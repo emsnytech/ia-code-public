@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L'IA dans le code public</title>
+<meta name="description" content="Observatoire de la place des assistants de programmation IA, et de Claude Code en particulier, dans les dépôts open source des services numériques de l'État.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/form26.css">
+<style>
+  :root{--admin:#1d4ed8;--accent:#b45309;--usager:#15803d}
+  @media (prefers-color-scheme: dark){:root{--admin:#60a5fa;--accent:#f59e0b;--usager:#4ade80}}
+  main{max-width:1000px;margin:0 auto;padding:3rem 16px 2rem}
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 .4rem}
+  h1{font-weight:800;line-height:1.1;font-size:clamp(2rem,4.6vw,3.1rem);margin:0 0 1rem;letter-spacing:-.01em}
+  .lede{font-size:1.15rem;color:var(--muted);max-width:44rem;margin:0 0 2.2rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:1rem}
+  .card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.4rem;color:inherit;text-decoration:none;transition:border-color .2s}
+  .card:hover{border-color:var(--accent)}
+  .card h2{font-weight:800;font-size:1.35rem;margin:0 0 .4rem}
+  .card p{margin:0;color:var(--muted)}
+  .card .go{display:inline-block;margin-top:.9rem;font-weight:700;color:var(--admin)}
+  .warn{margin-top:2.2rem;background:var(--surface);border-left:4px solid var(--accent);border-radius:8px;padding:1rem 1.2rem;color:var(--muted);font-size:.95rem}
+  .warn b{color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">FORM 2026 · Observatoire</p>
+  <h1>L'IA dans le code public</h1>
+  <p class="lede">Les services numériques de l'État publient leur code. Chaque mise en production y est datée et signée : on peut donc mesurer, sur pièces, la place qu'y prennent les assistants de programmation IA, et Claude Code en particulier.</p>
+  <div class="cards">
+    <a class="card" href="services-publics/">
+      <h2>33 dépôts publics, deux ans</h2>
+      <p>Démarche Numérique, RDV Service Public, Tchap, La Suite numérique, data.gouv.fr, ProConnect, pass Culture… Combien d'équipes recourent à l'IA, depuis quand, et avec quel poids.</p>
+      <span class="go">Ouvrir le tableau de bord →</span>
+    </a>
+    <a class="card" href="demarche-numerique/">
+      <h2>Démarche Numérique, cinq ans</h2>
+      <p>Toutes les mises en production depuis 2021, par nature (sécurité, accessibilité, API, design…) et par public, et l'arrivée de Claude Code en 2026.</p>
+      <span class="go">Ouvrir le tableau de bord →</span>
+    </a>
+  </div>
+  <p class="warn"><b>À lire avant de citer un chiffre.</b> Une contribution est comptée « avec Claude » quand un de ses commits porte la mention « Co-Authored-By: Claude » ou « Generated with Claude Code ». Cette mention se désactive, et un usage en conversation ou en relecture n'en laisse aucune : les chiffres sont un minimum. Les classements (évolution, nature, public) sont automatiques et valent en tendance.</p>
+</main>
+<footer class="site-foot">Sources : historiques Git publics sur GitHub, lus le 14 octobre 2026. Méthode, scripts et données sur <a href="https://github.com/emsnytech/ia-code-public">le dépôt du projet</a>.</footer>
+</body>
+</html>

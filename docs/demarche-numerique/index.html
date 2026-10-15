@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Démarche Numérique — mises en production</title>
+<meta name="description" content="Cinq ans de mises en production de Démarche Numérique, par nature et par public, et la part faite avec Claude Code.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/form26.css">
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>window.DASH_SOURCES = {"mensuel": "../data/demarche-numerique/mensuel.csv", "categories_mensuel": "../data/demarche-numerique/categories_mensuel.csv", "mises_en_production": "../data/demarche-numerique/mises_en_production.csv"};</script>
+<script src="../assets/dash-shim.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<nav class="site-nav"><a href="../">← Observatoire</a><a href="../demarche-numerique/">Démarche Numérique · 5 ans</a><a href="../services-publics/">Services publics · 2 ans</a></nav>
+<style>
+.dn{
+  --f-font:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-ink:#1e2022;--f-muted:#5c6066;--f-paper:#fbf9f5;--f-surface:#ffffff;--f-line:#e2dfd7;
+  --f-c0:#b45309;--f-c1:#1d4ed8;--f-c2:#15803d;--f-c3:#0e7490;--f-c4:#6d28d9;--f-c5:#be185d;--f-c6:#4d7c0f;--f-c7:#78716c;
+  --f-ok:#15803d;--f-bad:#b91c1c;--f-soft:#f3efe6;
+  --color-fg:var(--f-ink);--color-fg-muted:var(--f-muted);--color-bg:var(--f-paper);--color-panel:var(--f-surface);--color-border-line:var(--f-line);
+  --color-ok:var(--f-ok);--color-bad:var(--f-bad);
+  --cds-chart-muted:#d6d1c6;--cds-chart-grid:var(--f-line);--cds-chart-axis:#a8a39a;--cds-chart-reference:var(--f-muted);
+  --cds-text-secondary:var(--f-muted);--cds-surface-popover:var(--f-surface);--cds-border:var(--f-line);--cds-radius:10px;
+  background:var(--f-paper);color:var(--f-ink);font-family:var(--f-font);font-size:17px;line-height:1.55;
+  padding:var(--cds-pad-lg);border-radius:12px;
+}
+@media (prefers-color-scheme: dark){.dn{
+  --f-ink:#f3f4f6;--f-muted:#9ca3af;--f-paper:#18181b;--f-surface:#27272a;--f-line:#3f3f46;
+  --f-c0:#f59e0b;--f-c1:#60a5fa;--f-c2:#4ade80;--f-c3:#22d3ee;--f-c4:#a78bfa;--f-c5:#f472b6;--f-c6:#a3e635;--f-c7:#a8a29e;
+  --f-ok:#4ade80;--f-bad:#f87171;--f-soft:#3a2a12;
+  --cds-chart-muted:#52525b;--cds-chart-axis:#71717a;
+}}
+.dn h1,.dn h2,.dn h3{font-family:var(--f-font);font-weight:800;letter-spacing:-.01em}
+.dn h1{font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.15}
+.dn .big{font-family:var(--f-font)!important;font-weight:800!important;color:var(--f-c0)}
+.dn a{color:var(--f-c1)}
+.dn .tabs button[aria-selected=true]{border-bottom-color:var(--f-c0)!important;font-weight:700}
+.dn .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--f-c0);margin:0 0 .3rem}
+.dn{font-family:var(--f-font);display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.dn h1{font-family:var(--f-font);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
+.dn .lede{color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 0;font-size:var(--cds-font-size-body)}
+.dn .tabs{display:flex;gap:var(--cds-gap-xs);flex-wrap:wrap;border-bottom:1px solid var(--color-border-line)}
+.dn .tabs button{font:inherit;font-size:var(--cds-font-size-body);background:none;border:0;border-bottom:2px solid transparent;padding:var(--cds-pad-sm) var(--cds-pad-md);color:var(--color-fg-muted);cursor:pointer;margin-bottom:-1px}
+.dn .tabs button[aria-selected=true]{color:var(--color-fg);border-bottom-color:var(--color-fg)}
+.dn .pane{display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.dn .pane[hidden]{display:none}
+.dn .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.dn .card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0}
+.dn .lab{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.dn .big{font-family:var(--f-font);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;margin-top:var(--cds-gap-xs);min-height:1.2em}
+.dn h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0}
+.dn h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:0}
+.dn .note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md)}
+.dn .chart{position:relative;min-height:300px}
+.dn .mini{position:relative;min-height:120px}
+.dn .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:var(--cds-gap-md)}
+.dn .grid .card{padding:var(--cds-pad-md)}
+.dn .mhead{display:flex;justify-content:space-between;gap:var(--cds-gap-sm);align-items:baseline}
+.dn .legend{display:flex;gap:var(--cds-gap-md);flex-wrap:wrap;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-bottom:var(--cds-gap-sm)}
+.dn .sw{display:inline-block;width:.7rem;height:.7rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.dn .tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);display:none;white-space:nowrap;z-index:2}
+.dn .tip .d{color:var(--cds-text-secondary)}
+.dn table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.dn th,.dn td{text-align:left;padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.dn th{position:sticky;top:0;background:var(--color-panel);color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium)}
+.dn td.n,.dn th.n{text-align:right}
+.dn .scroll{max-height:32rem;overflow:auto}
+.dn .barcell{display:flex;align-items:center;gap:var(--cds-gap-xs);justify-content:flex-end}
+.dn .barcell span.b{display:inline-block;height:.5rem;border-radius:4px;background:var(--cds-chart-muted)}
+.dn .tools{display:flex;gap:var(--cds-gap-sm);flex-wrap:wrap;align-items:center;margin-bottom:var(--cds-gap-sm);font-size:var(--cds-font-size-caption)}
+.dn .tools input[type=search],.dn .tools select{padding:var(--cds-pad-xs) var(--cds-pad-sm);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);font:inherit}
+.dn .tools input[type=search]{flex:1;min-width:12rem}
+.dn .tag{display:inline-block;padding:0 .4rem;border-radius:999px;font-size:var(--cds-font-size-caption)}
+.dn .tag.oui{background:color-mix(in srgb,var(--color-ok) 15%,transparent);color:var(--color-ok)}
+.dn a{color:inherit}
+.dn .fail{display:flex;align-items:center;justify-content:center;gap:.4rem;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);min-height:inherit}
+.dn .fail i{width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad);display:inline-block}
+.dn [data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+.dn [data-dash-source-state=empty]{color:transparent}
+.dn .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:var(--cds-gap-md)}
+.dn .cmode{display:inline-flex;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);overflow:hidden;margin-bottom:var(--cds-gap-sm)}
+.dn .cmode button{font:inherit;font-size:var(--cds-font-size-caption);background:none;border:0;padding:var(--cds-pad-xs) var(--cds-pad-sm);color:var(--color-fg-muted);cursor:pointer}
+.dn .cmode button[aria-pressed=true]{background:var(--color-bg);color:var(--color-fg)}
+.dn .clegend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs) var(--cds-gap-sm);margin-bottom:var(--cds-gap-sm);font-size:var(--cds-font-size-caption)}
+.dn .clegend button{font:inherit;display:inline-flex;align-items:center;gap:.35rem;background:none;border:1px solid transparent;border-radius:999px;padding:0 .45rem;color:var(--color-fg-muted);cursor:pointer;font-variant-numeric:tabular-nums}
+.dn .clegend button[aria-pressed=true]{border-color:var(--color-border-line);color:var(--color-fg)}
+.dn .clegend i{width:.7rem;height:.18rem;border-radius:2px;display:inline-block}
+.dn .clegend b{font-weight:var(--cds-font-weight-medium);color:var(--color-fg)}
+.dn .method p{margin:0 0 var(--cds-gap-sm);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.5}
+.dn .method dl{display:grid;grid-template-columns:minmax(8rem,max-content) 1fr;gap:var(--cds-gap-xs) var(--cds-gap-md);font-size:var(--cds-font-size-caption);margin:0 0 var(--cds-gap-md)}
+.dn .method dt{font-weight:var(--cds-font-weight-medium)}
+.dn .method dd{margin:0;color:var(--color-fg-muted)}
+</style>
+<div class="dn">
+  <header>
+    <p class="eyebrow">FORM 2026 · Observatoire</p>
+    <h1 id="titre">Démarche Numérique — mises en production</h1>
+    <p class="lede dash-skeleton" id="lede" data-source="synthese">—</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-ensemble" data-pane="ensemble" aria-selected="true">Vue d'ensemble</button>
+    <button role="tab" id="tab-nature" data-pane="nature" aria-selected="false">Par nature</button>
+    <button role="tab" id="tab-public" data-pane="public" aria-selected="false">Par public</button>
+    <button role="tab" id="tab-liste" data-pane="liste" aria-selected="false">Liste</button>
+    <button role="tab" id="tab-methode" data-pane="methode" aria-selected="false">Méthode</button>
+  </nav>
+
+  <div class="pane" id="ensemble">
+    <div class="tiles" id="kpis">
+      <div class="card"><div class="lab">Évolutions en production · 5 ans</div><div class="big dash-skeleton" data-source="synthese" data-field="fonctionnalites" data-row="0">—</div></div>
+      <div class="card"><div class="lab">Évolutions · 12 derniers mois</div><div class="big dash-skeleton" data-source="synthese" data-field="fonctionnalites_12_mois" data-row="0">—</div></div>
+      <div class="card"><div class="lab">Évolutions faites avec Claude</div><div class="big dash-skeleton" data-source="synthese" data-field="fonctionnalites_claude" data-row="0">—</div></div>
+      <div class="card"><div class="lab">Part Claude des évolutions · 3 derniers mois</div><div class="big dash-skeleton" data-source="synthese" data-field="part_claude_3_mois" data-row="0">—</div></div>
+    </div>
+    <section class="card" id="mensuel-card">
+      <h2>Évolutions mises en production, par mois</h2>
+      <p class="note">Pull requests d'évolution (tout ce qui n'est ni correctif ni technique), comptées au mois de la première version déployée qui les contient. En couleur : celles dont au moins un commit porte la mention « Co-Authored-By: Claude ».</p>
+      <div class="legend"><span><span class="sw" style="background:var(--cds-chart-muted)"></span>Sans trace de Claude</span><span><span class="sw sw1"></span>Avec Claude</span></div>
+      <div class="chart" id="chart-mensuel" data-source="mensuel"></div>
+    </section>
+    <div class="grid2">
+      <section class="card" id="cumul-nature-card">
+        <h2>Cumul des mises en production par nature</h2>
+        <p class="note">Total cumulé depuis le 14 octobre 2021, mois par mois : chaque bande est une nature, le haut de la pile est le total. Survolez une nature dans la légende pour la mettre en avant, cliquez pour la garder.</p>
+        <div class="cmode" data-axe="nature" role="group" aria-label="Représentation"><button type="button" data-mode="stack" aria-pressed="true">Empilé</button><button type="button" data-mode="lines" aria-pressed="false">Courbes</button></div>
+        <div class="clegend" data-axe="nature" data-source="cumul"></div>
+        <div class="chart cumul" data-axe="nature" data-source="cumul"></div>
+      </section>
+      <section class="card" id="cumul-public-card">
+        <h2>Cumul des mises en production par public</h2>
+        <p class="note">Total cumulé depuis le 14 octobre 2021, mois par mois : chaque bande est un public, le haut de la pile est le total. Survolez un public dans la légende pour le mettre en avant, cliquez pour le garder.</p>
+        <div class="cmode" data-axe="public" role="group" aria-label="Représentation"><button type="button" data-mode="stack" aria-pressed="true">Empilé</button><button type="button" data-mode="lines" aria-pressed="false">Courbes</button></div>
+        <div class="clegend" data-axe="public" data-source="cumul"></div>
+        <div class="chart cumul" data-axe="public" data-source="cumul"></div>
+      </section>
+    </div>
+    <section class="card" id="annuel-card">
+      <h2>Toutes les mises en production, par année et par type</h2>
+      <p class="note">2021 commence le 14 octobre, 2026 s'arrête au 14 octobre.</p>
+      <div class="scroll">
+        <table id="table-annuel" data-source="annuel" data-row-key="annee">
+          <thead><tr><th data-field="annee">Année</th><th class="n" data-field="fonctionnalites">Évolutions</th><th class="n" data-field="fonctionnalites_avec_claude">dont avec Claude</th><th class="n" data-field="correctifs">Correctifs</th><th class="n" data-field="technique">Technique</th><th class="n" data-field="non_classe">Non classé</th><th class="n" data-field="total">Total</th><th class="n" data-field="total_avec_claude">Total avec Claude</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="pane" id="nature" hidden>
+    <section class="card" id="nature-table-card">
+      <h2>Par nature</h2>
+      <p class="note">Chaque mise en production reçoit une seule nature, la plus spécifique (voir Méthode). Trié par volume sur cinq ans.</p>
+      <div class="scroll">
+        <table class="axe-table" data-axe="nature" data-source="categories" data-row-key="axe,categorie">
+          <thead><tr><th data-field="categorie">Nature</th><th class="n" data-field="total">5 ans</th><th class="n" data-field="n_12_mois">12 derniers mois</th><th class="n" data-field="avec_claude">Avec Claude</th><th class="n" data-field="part_claude_12_mois">Part Claude · 12 mois</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section id="nature-multiples">
+      <h2>Évolution trimestrielle par nature</h2>
+      <p class="note">Même échelle pour toutes les natures. En couleur, la part faite avec Claude. Le dernier trimestre est incomplet.</p>
+      <div class="legend"><span><span class="sw" style="background:var(--cds-chart-muted)"></span>Sans trace de Claude</span><span><span class="sw sw1"></span>Avec Claude</span></div>
+      <div class="grid multiples" data-axe="nature" data-source="trimestriel"></div>
+    </section>
+  </div>
+
+  <div class="pane" id="public" hidden>
+    <section class="card" id="public-table-card">
+      <h2>Par public concerné</h2>
+      <p class="note">Qui voit le changement : usager, instructeur, administrateur de démarche, expert, super-admin, intégrateur API — ou seulement l'équipe technique.</p>
+      <div class="scroll">
+        <table class="axe-table" data-axe="public" data-source="categories" data-row-key="axe,categorie">
+          <thead><tr><th data-field="categorie">Public</th><th class="n" data-field="total">5 ans</th><th class="n" data-field="n_12_mois">12 derniers mois</th><th class="n" data-field="avec_claude">Avec Claude</th><th class="n" data-field="part_claude_12_mois">Part Claude · 12 mois</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section id="public-multiples">
+      <h2>Évolution trimestrielle par public</h2>
+      <p class="note">Même échelle pour tous les publics. En couleur, la part faite avec Claude.</p>
+      <div class="legend"><span><span class="sw" style="background:var(--cds-chart-muted)"></span>Sans trace de Claude</span><span><span class="sw sw1"></span>Avec Claude</span></div>
+      <div class="grid multiples" data-axe="public" data-source="trimestriel"></div>
+    </section>
+  </div>
+
+  <div class="pane" id="liste" hidden>
+    <section class="card" id="liste-card">
+      <h2>Toutes les mises en production</h2>
+      <p class="note">Les plus récentes d'abord. Le numéro ouvre la pull request sur GitHub. Au plus 1 000 lignes affichées : affinez avec les filtres.</p>
+      <div class="tools">
+        <input type="search" id="q" placeholder="Rechercher dans les titres…" aria-label="Rechercher">
+        <select id="f-nature" aria-label="Nature"></select>
+        <select id="f-public" aria-label="Public"></select>
+        <select id="f-type" aria-label="Type"></select>
+        <label><input type="checkbox" id="only-claude"> Avec Claude</label>
+        <span id="count" class="lab"></span>
+      </div>
+      <div class="scroll">
+        <table id="table-liste" data-source="mises_en_production" data-row-key="pr">
+          <thead><tr><th data-field="pr">PR</th><th data-field="titre">Titre</th><th data-field="nature">Nature</th><th data-field="public">Public</th><th data-field="mise_en_production">En production</th><th data-field="claude">Claude</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="pane" id="methode" hidden>
+    <section class="card method">
+      <h2>Méthode</h2>
+      <p>Source : l'historique Git public du dépôt demarche-numerique/demarche.numerique.gouv.fr, branche main, du 14 octobre 2021 au 14 octobre 2026. Une ligne = une pull request fusionnée (ou un commit poussé directement sur main). « En production » = la première version datée (étiquettes AAAA-MM-JJ-NN utilisées pour les déploiements) qui contient la fusion.</p>
+      <p>Tous les classements sont automatiques, par mots-clés sur le titre et la branche, complétés par les fichiers modifiés. Ils sont fiables en tendance, pas ligne à ligne. « Avec Claude » = au moins un commit porte « Co-Authored-By: Claude » ; c'est un minimum.</p>
+      <h3>Nature (une seule par ligne, dans cet ordre de priorité)</h3>
+      <dl>
+        <dt>Sécurité</dt><dd>Authentification, 2FA, sessions, CSP, assainissement, limitation de débit, droits d'accès, antivirus, chiffrement.</dd>
+        <dt>Accessibilité</dt><dd>a11y, RGAA, ARIA, lecteur d'écran, navigation clavier, contrastes.</dd>
+        <dt>Dépendances</dt><dd>Montées de version de gems, paquets JS, Ruby, Rails, DSFR ; PR Dependabot.</dd>
+        <dt>Tests & qualité</dt><dd>Specs, tests systèmes, tests instables, Rubocop, intégration continue.</dd>
+        <dt>Performance</dt><dd>N+1, optimisation, cache, index, temps de réponse, mémoire.</dd>
+        <dt>API & interopérabilité</dt><dd>API GraphQL, webhooks, API Entreprise / Particulier, FranceConnect, ProConnect, SIRET, référentiels, Chorus, API Géo.</dd>
+        <dt>Design & ergonomie</dt><dd>DSFR, mise en page, affichage, mobile, menus, boutons, mode sombre, refontes.</dd>
+        <dt>Contenus & libellés</dt><dd>Wording, traductions, FAQ, documentation, coquilles.</dd>
+        <dt>Fonctionnalité</dt><dd>Évolution métier qui ne relève d'aucune nature ci-dessus.</dd>
+        <dt>Correctif</dt><dd>Correction de bug qui ne relève d'aucune nature ci-dessus.</dd>
+        <dt>Technique & maintenance</dt><dd>Refactorisation, migrations, nettoyage, feature flags, tâches.</dd>
+      </dl>
+      <h3>Public concerné</h3>
+      <p>Lu dans la formule « ETQ (en tant que) usager / instructeur / admin… » quand elle existe, sinon dans le titre, sinon d'après les dossiers de code modifiés (contrôleurs et vues usagers, instructeurs, administrateurs, manager, API). « Équipe technique » = invisible pour les utilisateurs ; « Transverse » = touche l'interface sans public identifiable.</p>
+      <h3>Type</h3>
+      <p>Évolution, correctif, technique ou non classé : c'est le premier classement, celui de la vue d'ensemble. Une évolution peut avoir pour nature Design, API, Accessibilité, etc.</p>
+    </section>
+  </div>
+</div>
+<script>
+window.FORM_COLORS = window.FORM_COLORS || ['var(--f-c0)','var(--f-c1)','var(--f-c2)','var(--f-c3)','var(--f-c4)','var(--f-c5)','var(--f-c6)','var(--f-c7)'];
+dash.calc('synthese', {
+  title: 'Chiffres clés',
+  description: 'Totaux et part de Claude calculés à partir des comptes mensuels.',
+  inputs: ['mensuel'],
+  fn: (mensuel) => {
+    const n = (r, k) => Number(r[k]) || 0;
+    const sum = (rs, k) => rs.reduce((s, r) => s + n(r, k), 0);
+    const rows = [...mensuel].sort((a, b) => a.mois < b.mois ? -1 : 1);
+    const last12 = rows.slice(-12), last3 = rows.slice(-3);
+    const f3 = sum(last3, 'fonctionnalites');
+    return [{
+      fonctionnalites: sum(rows, 'fonctionnalites'),
+      fonctionnalites_12_mois: sum(last12, 'fonctionnalites'),
+      fonctionnalites_claude: sum(rows, 'fonctionnalites_avec_claude'),
+      part_claude_3_mois: f3 ? sum(last3, 'fonctionnalites_avec_claude') / f3 : 0,
+      premier_mois_claude: (rows.find(r => n(r, 'total_avec_claude') > 0) || {}).mois || null
+    }];
+  }
+});
+dash.calc('annuel', {
+  title: 'Totaux par année',
+  description: 'Somme des comptes mensuels par année civile.',
+  inputs: ['mensuel'],
+  fn: (mensuel) => {
+    const keys = ['fonctionnalites', 'fonctionnalites_avec_claude', 'correctifs', 'technique', 'non_classe', 'total', 'total_avec_claude'];
+    const by = {};
+    for (const r of mensuel) {
+      const y = String(r.mois).slice(0, 4);
+      by[y] = by[y] || Object.fromEntries([['annee', y], ...keys.map(k => [k, 0])]);
+      for (const k of keys) by[y][k] += Number(r[k]) || 0;
+    }
+    return Object.values(by).sort((a, b) => a.annee < b.annee ? -1 : 1);
+  }
+});
+dash.calc('categories', {
+  title: 'Totaux par nature et par public',
+  description: 'Pour chaque catégorie : total sur cinq ans, total des 12 derniers mois, nombre avec Claude et part de Claude sur 12 mois.',
+  inputs: ['categories_mensuel'],
+  fn: (categories_mensuel) => {
+    const months = [...new Set(categories_mensuel.map(r => r.mois))].sort();
+    const recent = new Set(months.slice(-12));
+    const by = {};
+    for (const r of categories_mensuel) {
+      const k = r.axe + '|' + r.categorie;
+      const o = by[k] = by[k] || { axe: r.axe, categorie: r.categorie, total: 0, n_12_mois: 0, avec_claude: 0, claude_12_mois: 0 };
+      const n = Number(r.n) || 0, c = Number(r.n_avec_claude) || 0;
+      o.total += n; o.avec_claude += c;
+      if (recent.has(r.mois)) { o.n_12_mois += n; o.claude_12_mois += c; }
+    }
+    return Object.values(by).map(o => ({ ...o, part_claude_12_mois: o.n_12_mois ? o.claude_12_mois / o.n_12_mois : 0 }))
+      .sort((a, b) => b.total - a.total);
+  }
+});
+dash.calc('trimestriel', {
+  title: 'Comptes par trimestre',
+  description: 'Mises en production et part avec Claude, par trimestre civil, pour chaque nature et chaque public.',
+  inputs: ['categories_mensuel'],
+  fn: (categories_mensuel) => {
+    const by = {};
+    for (const r of categories_mensuel) {
+      const y = String(r.mois).slice(0, 4), q = Math.ceil(Number(String(r.mois).slice(5, 7)) / 3);
+      const t = y + '-T' + q, k = r.axe + '|' + r.categorie + '|' + t;
+      const o = by[k] = by[k] || { axe: r.axe, categorie: r.categorie, trimestre: t, n: 0, n_avec_claude: 0 };
+      o.n += Number(r.n) || 0; o.n_avec_claude += Number(r.n_avec_claude) || 0;
+    }
+    return Object.values(by).sort((a, b) => a.trimestre < b.trimestre ? -1 : 1);
+  }
+});
+
+dash.calc('cumul', {
+  title: 'Cumul mensuel par catégorie',
+  description: 'Total cumulé des mises en production depuis octobre 2021, mois par mois, pour chaque nature et chaque public.',
+  inputs: ['categories_mensuel'],
+  fn: (categories_mensuel) => {
+    const months = [...new Set(categories_mensuel.map(r => r.mois))].sort();
+    const by = {};
+    for (const r of categories_mensuel) {
+      const k = r.axe + '|' + r.categorie;
+      by[k] = by[k] || { axe: r.axe, categorie: r.categorie, m: {} };
+      by[k].m[r.mois] = (by[k].m[r.mois] || 0) + (Number(r.n) || 0);
+    }
+    const out = [];
+    for (const s of Object.values(by)) {
+      let c = 0;
+      for (const mo of months) { c += s.m[mo] || 0; out.push({ axe: s.axe, categorie: s.categorie, mois: mo, cumul: c }); }
+    }
+    return out;
+  }
+});
+
+(function () {
+  const fmt = ((v) => new Intl.NumberFormat('fr-FR').format(v));
+  const pct = ((v) => new Intl.NumberFormat('fr-FR', { style: 'percent', maximumFractionDigits: 0 }).format(v));
+  const frMonth = new Intl.DateTimeFormat('fr-FR', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const fail = (el) => { el.innerHTML = ''; const d = document.createElement('div'); d.className = 'fail'; d.append(document.createElement('i'), 'Failed to load'); el.append(d); };
+  document.querySelectorAll('.sw1').forEach(s => { s.style.background = window.FORM_COLORS[0]; });
+
+  // Tabs
+  const tabs = [...document.querySelectorAll('.tabs button')];
+  let current = 'ensemble';
+  function show(id) {
+    if (!document.getElementById(id) || !tabs.some(t => t.dataset.pane === id)) return;
+    current = id;
+    tabs.forEach(t => t.setAttribute('aria-selected', String(t.dataset.pane === id)));
+    document.querySelectorAll('.pane').forEach(p => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    drawAll();
+  }
+  tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.pane)));
+
+  // Tooltip helper
+  function tipFor(el) {
+    let tip = el.querySelector(':scope > .tip');
+    if (!tip) { tip = document.createElement('div'); tip.className = 'tip'; el.append(tip); }
+    return {
+      show(ev, lines) {
+        tip.innerHTML = '';
+        lines.forEach((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 'd'; d.textContent = l; tip.append(d); });
+        tip.style.display = 'block';
+        const [mx, my] = d3.pointer(ev, el);
+        tip.style.left = Math.max(0, Math.min(el.clientWidth - tip.offsetWidth, mx + 12)) + 'px';
+        tip.style.top = Math.max(0, my - tip.offsetHeight - 8) + 'px';
+      },
+      hide() { tip.style.display = 'none'; }
+    };
+  }
+
+  // Stacked bars: total (muted) with Claude part (accent)
+  function bars(el, data, opts) {
+    el.innerHTML = '';
+    const W = Math.max(240, el.clientWidth), H = opts.height;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([0, opts.max || d3.max(data, d => d.total) || 1], [H - 22, 8]).nice();
+    const ticks = y.ticks(opts.ticks);
+    const probe = svg.append('g').selectAll('text').data(ticks).join('text').text(d => fmt(d)).style('font-size', 'var(--cds-font-size-caption)');
+    const left = 6 + (d3.max(probe.nodes(), n => n.getComputedTextLength()) || 16);
+    probe.remove();
+    const x = d3.scaleBand(data.map(d => d.key), [left, W - 4]).padding(0.2);
+    svg.append('g').selectAll('line').data(ticks).join('line')
+      .attr('x1', left).attr('x2', W - 4).attr('y1', d => y(d)).attr('y2', d => y(d))
+      .attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(ticks).join('text').text(d => fmt(d))
+      .attr('x', left - 5).attr('y', d => y(d) + 4).attr('text-anchor', 'end')
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+    svg.append('g').selectAll('text').data(data.filter(opts.yearLabel)).join('text')
+      .text(d => d.year).attr('x', d => x(d.key)).attr('y', H - 6)
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+    svg.append('line').attr('x1', left).attr('x2', W - 4).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    const rx = Math.min(3, x.bandwidth() / 2);
+    svg.append('g').selectAll('rect').data(data).join('rect')
+      .attr('x', d => x(d.key)).attr('width', x.bandwidth()).attr('y', d => y(d.total)).attr('height', d => y(0) - y(d.total))
+      .attr('rx', rx).attr('fill', 'var(--cds-chart-muted)');
+    svg.append('g').selectAll('rect').data(data.filter(d => d.claude > 0)).join('rect')
+      .attr('x', d => x(d.key)).attr('width', x.bandwidth()).attr('y', d => y(d.claude)).attr('height', d => y(0) - y(d.claude))
+      .attr('rx', rx).style('fill', window.FORM_COLORS[0]);
+    const tip = tipFor(el);
+    svg.append('g').selectAll('rect').data(data).join('rect')
+      .attr('x', d => x(d.key) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev, d) => tip.show(ev, [d.label, fmt(d.total) + ' ' + opts.unit, 'dont ' + fmt(d.claude) + ' avec Claude' + (d.total ? ' (' + pct(d.claude / d.total) + ')' : '')]))
+      .on('mouseleave', () => tip.hide());
+  }
+
+  // Series palette: the eight theme colors, plus blends of neighbours when more are needed
+  function palette(n) {
+    const probe = document.createElement('span');
+    document.querySelector('.dn').append(probe);
+    const base = window.FORM_COLORS.map(c => { probe.style.color = c; return getComputedStyle(probe).color; });
+    probe.remove();
+    const out = base.slice(0, n);
+    for (let i = 0; out.length < n; i++) out.push(d3.interpolateRgb(base[i % base.length], base[(i + 3) % base.length])(0.5));
+    return out;
+  }
+  const pinned = { nature: null, public: null };
+  const mode = { nature: 'stack', public: 'stack' };
+  document.querySelectorAll('.cmode').forEach(g => {
+    g.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+      mode[g.dataset.axe] = b.dataset.mode;
+      g.querySelectorAll('button').forEach(o => o.setAttribute('aria-pressed', String(o === b)));
+      drawCumul(g.dataset.axe);
+    }));
+  });
+
+  function drawCumul(axe) {
+    const el = document.querySelector(`.cumul[data-axe="${axe}"]`);
+    const leg = document.querySelector(`.clegend[data-axe="${axe}"]`);
+    const cu = dash.data('cumul');
+    if (cu.status !== 'ok') { leg.innerHTML = ''; if (cu.status === 'error') fail(el); else el.innerHTML = ''; return; }
+    const rows = cu.data.filter(r => r.axe === axe);
+    const months = [...new Set(rows.map(r => r.mois))].sort();
+    const last = months[months.length - 1];
+    const series = d3.groups(rows, r => r.categorie).map(([name, rs]) => ({
+      name, pts: rs.map(r => ({ mois: r.mois, date: new Date(r.mois + '-01T00:00:00Z'), v: r.cumul })).sort((a, b) => a.date - b.date)
+    }));
+    series.forEach(s => { s.end = s.pts.length ? s.pts[s.pts.length - 1].v : 0; });
+    series.sort((a, b) => b.end - a.end);
+    const cols = palette(series.length);
+    series.forEach((s, i) => { s.color = cols[i]; });
+
+    el.innerHTML = '';
+    const W = Math.max(260, el.clientWidth), H = 300;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([0, (mode[axe] === 'stack' ? d3.sum(series, s => s.end) : d3.max(series, s => s.end)) || 1], [H - 22, 8]).nice();
+    const ticks = y.ticks(5);
+    const probe = svg.append('g').selectAll('text').data(ticks).join('text').text(d => fmt(d)).style('font-size', 'var(--cds-font-size-caption)');
+    const left = 6 + (d3.max(probe.nodes(), n => n.getComputedTextLength()) || 16);
+    probe.remove();
+    const x = d3.scaleUtc([new Date(months[0] + '-01T00:00:00Z'), new Date(last + '-01T00:00:00Z')], [left, W - 6]);
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', left).attr('x2', W - 6).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(ticks).join('text').text(d => fmt(d)).attr('x', left - 5).attr('y', d => y(d) + 4).attr('text-anchor', 'end')
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+    const years = months.filter(m => m.endsWith('-01')).map(m => new Date(m + '-01T00:00:00Z'));
+    svg.append('g').selectAll('text').data(years).join('text').text(d => d.getUTCFullYear()).attr('x', d => x(d)).attr('y', H - 6).attr('text-anchor', 'middle')
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+    svg.append('line').attr('x1', left).attr('x2', W - 6).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    const stacked = mode[axe] === 'stack';
+    let paths;
+    const tops = {};
+    if (stacked) {
+      // stack in legend order, largest at the bottom
+      const table = months.map(mo => Object.fromEntries([['mois', mo], ...series.map(s => [s.name, (s.pts.find(p => p.mois === mo) || { v: 0 }).v])]));
+      const st = d3.stack().keys(series.map(s => s.name))(table);
+      st.forEach(layer => { tops[layer.key] = layer.map(d => d[1]); });
+      const area = d3.area().x((d, i) => x(new Date(months[i] + '-01T00:00:00Z'))).y0(d => y(d[0])).y1(d => y(d[1]));
+      paths = svg.append('g').selectAll('path').data(series).join('path')
+        .attr('d', s => area(st.find(l => l.key === s.name)))
+        .style('fill', s => s.color).style('stroke', 'var(--color-panel)').attr('stroke-width', 0.5)
+        .attr('fill-opacity', 0.85);
+    } else {
+      const line = d3.line().x(p => x(p.date)).y(p => y(p.v));
+      paths = svg.append('g').selectAll('path').data(series).join('path')
+        .attr('d', s => line(s.pts)).attr('fill', 'none').attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+        .style('stroke', s => s.color);
+    }
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').style('display', 'none');
+    const dots = svg.append('g').selectAll('circle').data(series).join('circle').attr('r', 3).style('fill', s => s.color).style('display', 'none');
+
+    let hover = null;
+    const focus = () => hover || pinned[axe];
+    const emphasize = () => {
+      const f = focus();
+      paths.attr('opacity', s => !f || s.name === f ? 1 : 0.15).attr('stroke-width', s => s.name === f ? 2.5 : 2);
+      leg.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.name === pinned[axe])));
+    };
+
+    leg.innerHTML = '';
+    for (const s of series) {
+      const b = document.createElement('button');
+      b.type = 'button'; b.dataset.name = s.name;
+      const sw = document.createElement('i'); sw.style.background = s.color;
+      const t = document.createElement('span'); t.textContent = s.name;
+      const v = document.createElement('b'); v.textContent = fmt(s.end);
+      b.append(sw, t, v);
+      b.addEventListener('mouseenter', () => { hover = s.name; emphasize(); });
+      b.addEventListener('mouseleave', () => { hover = null; emphasize(); });
+      b.addEventListener('click', () => { pinned[axe] = pinned[axe] === s.name ? null : s.name; emphasize(); });
+      leg.append(b);
+    }
+    emphasize();
+
+    const tip = tipFor(el);
+    const dates = months.map(m => new Date(m + '-01T00:00:00Z'));
+    svg.append('rect').attr('x', left).attr('width', W - 6 - left).attr('y', 0).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev);
+        const t = x.invert(mx);
+        let i = d3.bisector(d => d).center(dates, t);
+        i = Math.max(0, Math.min(dates.length - 1, i));
+        const d = dates[i], mo = months[i];
+        rule.style('display', null).attr('x1', x(d)).attr('x2', x(d));
+        const f = focus();
+        const vals = series.map(s => ({ s, v: (s.pts.find(p => p.mois === mo) || { v: 0 }).v }));
+        dots.style('display', s => !f || s.name === f ? null : 'none')
+          .attr('cx', x(d)).attr('cy', s => y(stacked ? tops[s.name][i] : (vals.find(o => o.s === s) || { v: 0 }).v));
+        const shown = f ? vals.filter(o => o.s.name === f) : vals;
+        tip.show(ev, [frMonth.format(d) + (stacked && !f ? ' · total ' + fmt(d3.sum(vals, o => o.v)) : ''), ...shown.map(o => o.s.name + ' : ' + fmt(o.v))]);
+      })
+      .on('mouseleave', () => { tip.hide(); rule.style('display', 'none'); dots.style('display', 'none'); });
+  }
+
+  function drawEnsemble() {
+    drawCumul('nature');
+    drawCumul('public');
+    const m = dash.data('mensuel');
+    const ch = document.getElementById('chart-mensuel');
+    if (m.status === 'ok') {
+      const data = m.data.map(r => { const d = new Date(r.mois + '-01T00:00:00Z'); return { key: r.mois, date: d, year: d.getUTCFullYear(), label: frMonth.format(d), total: Number(r.fonctionnalites) || 0, claude: Number(r.fonctionnalites_avec_claude) || 0 }; })
+        .sort((a, b) => a.date - b.date);
+      bars(ch, data, { height: 300, ticks: 5, unit: 'évolutions', yearLabel: d => d.date.getUTCMonth() === 0 });
+    } else if (m.status === 'error') fail(ch); else ch.innerHTML = '';
+
+    const an = dash.data('annuel');
+    const tb = document.querySelector('#table-annuel tbody');
+    tb.innerHTML = '';
+    if (an.status === 'ok') {
+      const cols = ['annee', 'fonctionnalites', 'fonctionnalites_avec_claude', 'correctifs', 'technique', 'non_classe', 'total', 'total_avec_claude'];
+      for (const r of an.data) {
+        const tr = document.createElement('tr');
+        cols.forEach((c, i) => { const td = document.createElement('td'); if (i) td.className = 'n'; td.textContent = i ? fmt(r[c]) : r[c]; tr.append(td); });
+        tb.append(tr);
+      }
+    }
+  }
+
+  function drawAxe(axe) {
+    const cat = dash.data('categories');
+    const table = document.querySelector(`.axe-table[data-axe="${axe}"]`);
+    const tb = table.querySelector('tbody');
+    tb.innerHTML = '';
+    if (cat.status === 'ok') {
+      const rows = cat.data.filter(r => r.axe === axe);
+      const max = d3.max(rows, r => r.total) || 1;
+      for (const r of rows) {
+        const tr = document.createElement('tr');
+        tr.dataset.key = encodeURIComponent(r.axe) + ',' + encodeURIComponent(r.categorie);
+        const td0 = document.createElement('td'); td0.textContent = r.categorie;
+        const td1 = document.createElement('td'); td1.className = 'n';
+        const bc = document.createElement('div'); bc.className = 'barcell';
+        const b = document.createElement('span'); b.className = 'b'; b.style.width = (4 * r.total / max) + 'rem';
+        const v = document.createElement('span'); v.textContent = fmt(r.total);
+        bc.append(b, v); td1.append(bc);
+        const td2 = document.createElement('td'); td2.className = 'n'; td2.textContent = fmt(r.n_12_mois);
+        const td3 = document.createElement('td'); td3.className = 'n'; td3.textContent = fmt(r.avec_claude);
+        const td4 = document.createElement('td'); td4.className = 'n'; td4.textContent = pct(r.part_claude_12_mois);
+        tr.append(td0, td1, td2, td3, td4);
+        tb.append(tr);
+      }
+    }
+
+    const grid = document.querySelector(`.multiples[data-axe="${axe}"]`);
+    const tri = dash.data('trimestriel');
+    if (tri.status !== 'ok' || cat.status !== 'ok') { if (tri.status === 'error') fail(grid); else grid.innerHTML = ''; return; }
+    const quarters = [...new Set(tri.data.map(r => r.trimestre))].sort();
+    const rows = tri.data.filter(r => r.axe === axe);
+    const order = cat.data.filter(r => r.axe === axe).map(r => r.categorie);
+    const max = d3.max(rows, r => r.n) || 1;
+    grid.innerHTML = '';
+    for (const c of order) {
+      const card = document.createElement('div'); card.className = 'card';
+      const head = document.createElement('div'); head.className = 'mhead';
+      const h = document.createElement('h3'); h.textContent = c;
+      const lab = document.createElement('span'); lab.className = 'lab';
+      const own = rows.filter(r => r.categorie === c);
+      const tot = d3.sum(own, r => r.n), cl = d3.sum(own, r => r.n_avec_claude);
+      lab.textContent = fmt(tot) + ' · ' + fmt(cl) + ' avec Claude';
+      head.append(h, lab);
+      const box = document.createElement('div'); box.className = 'mini';
+      card.append(head, box); grid.append(card);
+      const byQ = Object.fromEntries(own.map(r => [r.trimestre, r]));
+      const data = quarters.map(q => ({ key: q, year: q.slice(0, 4), label: q.replace('-T', ' · T'), total: byQ[q] ? byQ[q].n : 0, claude: byQ[q] ? byQ[q].n_avec_claude : 0 }));
+      bars(box, data, { height: 120, ticks: 2, max, unit: 'mises en production', yearLabel: d => d.key.endsWith('T1') && Number(d.year) % 2 === 0 });
+    }
+  }
+
+  // List
+  let listRows = [];
+  const q = document.getElementById('q'), only = document.getElementById('only-claude');
+  const sels = { nature: document.getElementById('f-nature'), public: document.getElementById('f-public'), type: document.getElementById('f-type') };
+  const allLabel = { nature: 'Toutes natures', public: 'Tous publics', type: 'Tous types' };
+  [q, only, ...Object.values(sels)].forEach(e => e.addEventListener(e === q ? 'input' : 'change', () => drawList()));
+  function fillSelects() {
+    for (const [k, sel] of Object.entries(sels)) {
+      const v = sel.value;
+      const opts = [...new Set(listRows.map(r => r[k]))].sort((a, b) => a.localeCompare(b, 'fr'));
+      sel.replaceChildren(new Option(allLabel[k], ''), ...opts.map(o => new Option(o, o)));
+      sel.value = opts.includes(v) ? v : '';
+    }
+  }
+  function drawList() {
+    const tb = document.querySelector('#table-liste tbody');
+    tb.innerHTML = '';
+    const term = q.value.trim().toLowerCase();
+    const rows = listRows.filter(r => (!only.checked || r.claude === 'oui')
+      && Object.entries(sels).every(([k, s]) => !s.value || r[k] === s.value)
+      && (!term || String(r.titre).toLowerCase().includes(term)));
+    document.getElementById('count').textContent = fmt(rows.length) + ' ligne' + (rows.length > 1 ? 's' : '') + (rows.length > 1000 ? ' (1 000 affichées)' : '');
+    const frag = document.createDocumentFragment();
+    for (const r of rows.slice(0, 1000)) {
+      const tr = document.createElement('tr');
+      const td0 = document.createElement('td'); const a = document.createElement('a'); a.textContent = r.pr;
+      if (/^https:\/\/github\.com\/demarche-numerique\//.test(r.lien)) { a.href = r.lien; a.target = '_blank'; a.rel = 'noopener'; }
+      td0.append(a);
+      const cells = [r.titre, r.nature, r.public, r.mise_en_production].map(t => { const td = document.createElement('td'); td.textContent = t; return td; });
+      const tdc = document.createElement('td');
+      if (r.claude === 'oui') { const s = document.createElement('span'); s.className = 'tag oui'; s.textContent = 'oui'; tdc.append(s); } else tdc.textContent = 'non';
+      tr.append(td0, ...cells, tdc); frag.append(tr);
+    }
+    tb.append(frag);
+  }
+
+  function drawAll() {
+    if (current === 'ensemble') drawEnsemble();
+    if (current === 'nature') drawAxe('nature');
+    if (current === 'public') drawAxe('public');
+  }
+
+  let listLoaded = false;
+  dash.onData(() => {
+    const s = dash.data('synthese');
+    const kpiEls = [...document.querySelectorAll('#kpis .big')];
+    const lede = document.getElementById('lede');
+    if (s.status === 'ok' && s.data[0]) {
+      const r = s.data[0];
+      kpiEls.forEach(el => { const k = el.dataset.field; el.textContent = k === 'part_claude_3_mois' ? pct(r[k]) : fmt(r[k]); });
+      const first = r.premier_mois_claude ? frMonth.format(new Date(r.premier_mois_claude + '-01T00:00:00Z')) : '—';
+      lede.textContent = `En cinq ans, ${fmt(r.fonctionnalites)} évolutions sont passées en production. Claude laisse sa première trace en ${first} ; sur les trois derniers mois, il figure dans ${pct(r.part_claude_3_mois)} des évolutions livrées.`;
+      [...kpiEls, lede].forEach(e => e.classList.remove('dash-skeleton'));
+    } else {
+      kpiEls.forEach(el => { el.textContent = '—'; }); lede.textContent = '—';
+      if (s.status === 'error') [...kpiEls, lede].forEach(e => e.classList.remove('dash-skeleton'));
+    }
+
+    const l = dash.data('mises_en_production');
+    if (l.status === 'ok') { if (!listLoaded || listRows !== l.data) { listRows = l.data; fillSelects(); listLoaded = true; } drawList(); }
+    else { listRows = []; document.querySelector('#table-liste tbody').innerHTML = ''; document.getElementById('count').textContent = l.status === 'error' ? 'Failed to load' : ''; }
+
+    drawAll();
+  });
+
+  const named = location.hash.slice(1);
+  if (named && tabs.some(t => t.dataset.pane === named)) show(named);
+})();
+</script>
+
+</div>
+<footer class="site-foot">Données : historiques Git publics sur GitHub, lus le 14 octobre 2026. Méthode, scripts et fichiers CSV : <a href="https://github.com/emsnytech/ia-code-public">dépôt du projet</a>. Charte FORM 2026.</footer>
+</body>
+</html>

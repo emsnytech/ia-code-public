@@ -1,0 +1,826 @@
+mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,avec_copilot,avec_cursor,avec_autre_ia,commits,commits_avec_claude
+2024-10,Démarche Numérique,DINUM,35,0,13,0,0,0,0,95,0
+2024-11,Démarche Numérique,DINUM,78,0,50,0,0,0,0,289,0
+2024-12,Démarche Numérique,DINUM,66,0,42,0,0,0,0,253,0
+2025-01,Démarche Numérique,DINUM,66,0,31,0,0,0,0,228,0
+2025-02,Démarche Numérique,DINUM,66,0,35,0,0,0,0,189,0
+2025-03,Démarche Numérique,DINUM,95,0,52,0,0,0,0,304,0
+2025-04,Démarche Numérique,DINUM,63,0,38,0,1,0,0,157,0
+2025-05,Démarche Numérique,DINUM,67,0,40,0,0,0,0,222,0
+2025-06,Démarche Numérique,DINUM,79,0,42,0,0,0,0,200,0
+2025-07,Démarche Numérique,DINUM,101,0,58,0,0,0,0,260,0
+2025-08,Démarche Numérique,DINUM,40,0,20,0,0,0,0,103,0
+2025-09,Démarche Numérique,DINUM,125,0,58,0,0,0,0,476,0
+2025-10,Démarche Numérique,DINUM,97,0,49,0,0,0,0,275,0
+2025-11,Démarche Numérique,DINUM,80,0,38,0,0,0,0,241,0
+2025-12,Démarche Numérique,DINUM,74,0,51,0,0,0,0,269,0
+2026-01,Démarche Numérique,DINUM,85,0,46,0,0,0,0,283,0
+2026-02,Démarche Numérique,DINUM,110,0,68,0,0,0,0,264,0
+2026-03,Démarche Numérique,DINUM,140,30,77,8,0,0,0,415,71
+2026-04,Démarche Numérique,DINUM,124,42,36,11,0,0,1,270,94
+2026-05,Démarche Numérique,DINUM,127,60,32,6,0,0,0,382,119
+2026-06,Démarche Numérique,DINUM,128,48,66,24,0,0,1,442,137
+2026-07,Démarche Numérique,DINUM,187,94,63,31,0,0,0,541,196
+2026-08,Démarche Numérique,DINUM,106,57,23,14,0,0,0,335,126
+2026-09,Démarche Numérique,DINUM,283,169,95,62,0,0,1,715,330
+2026-10,Démarche Numérique,DINUM,120,65,68,46,0,0,0,364,209
+2024-10,RDV Service Public,ANCT / beta.gouv,49,0,6,0,0,0,0,49,0
+2024-11,RDV Service Public,ANCT / beta.gouv,72,0,12,0,0,0,0,72,0
+2024-12,RDV Service Public,ANCT / beta.gouv,69,0,10,0,0,0,0,69,0
+2025-01,RDV Service Public,ANCT / beta.gouv,86,0,19,0,0,0,0,86,0
+2025-02,RDV Service Public,ANCT / beta.gouv,74,0,22,0,0,0,0,74,0
+2025-03,RDV Service Public,ANCT / beta.gouv,77,0,11,0,0,0,0,77,0
+2025-04,RDV Service Public,ANCT / beta.gouv,50,0,9,0,0,0,0,50,0
+2025-05,RDV Service Public,ANCT / beta.gouv,80,0,14,0,0,0,0,80,0
+2025-06,RDV Service Public,ANCT / beta.gouv,83,0,14,0,0,0,0,83,0
+2025-07,RDV Service Public,ANCT / beta.gouv,53,0,10,0,0,0,0,53,0
+2025-08,RDV Service Public,ANCT / beta.gouv,46,0,4,0,0,0,0,46,0
+2025-09,RDV Service Public,ANCT / beta.gouv,75,0,20,0,0,0,0,75,0
+2025-10,RDV Service Public,ANCT / beta.gouv,87,0,18,0,0,0,0,87,0
+2025-11,RDV Service Public,ANCT / beta.gouv,96,0,27,0,0,0,0,96,0
+2025-12,RDV Service Public,ANCT / beta.gouv,73,0,21,0,0,0,0,73,0
+2026-01,RDV Service Public,ANCT / beta.gouv,76,1,15,0,1,0,0,76,1
+2026-02,RDV Service Public,ANCT / beta.gouv,123,1,17,0,0,0,0,123,1
+2026-03,RDV Service Public,ANCT / beta.gouv,85,0,15,0,0,0,0,85,0
+2026-04,RDV Service Public,ANCT / beta.gouv,38,0,6,0,0,0,0,38,0
+2026-05,RDV Service Public,ANCT / beta.gouv,38,0,10,0,0,0,0,38,0
+2026-06,RDV Service Public,ANCT / beta.gouv,83,0,20,0,0,0,0,83,0
+2026-07,RDV Service Public,ANCT / beta.gouv,44,0,10,0,0,0,0,44,0
+2026-08,RDV Service Public,ANCT / beta.gouv,70,0,13,0,0,0,0,70,0
+2026-09,RDV Service Public,ANCT / beta.gouv,116,0,24,0,0,0,0,116,0
+2026-10,RDV Service Public,ANCT / beta.gouv,50,0,3,0,0,0,0,50,0
+2024-10,Tchap (web),DINUM,14,0,8,0,0,0,0,29,0
+2024-11,Tchap (web),DINUM,4,0,1,0,0,0,0,6,0
+2024-12,Tchap (web),DINUM,1,0,0,0,0,0,0,1,0
+2025-01,Tchap (web),DINUM,20,0,6,0,0,0,0,119,0
+2025-02,Tchap (web),DINUM,10,0,1,0,0,0,0,12,0
+2025-03,Tchap (web),DINUM,9,0,2,0,0,0,0,11,0
+2025-04,Tchap (web),DINUM,12,0,2,0,0,0,0,19,0
+2025-05,Tchap (web),DINUM,9,0,2,0,0,0,0,13,0
+2025-06,Tchap (web),DINUM,5,0,1,0,0,0,0,8,0
+2025-07,Tchap (web),DINUM,7,0,2,0,0,0,0,31,0
+2025-08,Tchap (web),DINUM,14,0,2,0,0,0,0,14,0
+2025-09,Tchap (web),DINUM,12,0,1,0,0,0,0,14,0
+2025-10,Tchap (web),DINUM,18,0,1,0,0,0,0,47,0
+2025-11,Tchap (web),DINUM,16,0,3,0,0,0,0,28,0
+2025-12,Tchap (web),DINUM,11,0,1,0,0,0,0,18,0
+2026-01,Tchap (web),DINUM,11,0,3,0,0,0,0,18,0
+2026-02,Tchap (web),DINUM,8,0,0,0,0,0,0,15,0
+2026-03,Tchap (web),DINUM,16,0,4,0,0,0,0,16,0
+2026-04,Tchap (web),DINUM,20,0,3,0,0,0,0,43,0
+2026-05,Tchap (web),DINUM,12,0,1,0,0,0,0,31,0
+2026-06,Tchap (web),DINUM,9,0,1,0,0,0,0,13,0
+2026-07,Tchap (web),DINUM,11,0,0,0,0,0,0,12,0
+2026-08,Tchap (web),DINUM,17,0,2,0,0,0,0,19,0
+2026-09,Tchap (web),DINUM,8,0,2,0,0,0,0,11,0
+2026-10,Tchap (web),DINUM,6,0,3,0,0,0,0,17,0
+2024-10,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2024-11,"Tchap (Android, nouvelle app)",DINUM,1,0,0,0,0,0,0,11,0
+2024-12,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-01,"Tchap (Android, nouvelle app)",DINUM,6,0,3,0,0,0,0,113,0
+2025-02,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-03,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-04,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-05,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-06,"Tchap (Android, nouvelle app)",DINUM,4,0,1,0,0,0,0,4,0
+2025-07,"Tchap (Android, nouvelle app)",DINUM,6,0,0,0,0,0,0,6,0
+2025-08,"Tchap (Android, nouvelle app)",DINUM,5,0,2,0,0,0,0,5,0
+2025-09,"Tchap (Android, nouvelle app)",DINUM,1,0,0,0,0,0,0,1,0
+2025-10,"Tchap (Android, nouvelle app)",DINUM,1,0,1,0,0,0,0,1,0
+2025-11,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-12,"Tchap (Android, nouvelle app)",DINUM,17,0,1,0,0,0,0,17,0
+2026-01,"Tchap (Android, nouvelle app)",DINUM,1,0,0,0,0,0,0,1,0
+2026-02,"Tchap (Android, nouvelle app)",DINUM,13,0,0,0,0,0,0,13,0
+2026-03,"Tchap (Android, nouvelle app)",DINUM,12,0,2,0,0,0,0,12,0
+2026-04,"Tchap (Android, nouvelle app)",DINUM,20,0,2,0,0,0,0,25,0
+2026-05,"Tchap (Android, nouvelle app)",DINUM,11,0,3,0,0,0,0,12,0
+2026-06,"Tchap (Android, nouvelle app)",DINUM,25,0,4,0,0,0,0,25,0
+2026-07,"Tchap (Android, nouvelle app)",DINUM,36,0,4,0,0,0,0,36,0
+2026-08,"Tchap (Android, nouvelle app)",DINUM,12,0,0,0,0,0,0,12,0
+2026-09,"Tchap (Android, nouvelle app)",DINUM,17,0,2,0,0,0,0,17,0
+2026-10,"Tchap (Android, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2024-10,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2024-11,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2024-12,"Tchap (iOS, nouvelle app)",DINUM,11,0,1,0,0,0,0,13,0
+2025-01,"Tchap (iOS, nouvelle app)",DINUM,5,0,2,0,0,0,0,12,0
+2025-02,"Tchap (iOS, nouvelle app)",DINUM,8,0,0,0,0,0,0,36,0
+2025-03,"Tchap (iOS, nouvelle app)",DINUM,11,0,0,0,0,0,0,31,0
+2025-04,"Tchap (iOS, nouvelle app)",DINUM,5,0,1,0,0,0,0,10,0
+2025-05,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-06,"Tchap (iOS, nouvelle app)",DINUM,24,0,0,0,0,0,0,37,0
+2025-07,"Tchap (iOS, nouvelle app)",DINUM,4,0,0,0,0,0,0,9,0
+2025-08,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-09,"Tchap (iOS, nouvelle app)",DINUM,1,0,0,0,0,0,0,2,0
+2025-10,"Tchap (iOS, nouvelle app)",DINUM,21,0,3,0,0,0,0,27,0
+2025-11,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2025-12,"Tchap (iOS, nouvelle app)",DINUM,18,0,2,0,0,0,0,30,0
+2026-01,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2026-02,"Tchap (iOS, nouvelle app)",DINUM,12,0,1,0,0,0,0,13,0
+2026-03,"Tchap (iOS, nouvelle app)",DINUM,35,0,1,0,0,0,0,61,0
+2026-04,"Tchap (iOS, nouvelle app)",DINUM,7,0,1,0,0,0,0,20,0
+2026-05,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2026-06,"Tchap (iOS, nouvelle app)",DINUM,19,0,3,0,0,0,0,21,0
+2026-07,"Tchap (iOS, nouvelle app)",DINUM,17,0,1,0,0,0,0,17,0
+2026-08,"Tchap (iOS, nouvelle app)",DINUM,13,0,4,0,0,0,0,13,0
+2026-09,"Tchap (iOS, nouvelle app)",DINUM,7,0,0,0,0,0,0,7,0
+2026-10,"Tchap (iOS, nouvelle app)",DINUM,0,0,0,0,0,0,0,0,0
+2024-10,"Tchap (Android, historique)",DINUM,2,0,0,0,0,0,0,5,0
+2024-11,"Tchap (Android, historique)",DINUM,5,0,0,0,0,0,0,18,0
+2024-12,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,4,0
+2025-01,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,3,0
+2025-02,"Tchap (Android, historique)",DINUM,3,0,0,0,0,0,0,9,0
+2025-03,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,2,0
+2025-04,"Tchap (Android, historique)",DINUM,2,0,0,0,0,0,0,5,0
+2025-05,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,5,0
+2025-06,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2025-07,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2025-08,"Tchap (Android, historique)",DINUM,3,0,0,0,0,0,0,9,0
+2025-09,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2025-10,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,4,0
+2025-11,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2025-12,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-01,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-02,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,3,0
+2026-03,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-04,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-05,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-06,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-07,"Tchap (Android, historique)",DINUM,1,0,0,0,0,0,0,1,0
+2026-08,"Tchap (Android, historique)",DINUM,2,0,0,0,0,0,0,2,0
+2026-09,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-10,"Tchap (Android, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2024-10,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2024-11,"Tchap (iOS, historique)",DINUM,13,0,2,0,0,0,0,14,0
+2024-12,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2025-01,"Tchap (iOS, historique)",DINUM,6,0,0,0,0,0,0,6,0
+2025-02,"Tchap (iOS, historique)",DINUM,2,0,0,0,0,0,0,5,0
+2025-03,"Tchap (iOS, historique)",DINUM,7,0,0,0,0,0,0,12,0
+2025-04,"Tchap (iOS, historique)",DINUM,9,0,3,0,0,0,0,12,0
+2025-05,"Tchap (iOS, historique)",DINUM,3,0,1,0,0,0,0,4,0
+2025-06,"Tchap (iOS, historique)",DINUM,9,0,3,0,0,0,0,11,0
+2025-07,"Tchap (iOS, historique)",DINUM,7,0,1,0,0,0,0,7,0
+2025-08,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2025-09,"Tchap (iOS, historique)",DINUM,6,0,1,0,0,0,0,8,0
+2025-10,"Tchap (iOS, historique)",DINUM,6,0,0,0,0,0,0,8,0
+2025-11,"Tchap (iOS, historique)",DINUM,5,0,1,0,0,0,0,6,0
+2025-12,"Tchap (iOS, historique)",DINUM,6,0,0,0,0,0,0,6,0
+2026-01,"Tchap (iOS, historique)",DINUM,10,0,0,0,0,0,0,76,0
+2026-02,"Tchap (iOS, historique)",DINUM,6,0,0,0,0,0,0,10,0
+2026-03,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-04,"Tchap (iOS, historique)",DINUM,1,0,0,0,0,0,0,3,0
+2026-05,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-06,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-07,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-08,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-09,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2026-10,"Tchap (iOS, historique)",DINUM,0,0,0,0,0,0,0,0,0
+2024-10,Docs (La Suite),DINUM,44,0,11,0,0,0,0,44,0
+2024-11,Docs (La Suite),DINUM,48,0,11,0,0,0,0,48,0
+2024-12,Docs (La Suite),DINUM,59,0,12,0,0,0,0,59,0
+2025-01,Docs (La Suite),DINUM,124,0,56,0,0,0,0,124,0
+2025-02,Docs (La Suite),DINUM,26,0,9,0,0,0,0,26,0
+2025-03,Docs (La Suite),DINUM,154,0,37,0,0,0,0,154,0
+2025-04,Docs (La Suite),DINUM,29,0,3,0,0,0,0,29,0
+2025-05,Docs (La Suite),DINUM,92,0,23,0,0,0,0,92,0
+2025-06,Docs (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-07,Docs (La Suite),DINUM,151,0,44,0,0,0,0,151,0
+2025-08,Docs (La Suite),DINUM,37,0,13,0,0,0,0,37,0
+2025-09,Docs (La Suite),DINUM,92,0,18,0,0,0,0,92,0
+2025-10,Docs (La Suite),DINUM,86,0,34,0,0,0,0,86,0
+2025-11,Docs (La Suite),DINUM,67,0,23,0,0,0,0,67,0
+2025-12,Docs (La Suite),DINUM,89,0,39,0,0,0,0,89,0
+2026-01,Docs (La Suite),DINUM,86,0,22,0,0,0,0,86,0
+2026-02,Docs (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-03,Docs (La Suite),DINUM,200,0,74,0,0,0,0,200,0
+2026-04,Docs (La Suite),DINUM,36,0,10,0,0,0,0,36,0
+2026-05,Docs (La Suite),DINUM,85,0,15,0,0,0,0,85,0
+2026-06,Docs (La Suite),DINUM,113,0,31,0,0,0,0,113,0
+2026-07,Docs (La Suite),DINUM,56,0,16,0,0,0,0,56,0
+2026-08,Docs (La Suite),DINUM,58,1,16,0,0,0,0,58,1
+2026-09,Docs (La Suite),DINUM,76,0,18,0,0,0,0,76,0
+2026-10,Docs (La Suite),DINUM,180,0,51,0,0,0,0,180,0
+2024-10,Visio (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-11,Visio (La Suite),DINUM,93,0,36,0,0,0,0,93,0
+2024-12,Visio (La Suite),DINUM,96,0,19,0,0,0,0,98,0
+2025-01,Visio (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-02,Visio (La Suite),DINUM,114,0,46,0,0,0,0,114,0
+2025-03,Visio (La Suite),DINUM,110,0,49,0,0,0,0,110,0
+2025-04,Visio (La Suite),DINUM,123,0,56,0,0,0,0,123,0
+2025-05,Visio (La Suite),DINUM,58,0,20,0,0,0,0,58,0
+2025-06,Visio (La Suite),DINUM,35,0,6,0,0,0,0,35,0
+2025-07,Visio (La Suite),DINUM,110,0,26,0,0,0,0,110,0
+2025-08,Visio (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-09,Visio (La Suite),DINUM,184,0,62,0,0,0,0,184,0
+2025-10,Visio (La Suite),DINUM,65,0,15,0,0,0,0,65,0
+2025-11,Visio (La Suite),DINUM,20,0,7,0,0,0,0,20,0
+2025-12,Visio (La Suite),DINUM,44,0,18,0,0,0,0,44,0
+2026-01,Visio (La Suite),DINUM,126,0,56,0,0,0,0,128,0
+2026-02,Visio (La Suite),DINUM,53,0,9,0,0,0,0,53,0
+2026-03,Visio (La Suite),DINUM,152,0,48,0,0,0,0,152,0
+2026-04,Visio (La Suite),DINUM,44,0,9,0,0,0,0,44,0
+2026-05,Visio (La Suite),DINUM,55,0,12,0,0,0,0,55,0
+2026-06,Visio (La Suite),DINUM,130,0,37,0,0,0,0,130,0
+2026-07,Visio (La Suite),DINUM,94,2,28,1,0,0,0,94,2
+2026-08,Visio (La Suite),DINUM,195,0,38,0,0,0,0,195,0
+2026-09,Visio (La Suite),DINUM,118,1,23,1,0,0,0,118,1
+2026-10,Visio (La Suite),DINUM,67,0,10,0,0,0,0,67,0
+2024-10,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-11,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-12,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-01,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-02,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-03,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-04,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-05,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-06,Fichiers (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-07,Fichiers (La Suite),DINUM,336,0,154,0,0,0,0,342,0
+2025-08,Fichiers (La Suite),DINUM,34,0,13,0,0,0,0,34,0
+2025-09,Fichiers (La Suite),DINUM,106,0,52,0,0,0,0,106,0
+2025-10,Fichiers (La Suite),DINUM,4,0,0,0,0,0,0,4,0
+2025-11,Fichiers (La Suite),DINUM,86,0,29,0,0,0,0,86,0
+2025-12,Fichiers (La Suite),DINUM,44,0,16,0,0,0,0,44,0
+2026-01,Fichiers (La Suite),DINUM,46,0,21,0,0,0,0,46,0
+2026-02,Fichiers (La Suite),DINUM,198,9,61,1,0,1,0,198,9
+2026-03,Fichiers (La Suite),DINUM,34,9,8,3,0,0,0,34,9
+2026-04,Fichiers (La Suite),DINUM,148,0,45,0,0,0,0,148,0
+2026-05,Fichiers (La Suite),DINUM,20,0,9,0,0,0,0,20,0
+2026-06,Fichiers (La Suite),DINUM,54,0,25,0,0,0,0,54,0
+2026-07,Fichiers (La Suite),DINUM,60,0,22,0,0,0,0,60,0
+2026-08,Fichiers (La Suite),DINUM,82,0,26,0,0,0,0,82,0
+2026-09,Fichiers (La Suite),DINUM,53,0,16,0,0,0,0,53,0
+2026-10,Fichiers (La Suite),DINUM,55,0,17,0,0,0,0,55,0
+2024-10,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-11,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-12,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-01,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-02,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-03,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-04,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-05,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-06,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-07,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-08,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-09,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-10,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-11,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-12,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-01,Messagerie (La Suite),DINUM,558,1,285,0,0,0,0,559,1
+2026-02,Messagerie (La Suite),DINUM,61,1,27,0,0,0,0,61,1
+2026-03,Messagerie (La Suite),DINUM,39,0,16,0,0,0,0,39,0
+2026-04,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-05,Messagerie (La Suite),DINUM,80,0,29,0,0,0,0,80,0
+2026-06,Messagerie (La Suite),DINUM,35,0,8,0,0,0,0,35,0
+2026-07,Messagerie (La Suite),DINUM,40,0,15,0,0,0,0,40,0
+2026-08,Messagerie (La Suite),DINUM,6,0,3,0,0,0,0,6,0
+2026-09,Messagerie (La Suite),DINUM,51,0,14,0,0,0,0,51,0
+2026-10,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-10,Régie (La Suite),DINUM,13,0,3,0,0,0,0,13,0
+2024-11,Régie (La Suite),DINUM,78,0,19,0,0,0,0,78,0
+2024-12,Régie (La Suite),DINUM,37,0,9,0,0,0,0,37,0
+2025-01,Régie (La Suite),DINUM,42,0,12,0,0,0,0,42,0
+2025-02,Régie (La Suite),DINUM,58,0,30,0,0,0,0,58,0
+2025-03,Régie (La Suite),DINUM,77,0,21,0,0,0,0,77,0
+2025-04,Régie (La Suite),DINUM,39,0,11,0,0,0,0,39,0
+2025-05,Régie (La Suite),DINUM,17,0,3,0,0,0,0,17,0
+2025-06,Régie (La Suite),DINUM,55,0,12,0,0,0,0,55,0
+2025-07,Régie (La Suite),DINUM,8,0,1,0,0,0,0,8,0
+2025-08,Régie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-09,Régie (La Suite),DINUM,23,0,7,0,0,0,0,23,0
+2025-10,Régie (La Suite),DINUM,10,0,3,0,0,0,0,10,0
+2025-11,Régie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-12,Régie (La Suite),DINUM,17,0,7,0,0,0,0,17,0
+2026-01,Régie (La Suite),DINUM,20,0,6,0,0,0,0,20,0
+2026-02,Régie (La Suite),DINUM,22,0,9,0,0,0,0,22,0
+2026-03,Régie (La Suite),DINUM,20,1,5,0,0,0,0,20,1
+2026-04,Régie (La Suite),DINUM,19,0,5,0,0,0,0,19,0
+2026-05,Régie (La Suite),DINUM,5,0,0,0,0,0,0,5,0
+2026-06,Régie (La Suite),DINUM,9,0,3,0,0,0,0,9,0
+2026-07,Régie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-08,Régie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-09,Régie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-10,Régie (La Suite),DINUM,17,0,1,0,0,0,0,17,0
+2024-10,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-11,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-12,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-01,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-02,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-03,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-04,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-05,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-06,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-07,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-08,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-09,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-10,Assistant IA (La Suite),DINUM,168,0,39,0,0,0,0,168,0
+2025-11,Assistant IA (La Suite),DINUM,29,0,6,0,0,0,0,29,0
+2025-12,Assistant IA (La Suite),DINUM,10,0,2,0,0,0,0,10,0
+2026-01,Assistant IA (La Suite),DINUM,17,0,3,0,0,0,0,17,0
+2026-02,Assistant IA (La Suite),DINUM,24,0,11,0,0,0,0,24,0
+2026-03,Assistant IA (La Suite),DINUM,38,0,16,0,0,0,0,38,0
+2026-04,Assistant IA (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-05,Assistant IA (La Suite),DINUM,43,0,21,0,0,0,0,43,0
+2026-06,Assistant IA (La Suite),DINUM,39,0,21,0,0,0,0,39,0
+2026-07,Assistant IA (La Suite),DINUM,27,0,10,0,0,0,0,27,0
+2026-08,Assistant IA (La Suite),DINUM,12,0,5,0,0,0,0,12,0
+2026-09,Assistant IA (La Suite),DINUM,40,0,7,0,0,0,0,40,0
+2026-10,Assistant IA (La Suite),DINUM,19,0,5,0,0,0,0,19,0
+2024-10,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-11,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-12,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-01,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-02,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-03,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-04,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-05,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-06,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-07,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-08,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-09,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-10,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-11,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-12,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-01,Agenda (La Suite),DINUM,68,65,29,27,0,0,0,68,65
+2026-02,Agenda (La Suite),DINUM,16,3,7,1,0,0,0,18,5
+2026-03,Agenda (La Suite),DINUM,15,0,7,0,0,0,0,27,0
+2026-04,Agenda (La Suite),DINUM,9,0,3,0,0,0,0,9,0
+2026-05,Agenda (La Suite),DINUM,5,0,1,0,0,0,0,5,0
+2026-06,Agenda (La Suite),DINUM,11,0,2,0,0,0,0,11,0
+2026-07,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-08,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-09,Agenda (La Suite),DINUM,3,0,0,0,0,0,0,3,0
+2026-10,Agenda (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-10,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-11,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-12,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-01,Recherche (La Suite),DINUM,26,0,1,0,0,0,0,26,0
+2025-02,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-03,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-04,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-05,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-06,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-07,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-08,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-09,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-10,Recherche (La Suite),DINUM,19,0,4,0,0,0,0,19,0
+2025-11,Recherche (La Suite),DINUM,5,0,3,0,0,0,0,5,0
+2025-12,Recherche (La Suite),DINUM,4,0,1,0,0,0,0,4,0
+2026-01,Recherche (La Suite),DINUM,19,0,2,0,0,0,0,19,0
+2026-02,Recherche (La Suite),DINUM,6,0,1,0,0,0,0,6,0
+2026-03,Recherche (La Suite),DINUM,2,0,1,0,0,0,0,2,0
+2026-04,Recherche (La Suite),DINUM,2,0,0,0,0,0,0,2,0
+2026-05,Recherche (La Suite),DINUM,14,0,0,0,0,0,0,14,0
+2026-06,Recherche (La Suite),DINUM,2,0,0,0,0,0,0,2,0
+2026-07,Recherche (La Suite),DINUM,2,0,0,0,0,0,0,2,0
+2026-08,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-09,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-10,Recherche (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2024-10,Projets (La Suite),DINUM,20,0,5,0,0,0,0,20,0
+2024-11,Projets (La Suite),DINUM,19,0,3,0,0,0,0,19,0
+2024-12,Projets (La Suite),DINUM,2,0,0,0,0,0,0,2,0
+2025-01,Projets (La Suite),DINUM,4,0,1,0,0,0,0,4,0
+2025-02,Projets (La Suite),DINUM,3,0,1,0,0,0,0,3,0
+2025-03,Projets (La Suite),DINUM,7,0,0,0,0,0,0,7,0
+2025-04,Projets (La Suite),DINUM,1,0,0,0,0,0,0,1,0
+2025-05,Projets (La Suite),DINUM,4,0,2,0,0,0,0,4,0
+2025-06,Projets (La Suite),DINUM,20,0,3,0,0,0,0,20,0
+2025-07,Projets (La Suite),DINUM,5,0,0,0,0,0,0,5,0
+2025-08,Projets (La Suite),DINUM,3,0,2,0,0,0,0,3,0
+2025-09,Projets (La Suite),DINUM,16,0,2,0,0,0,0,16,0
+2025-10,Projets (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2025-11,Projets (La Suite),DINUM,20,0,0,0,0,0,0,20,0
+2025-12,Projets (La Suite),DINUM,1,0,1,0,0,0,0,1,0
+2026-01,Projets (La Suite),DINUM,10,0,1,0,0,0,0,10,0
+2026-02,Projets (La Suite),DINUM,27,0,15,0,0,0,0,27,0
+2026-03,Projets (La Suite),DINUM,20,0,8,0,0,0,0,20,0
+2026-04,Projets (La Suite),DINUM,15,0,2,0,0,0,0,15,0
+2026-05,Projets (La Suite),DINUM,5,0,0,0,0,0,0,5,0
+2026-06,Projets (La Suite),DINUM,1,0,0,0,0,0,0,1,0
+2026-07,Projets (La Suite),DINUM,7,0,2,0,0,0,0,7,0
+2026-08,Projets (La Suite),DINUM,0,0,0,0,0,0,0,0,0
+2026-09,Projets (La Suite),DINUM,5,0,1,0,0,0,0,5,0
+2026-10,Projets (La Suite),DINUM,4,0,0,0,0,0,0,4,0
+2024-10,data.gouv.fr (moteur udata),DINUM,7,0,3,0,0,0,0,7,0
+2024-11,data.gouv.fr (moteur udata),DINUM,47,0,10,0,0,0,0,47,0
+2024-12,data.gouv.fr (moteur udata),DINUM,25,0,6,0,0,0,0,25,0
+2025-01,data.gouv.fr (moteur udata),DINUM,24,0,10,0,0,0,0,24,0
+2025-02,data.gouv.fr (moteur udata),DINUM,13,0,5,0,0,0,0,13,0
+2025-03,data.gouv.fr (moteur udata),DINUM,33,0,9,0,0,0,0,33,0
+2025-04,data.gouv.fr (moteur udata),DINUM,21,0,6,0,0,0,0,21,0
+2025-05,data.gouv.fr (moteur udata),DINUM,21,0,9,0,0,0,0,21,0
+2025-06,data.gouv.fr (moteur udata),DINUM,25,0,12,0,0,0,0,25,0
+2025-07,data.gouv.fr (moteur udata),DINUM,55,0,15,0,0,0,1,55,0
+2025-08,data.gouv.fr (moteur udata),DINUM,20,0,3,0,0,0,0,20,0
+2025-09,data.gouv.fr (moteur udata),DINUM,34,0,9,0,0,0,0,34,0
+2025-10,data.gouv.fr (moteur udata),DINUM,38,0,13,0,0,0,0,38,0
+2025-11,data.gouv.fr (moteur udata),DINUM,47,0,14,0,0,0,0,47,0
+2025-12,data.gouv.fr (moteur udata),DINUM,30,0,11,0,0,0,0,30,0
+2026-01,data.gouv.fr (moteur udata),DINUM,69,0,23,0,0,0,0,69,0
+2026-02,data.gouv.fr (moteur udata),DINUM,34,0,11,0,0,0,0,34,0
+2026-03,data.gouv.fr (moteur udata),DINUM,30,1,11,1,0,0,0,30,1
+2026-04,data.gouv.fr (moteur udata),DINUM,29,0,13,0,0,0,0,29,0
+2026-05,data.gouv.fr (moteur udata),DINUM,13,0,5,0,0,0,0,13,0
+2026-06,data.gouv.fr (moteur udata),DINUM,51,0,20,0,0,0,0,51,0
+2026-07,data.gouv.fr (moteur udata),DINUM,31,0,5,0,0,0,0,31,0
+2026-08,data.gouv.fr (moteur udata),DINUM,30,0,8,0,0,0,0,30,0
+2026-09,data.gouv.fr (moteur udata),DINUM,51,0,4,0,0,0,0,51,0
+2026-10,data.gouv.fr (moteur udata),DINUM,29,0,8,0,0,0,0,29,0
+2024-10,data.gouv.fr (nouveau site),DINUM,42,0,16,0,0,0,0,65,0
+2024-11,data.gouv.fr (nouveau site),DINUM,141,0,48,0,0,0,0,182,0
+2024-12,data.gouv.fr (nouveau site),DINUM,34,0,16,0,0,0,0,34,0
+2025-01,data.gouv.fr (nouveau site),DINUM,40,0,18,0,0,0,0,40,0
+2025-02,data.gouv.fr (nouveau site),DINUM,35,0,14,0,0,0,0,35,0
+2025-03,data.gouv.fr (nouveau site),DINUM,58,0,14,0,0,0,0,58,0
+2025-04,data.gouv.fr (nouveau site),DINUM,27,0,16,0,0,0,0,27,0
+2025-05,data.gouv.fr (nouveau site),DINUM,50,0,22,0,0,0,0,50,0
+2025-06,data.gouv.fr (nouveau site),DINUM,77,0,24,0,0,0,0,77,0
+2025-07,data.gouv.fr (nouveau site),DINUM,95,0,37,0,0,0,0,95,0
+2025-08,data.gouv.fr (nouveau site),DINUM,27,0,8,0,0,0,0,27,0
+2025-09,data.gouv.fr (nouveau site),DINUM,44,0,9,0,0,0,0,44,0
+2025-10,data.gouv.fr (nouveau site),DINUM,53,0,15,0,0,0,0,53,0
+2025-11,data.gouv.fr (nouveau site),DINUM,34,0,14,0,0,0,0,34,0
+2025-12,data.gouv.fr (nouveau site),DINUM,48,1,17,0,0,0,0,48,1
+2026-01,data.gouv.fr (nouveau site),DINUM,48,0,24,0,0,0,0,48,0
+2026-02,data.gouv.fr (nouveau site),DINUM,47,0,26,0,0,2,0,47,0
+2026-03,data.gouv.fr (nouveau site),DINUM,49,0,18,0,0,0,0,49,0
+2026-04,data.gouv.fr (nouveau site),DINUM,40,0,21,0,0,0,0,40,0
+2026-05,data.gouv.fr (nouveau site),DINUM,29,0,15,0,0,1,0,29,0
+2026-06,data.gouv.fr (nouveau site),DINUM,50,0,17,0,0,0,0,50,0
+2026-07,data.gouv.fr (nouveau site),DINUM,19,0,12,0,0,0,0,19,0
+2026-08,data.gouv.fr (nouveau site),DINUM,33,0,11,0,0,0,0,33,0
+2026-09,data.gouv.fr (nouveau site),DINUM,35,1,15,0,0,0,0,35,1
+2026-10,data.gouv.fr (nouveau site),DINUM,18,0,8,0,0,0,0,18,0
+2024-10,Annuaire des Entreprises,DINUM,42,0,7,0,0,0,0,42,0
+2024-11,Annuaire des Entreprises,DINUM,62,0,11,0,0,0,0,63,0
+2024-12,Annuaire des Entreprises,DINUM,54,0,8,0,0,0,0,54,0
+2025-01,Annuaire des Entreprises,DINUM,46,0,15,0,0,0,0,46,0
+2025-02,Annuaire des Entreprises,DINUM,35,0,11,0,0,0,0,35,0
+2025-03,Annuaire des Entreprises,DINUM,48,0,22,0,0,0,0,48,0
+2025-04,Annuaire des Entreprises,DINUM,38,0,20,0,0,0,0,40,0
+2025-05,Annuaire des Entreprises,DINUM,22,0,8,0,0,0,0,22,0
+2025-06,Annuaire des Entreprises,DINUM,18,0,7,0,0,0,0,18,0
+2025-07,Annuaire des Entreprises,DINUM,33,0,14,0,0,0,0,35,0
+2025-08,Annuaire des Entreprises,DINUM,32,0,11,0,0,0,0,38,0
+2025-09,Annuaire des Entreprises,DINUM,56,0,17,0,0,0,0,58,0
+2025-10,Annuaire des Entreprises,DINUM,44,2,16,0,0,0,0,54,2
+2025-11,Annuaire des Entreprises,DINUM,29,0,12,0,0,0,0,29,0
+2025-12,Annuaire des Entreprises,DINUM,27,0,10,0,0,0,0,27,0
+2026-01,Annuaire des Entreprises,DINUM,32,0,14,0,0,0,0,32,0
+2026-02,Annuaire des Entreprises,DINUM,27,0,13,0,0,0,0,27,0
+2026-03,Annuaire des Entreprises,DINUM,27,0,14,0,0,0,0,27,0
+2026-04,Annuaire des Entreprises,DINUM,30,0,16,0,0,0,0,30,0
+2026-05,Annuaire des Entreprises,DINUM,28,0,17,0,0,0,0,28,0
+2026-06,Annuaire des Entreprises,DINUM,38,0,14,0,0,0,0,38,0
+2026-07,Annuaire des Entreprises,DINUM,27,0,16,0,0,0,0,27,0
+2026-08,Annuaire des Entreprises,DINUM,20,0,7,0,0,0,0,20,0
+2026-09,Annuaire des Entreprises,DINUM,19,0,11,0,0,0,0,19,0
+2026-10,Annuaire des Entreprises,DINUM,13,0,5,0,0,0,0,13,0
+2024-10,ProConnect,DINUM,0,0,0,0,0,0,0,0,0
+2024-11,ProConnect,DINUM,84,0,32,0,0,0,0,100,0
+2024-12,ProConnect,DINUM,6,0,2,0,0,0,0,17,0
+2025-01,ProConnect,DINUM,42,0,7,0,0,0,0,70,0
+2025-02,ProConnect,DINUM,35,0,6,0,0,0,0,73,0
+2025-03,ProConnect,DINUM,16,0,1,0,0,0,0,17,0
+2025-04,ProConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-05,ProConnect,DINUM,91,0,22,0,0,0,0,103,0
+2025-06,ProConnect,DINUM,35,0,9,0,0,0,0,69,0
+2025-07,ProConnect,DINUM,2,0,2,0,0,0,0,3,0
+2025-08,ProConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-09,ProConnect,DINUM,55,1,6,0,0,0,0,74,1
+2025-10,ProConnect,DINUM,51,0,7,0,0,0,0,63,0
+2025-11,ProConnect,DINUM,17,0,4,0,0,0,0,17,0
+2025-12,ProConnect,DINUM,0,0,0,0,0,0,0,0,0
+2026-01,ProConnect,DINUM,61,0,10,0,0,0,0,81,0
+2026-02,ProConnect,DINUM,41,0,2,0,0,0,0,45,0
+2026-03,ProConnect,DINUM,45,0,5,0,0,0,0,65,0
+2026-04,ProConnect,DINUM,6,0,4,0,0,0,0,7,0
+2026-05,ProConnect,DINUM,24,0,4,0,0,0,0,29,0
+2026-06,ProConnect,DINUM,14,0,2,0,0,0,0,16,0
+2026-07,ProConnect,DINUM,30,0,4,0,1,0,0,32,0
+2026-08,ProConnect,DINUM,12,0,4,0,0,0,0,15,0
+2026-09,ProConnect,DINUM,52,0,6,0,0,0,0,59,0
+2026-10,ProConnect,DINUM,29,0,3,0,0,0,0,30,0
+2024-10,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2024-11,FranceConnect,DINUM,2,0,0,0,0,0,0,2,0
+2024-12,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-01,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-02,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-03,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-04,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-05,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-06,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-07,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-08,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-09,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-10,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2025-11,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2025-12,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2026-01,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2026-02,FranceConnect,DINUM,2,0,0,0,0,0,0,2,0
+2026-03,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2026-04,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2026-05,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2026-06,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2026-07,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2026-08,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2026-09,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
+2026-10,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
+2024-10,Trackdéchets,Ministère de la Transition écologique,48,0,10,0,0,0,0,76,0
+2024-11,Trackdéchets,Ministère de la Transition écologique,57,0,15,0,0,0,0,76,0
+2024-12,Trackdéchets,Ministère de la Transition écologique,61,0,15,0,0,0,0,87,0
+2025-01,Trackdéchets,Ministère de la Transition écologique,63,0,13,0,0,0,0,90,0
+2025-02,Trackdéchets,Ministère de la Transition écologique,53,0,11,0,0,0,0,82,0
+2025-03,Trackdéchets,Ministère de la Transition écologique,51,0,9,0,0,0,0,135,0
+2025-04,Trackdéchets,Ministère de la Transition écologique,58,0,12,0,0,0,0,81,0
+2025-05,Trackdéchets,Ministère de la Transition écologique,51,0,4,0,0,0,0,73,0
+2025-06,Trackdéchets,Ministère de la Transition écologique,41,0,6,0,0,0,0,56,0
+2025-07,Trackdéchets,Ministère de la Transition écologique,79,0,12,0,0,0,0,120,0
+2025-08,Trackdéchets,Ministère de la Transition écologique,39,0,6,0,0,0,0,55,0
+2025-09,Trackdéchets,Ministère de la Transition écologique,62,0,14,0,0,0,0,72,0
+2025-10,Trackdéchets,Ministère de la Transition écologique,28,0,4,0,0,0,0,35,0
+2025-11,Trackdéchets,Ministère de la Transition écologique,25,0,6,0,0,0,0,36,0
+2025-12,Trackdéchets,Ministère de la Transition écologique,64,0,14,0,0,0,0,112,0
+2026-01,Trackdéchets,Ministère de la Transition écologique,33,0,6,0,0,0,0,47,0
+2026-02,Trackdéchets,Ministère de la Transition écologique,34,0,9,0,0,0,0,34,0
+2026-03,Trackdéchets,Ministère de la Transition écologique,27,0,11,0,0,0,0,39,0
+2026-04,Trackdéchets,Ministère de la Transition écologique,17,0,3,0,0,0,0,25,0
+2026-05,Trackdéchets,Ministère de la Transition écologique,20,0,7,0,1,0,0,56,0
+2026-06,Trackdéchets,Ministère de la Transition écologique,12,0,0,0,0,0,0,36,0
+2026-07,Trackdéchets,Ministère de la Transition écologique,38,0,16,0,1,0,0,93,0
+2026-08,Trackdéchets,Ministère de la Transition écologique,0,0,0,0,0,0,0,0,0
+2026-09,Trackdéchets,Ministère de la Transition écologique,16,0,1,0,0,0,0,32,0
+2026-10,Trackdéchets,Ministère de la Transition écologique,0,0,0,0,0,0,0,0,0
+2024-10,CarbuRe,Ministère de la Transition écologique,5,0,0,0,0,0,0,47,0
+2024-11,CarbuRe,Ministère de la Transition écologique,20,0,0,0,0,0,0,43,0
+2024-12,CarbuRe,Ministère de la Transition écologique,16,0,0,0,0,0,0,54,0
+2025-01,CarbuRe,Ministère de la Transition écologique,13,0,0,0,0,0,0,73,0
+2025-02,CarbuRe,Ministère de la Transition écologique,44,0,6,0,0,0,0,299,0
+2025-03,CarbuRe,Ministère de la Transition écologique,40,0,2,0,0,0,0,288,0
+2025-04,CarbuRe,Ministère de la Transition écologique,20,0,0,0,0,0,0,244,0
+2025-05,CarbuRe,Ministère de la Transition écologique,15,0,0,0,0,0,0,44,0
+2025-06,CarbuRe,Ministère de la Transition écologique,37,0,1,0,0,0,0,167,0
+2025-07,CarbuRe,Ministère de la Transition écologique,11,0,1,0,0,0,0,111,0
+2025-08,CarbuRe,Ministère de la Transition écologique,18,0,0,0,0,0,0,143,0
+2025-09,CarbuRe,Ministère de la Transition écologique,15,0,0,0,0,0,0,218,0
+2025-10,CarbuRe,Ministère de la Transition écologique,31,0,0,0,0,0,0,235,0
+2025-11,CarbuRe,Ministère de la Transition écologique,52,0,2,0,0,0,0,253,0
+2025-12,CarbuRe,Ministère de la Transition écologique,42,0,1,0,0,0,0,130,0
+2026-01,CarbuRe,Ministère de la Transition écologique,0,0,0,0,0,0,0,0,0
+2026-02,CarbuRe,Ministère de la Transition écologique,70,0,1,0,0,0,0,453,0
+2026-03,CarbuRe,Ministère de la Transition écologique,18,0,1,0,0,1,0,106,0
+2026-04,CarbuRe,Ministère de la Transition écologique,35,0,1,0,0,0,0,176,0
+2026-05,CarbuRe,Ministère de la Transition écologique,26,0,0,0,0,0,0,120,0
+2026-06,CarbuRe,Ministère de la Transition écologique,29,0,0,0,0,2,0,141,0
+2026-07,CarbuRe,Ministère de la Transition écologique,31,0,0,0,0,3,0,113,0
+2026-08,CarbuRe,Ministère de la Transition écologique,27,0,1,0,0,3,0,214,0
+2026-09,CarbuRe,Ministère de la Transition écologique,38,0,0,0,0,0,0,251,0
+2026-10,CarbuRe,Ministère de la Transition écologique,20,0,1,0,0,0,0,84,0
+2024-10,Code du travail numérique,Ministère du Travail,25,0,10,0,0,0,2,25,0
+2024-11,Code du travail numérique,Ministère du Travail,36,0,12,0,0,0,3,36,0
+2024-12,Code du travail numérique,Ministère du Travail,29,0,5,0,0,0,1,29,0
+2025-01,Code du travail numérique,Ministère du Travail,23,0,1,0,0,0,0,23,0
+2025-02,Code du travail numérique,Ministère du Travail,20,0,4,0,0,0,0,22,0
+2025-03,Code du travail numérique,Ministère du Travail,14,0,4,0,0,0,0,14,0
+2025-04,Code du travail numérique,Ministère du Travail,14,0,5,0,1,0,0,14,0
+2025-05,Code du travail numérique,Ministère du Travail,14,0,7,0,0,0,0,14,0
+2025-06,Code du travail numérique,Ministère du Travail,16,0,3,0,0,0,0,16,0
+2025-07,Code du travail numérique,Ministère du Travail,26,0,6,0,0,0,0,26,0
+2025-08,Code du travail numérique,Ministère du Travail,18,0,3,0,0,0,0,18,0
+2025-09,Code du travail numérique,Ministère du Travail,37,0,7,0,0,0,0,37,0
+2025-10,Code du travail numérique,Ministère du Travail,38,0,5,0,0,0,0,38,0
+2025-11,Code du travail numérique,Ministère du Travail,19,0,10,0,0,0,0,19,0
+2025-12,Code du travail numérique,Ministère du Travail,55,0,7,0,0,0,0,55,0
+2026-01,Code du travail numérique,Ministère du Travail,34,0,12,0,1,0,0,34,0
+2026-02,Code du travail numérique,Ministère du Travail,30,0,9,0,0,0,0,30,0
+2026-03,Code du travail numérique,Ministère du Travail,33,0,11,0,0,0,0,33,0
+2026-04,Code du travail numérique,Ministère du Travail,35,3,11,1,0,0,0,35,3
+2026-05,Code du travail numérique,Ministère du Travail,18,0,3,0,0,0,0,18,0
+2026-06,Code du travail numérique,Ministère du Travail,34,2,4,0,0,0,0,34,2
+2026-07,Code du travail numérique,Ministère du Travail,33,2,9,1,0,0,0,33,2
+2026-08,Code du travail numérique,Ministère du Travail,10,0,4,0,0,0,0,10,0
+2026-09,Code du travail numérique,Ministère du Travail,16,1,9,1,0,0,0,16,1
+2026-10,Code du travail numérique,Ministère du Travail,8,0,4,0,0,0,0,8,0
+2024-10,Mon-entreprise (Urssaf),Urssaf,54,0,22,0,0,0,0,54,0
+2024-11,Mon-entreprise (Urssaf),Urssaf,32,0,14,0,0,0,0,32,0
+2024-12,Mon-entreprise (Urssaf),Urssaf,64,0,16,0,0,0,0,64,0
+2025-01,Mon-entreprise (Urssaf),Urssaf,141,0,50,0,0,0,0,141,0
+2025-02,Mon-entreprise (Urssaf),Urssaf,82,0,28,0,0,0,0,82,0
+2025-03,Mon-entreprise (Urssaf),Urssaf,88,0,24,0,0,0,0,88,0
+2025-04,Mon-entreprise (Urssaf),Urssaf,64,0,34,0,0,0,0,64,0
+2025-05,Mon-entreprise (Urssaf),Urssaf,34,0,6,0,0,0,0,34,0
+2025-06,Mon-entreprise (Urssaf),Urssaf,202,1,74,1,0,0,0,202,1
+2025-07,Mon-entreprise (Urssaf),Urssaf,7,0,0,0,0,0,0,61,0
+2025-08,Mon-entreprise (Urssaf),Urssaf,1,0,0,0,0,0,0,94,0
+2025-09,Mon-entreprise (Urssaf),Urssaf,54,0,5,0,0,0,0,127,0
+2025-10,Mon-entreprise (Urssaf),Urssaf,20,0,3,0,0,0,0,20,0
+2025-11,Mon-entreprise (Urssaf),Urssaf,61,0,16,0,0,0,0,61,0
+2025-12,Mon-entreprise (Urssaf),Urssaf,57,0,10,0,0,0,0,57,0
+2026-01,Mon-entreprise (Urssaf),Urssaf,149,0,45,0,0,0,0,149,0
+2026-02,Mon-entreprise (Urssaf),Urssaf,73,0,10,0,0,0,0,73,0
+2026-03,Mon-entreprise (Urssaf),Urssaf,329,0,58,0,0,0,0,329,0
+2026-04,Mon-entreprise (Urssaf),Urssaf,65,0,8,0,0,0,0,65,0
+2026-05,Mon-entreprise (Urssaf),Urssaf,67,0,9,0,0,0,0,67,0
+2026-06,Mon-entreprise (Urssaf),Urssaf,160,0,40,0,0,0,0,160,0
+2026-07,Mon-entreprise (Urssaf),Urssaf,133,0,33,0,0,0,0,133,0
+2026-08,Mon-entreprise (Urssaf),Urssaf,71,0,9,0,0,0,0,71,0
+2026-09,Mon-entreprise (Urssaf),Urssaf,239,0,48,0,0,0,0,239,0
+2026-10,Mon-entreprise (Urssaf),Urssaf,58,0,4,0,0,0,0,58,0
+2024-10,pass Culture,Ministère de la Culture,237,0,85,0,0,0,0,237,0
+2024-11,pass Culture,Ministère de la Culture,347,0,150,0,0,0,0,347,0
+2024-12,pass Culture,Ministère de la Culture,309,0,122,0,0,0,0,309,0
+2025-01,pass Culture,Ministère de la Culture,473,0,212,0,0,0,0,473,0
+2025-02,pass Culture,Ministère de la Culture,434,0,196,0,0,0,0,434,0
+2025-03,pass Culture,Ministère de la Culture,418,0,188,0,0,0,0,418,0
+2025-04,pass Culture,Ministère de la Culture,420,0,166,0,0,0,0,420,0
+2025-05,pass Culture,Ministère de la Culture,382,0,187,0,0,0,0,382,0
+2025-06,pass Culture,Ministère de la Culture,379,0,183,0,0,0,0,379,0
+2025-07,pass Culture,Ministère de la Culture,354,0,146,0,0,0,0,354,0
+2025-08,pass Culture,Ministère de la Culture,431,0,167,0,0,0,0,431,0
+2025-09,pass Culture,Ministère de la Culture,478,0,187,0,0,0,0,478,0
+2025-10,pass Culture,Ministère de la Culture,472,0,209,0,0,0,0,472,0
+2025-11,pass Culture,Ministère de la Culture,348,0,150,0,0,0,0,348,0
+2025-12,pass Culture,Ministère de la Culture,350,0,131,0,0,0,0,350,0
+2026-01,pass Culture,Ministère de la Culture,290,0,112,0,0,0,0,290,0
+2026-02,pass Culture,Ministère de la Culture,370,0,154,0,0,0,0,370,0
+2026-03,pass Culture,Ministère de la Culture,404,0,155,0,0,0,0,404,0
+2026-04,pass Culture,Ministère de la Culture,410,0,164,0,0,0,0,410,0
+2026-05,pass Culture,Ministère de la Culture,282,0,121,0,0,0,0,282,0
+2026-06,pass Culture,Ministère de la Culture,411,2,135,0,0,0,0,411,2
+2026-07,pass Culture,Ministère de la Culture,275,0,128,0,0,0,0,275,0
+2026-08,pass Culture,Ministère de la Culture,221,0,106,0,0,0,0,221,0
+2026-09,pass Culture,Ministère de la Culture,330,0,134,0,0,0,0,330,0
+2026-10,pass Culture,Ministère de la Culture,155,0,81,0,0,0,0,155,0
+2024-10,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,119,0,18,0,0,0,0,119,0
+2024-11,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,170,0,30,0,0,0,0,170,0
+2024-12,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,131,0,19,0,0,0,0,131,0
+2025-01,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,265,0,55,0,0,0,0,265,0
+2025-02,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,286,0,70,0,0,0,0,286,0
+2025-03,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,195,0,63,0,0,0,0,195,0
+2025-04,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,267,0,63,0,0,0,0,267,0
+2025-05,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,211,0,55,0,0,0,0,211,0
+2025-06,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,327,0,73,0,0,0,0,327,0
+2025-07,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,356,0,75,0,0,0,0,356,0
+2025-08,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,166,0,35,0,0,0,0,166,0
+2025-09,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,228,0,49,0,0,0,0,228,0
+2025-10,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,162,0,29,0,0,0,0,162,0
+2025-11,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,114,0,28,0,0,0,0,114,0
+2025-12,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,158,0,41,0,0,0,0,158,0
+2026-01,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,159,0,47,0,0,0,0,159,0
+2026-02,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,162,0,46,0,0,0,0,162,0
+2026-03,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,280,0,95,0,0,0,0,280,0
+2026-04,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,189,0,34,0,0,0,0,189,0
+2026-05,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,290,0,80,0,0,0,0,290,0
+2026-06,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,248,0,82,0,0,0,0,248,0
+2026-07,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,200,0,49,0,0,1,0,200,0
+2026-08,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,159,0,51,0,0,0,0,159,0
+2026-09,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,352,0,78,0,0,0,0,352,0
+2026-10,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,140,0,33,0,0,1,0,140,0
+2024-10,Collectif Objets,Ministère de la Culture,16,0,4,0,0,0,0,73,0
+2024-11,Collectif Objets,Ministère de la Culture,4,0,2,0,0,0,0,9,0
+2024-12,Collectif Objets,Ministère de la Culture,44,0,2,0,0,0,0,89,0
+2025-01,Collectif Objets,Ministère de la Culture,4,0,1,0,0,0,0,31,0
+2025-02,Collectif Objets,Ministère de la Culture,3,0,2,0,0,0,0,8,0
+2025-03,Collectif Objets,Ministère de la Culture,2,0,1,0,0,0,0,2,0
+2025-04,Collectif Objets,Ministère de la Culture,31,0,5,0,0,0,0,40,0
+2025-05,Collectif Objets,Ministère de la Culture,14,0,4,0,0,0,0,22,0
+2025-06,Collectif Objets,Ministère de la Culture,1,0,1,0,0,0,0,1,0
+2025-07,Collectif Objets,Ministère de la Culture,9,0,3,0,0,0,0,9,0
+2025-08,Collectif Objets,Ministère de la Culture,2,0,1,0,0,0,0,3,0
+2025-09,Collectif Objets,Ministère de la Culture,3,0,0,0,0,0,0,4,0
+2025-10,Collectif Objets,Ministère de la Culture,4,0,1,0,0,0,0,7,0
+2025-11,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2025-12,Collectif Objets,Ministère de la Culture,9,0,0,0,0,0,0,22,0
+2026-01,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-02,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-03,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-04,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-05,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-06,Collectif Objets,Ministère de la Culture,20,1,1,0,0,0,0,20,1
+2026-07,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-08,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-09,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2026-10,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
+2024-10,France Chaleur Urbaine,Ministère de la Transition écologique,27,0,7,0,0,0,0,158,0
+2024-11,France Chaleur Urbaine,Ministère de la Transition écologique,49,0,9,0,0,0,0,340,0
+2024-12,France Chaleur Urbaine,Ministère de la Transition écologique,35,0,7,0,0,0,0,76,0
+2025-01,France Chaleur Urbaine,Ministère de la Transition écologique,28,0,7,0,0,0,0,138,0
+2025-02,France Chaleur Urbaine,Ministère de la Transition écologique,46,0,12,0,0,0,0,235,0
+2025-03,France Chaleur Urbaine,Ministère de la Transition écologique,75,0,14,0,0,0,0,313,0
+2025-04,France Chaleur Urbaine,Ministère de la Transition écologique,29,0,4,0,0,0,0,97,0
+2025-05,France Chaleur Urbaine,Ministère de la Transition écologique,65,0,18,0,0,0,0,271,0
+2025-06,France Chaleur Urbaine,Ministère de la Transition écologique,49,0,8,0,0,0,0,89,0
+2025-07,France Chaleur Urbaine,Ministère de la Transition écologique,57,0,17,0,0,0,0,289,0
+2025-08,France Chaleur Urbaine,Ministère de la Transition écologique,11,0,3,0,0,0,0,28,0
+2025-09,France Chaleur Urbaine,Ministère de la Transition écologique,31,1,11,1,0,0,0,220,2
+2025-10,France Chaleur Urbaine,Ministère de la Transition écologique,43,0,9,0,0,0,0,198,0
+2025-11,France Chaleur Urbaine,Ministère de la Transition écologique,19,1,5,0,0,0,0,84,4
+2025-12,France Chaleur Urbaine,Ministère de la Transition écologique,38,1,12,1,0,0,0,111,1
+2026-01,France Chaleur Urbaine,Ministère de la Transition écologique,42,1,6,0,0,0,0,107,1
+2026-02,France Chaleur Urbaine,Ministère de la Transition écologique,10,0,1,0,0,0,0,59,0
+2026-03,France Chaleur Urbaine,Ministère de la Transition écologique,25,0,4,0,0,0,0,161,0
+2026-04,France Chaleur Urbaine,Ministère de la Transition écologique,23,2,4,0,0,0,0,134,2
+2026-05,France Chaleur Urbaine,Ministère de la Transition écologique,15,0,7,0,1,0,0,163,0
+2026-06,France Chaleur Urbaine,Ministère de la Transition écologique,14,0,0,0,0,0,0,53,0
+2026-07,France Chaleur Urbaine,Ministère de la Transition écologique,31,0,9,0,0,0,0,207,0
+2026-08,France Chaleur Urbaine,Ministère de la Transition écologique,1,0,0,0,0,0,0,1,0
+2026-09,France Chaleur Urbaine,Ministère de la Transition écologique,37,0,3,0,0,0,0,137,0
+2026-10,France Chaleur Urbaine,Ministère de la Transition écologique,11,0,3,0,0,0,0,27,0
+2024-10,Nos Gestes Climat,ADEME,3,0,1,0,0,0,0,4,0
+2024-11,Nos Gestes Climat,ADEME,6,0,0,0,0,0,0,6,0
+2024-12,Nos Gestes Climat,ADEME,2,0,0,0,0,0,0,2,0
+2025-01,Nos Gestes Climat,ADEME,6,0,0,0,0,0,0,6,0
+2025-02,Nos Gestes Climat,ADEME,10,0,0,0,0,0,0,10,0
+2025-03,Nos Gestes Climat,ADEME,6,0,2,0,0,0,0,6,0
+2025-04,Nos Gestes Climat,ADEME,12,0,0,0,0,0,0,12,0
+2025-05,Nos Gestes Climat,ADEME,67,0,16,0,1,0,0,72,0
+2025-06,Nos Gestes Climat,ADEME,39,0,12,0,0,0,0,45,0
+2025-07,Nos Gestes Climat,ADEME,58,0,16,0,0,0,0,86,0
+2025-08,Nos Gestes Climat,ADEME,6,0,0,0,0,0,0,6,0
+2025-09,Nos Gestes Climat,ADEME,46,0,10,0,0,0,0,46,0
+2025-10,Nos Gestes Climat,ADEME,43,0,13,0,0,0,0,43,0
+2025-11,Nos Gestes Climat,ADEME,32,0,9,0,1,0,0,32,0
+2025-12,Nos Gestes Climat,ADEME,39,0,4,0,0,0,0,39,0
+2026-01,Nos Gestes Climat,ADEME,65,0,2,0,2,0,0,65,0
+2026-02,Nos Gestes Climat,ADEME,46,0,6,0,5,0,0,47,0
+2026-03,Nos Gestes Climat,ADEME,23,0,5,0,0,0,0,23,0
+2026-04,Nos Gestes Climat,ADEME,90,0,5,0,1,0,0,90,0
+2026-05,Nos Gestes Climat,ADEME,35,0,8,0,0,0,0,35,0
+2026-06,Nos Gestes Climat,ADEME,63,0,20,0,1,0,0,63,0
+2026-07,Nos Gestes Climat,ADEME,40,0,9,0,0,0,0,40,0
+2026-08,Nos Gestes Climat,ADEME,46,0,15,0,0,0,0,46,0
+2026-09,Nos Gestes Climat,ADEME,82,3,5,0,0,0,0,82,3
+2026-10,Nos Gestes Climat,ADEME,22,1,4,1,0,0,0,22,1
+2024-10,Aides jeunes (1jeune1solution),beta.gouv,15,0,5,0,0,0,0,15,0
+2024-11,Aides jeunes (1jeune1solution),beta.gouv,22,0,7,0,0,0,0,22,0
+2024-12,Aides jeunes (1jeune1solution),beta.gouv,10,0,3,0,0,0,0,10,0
+2025-01,Aides jeunes (1jeune1solution),beta.gouv,24,0,8,0,0,0,0,24,0
+2025-02,Aides jeunes (1jeune1solution),beta.gouv,14,0,1,0,0,0,0,14,0
+2025-03,Aides jeunes (1jeune1solution),beta.gouv,14,0,2,0,0,0,0,14,0
+2025-04,Aides jeunes (1jeune1solution),beta.gouv,10,0,2,0,0,0,0,10,0
+2025-05,Aides jeunes (1jeune1solution),beta.gouv,6,0,1,0,0,0,0,6,0
+2025-06,Aides jeunes (1jeune1solution),beta.gouv,8,0,3,0,0,0,0,8,0
+2025-07,Aides jeunes (1jeune1solution),beta.gouv,7,0,0,0,0,0,0,7,0
+2025-08,Aides jeunes (1jeune1solution),beta.gouv,15,0,4,0,0,0,0,15,0
+2025-09,Aides jeunes (1jeune1solution),beta.gouv,1,0,1,0,0,0,0,1,0
+2025-10,Aides jeunes (1jeune1solution),beta.gouv,9,0,1,0,0,0,0,9,0
+2025-11,Aides jeunes (1jeune1solution),beta.gouv,6,0,2,0,1,0,0,6,0
+2025-12,Aides jeunes (1jeune1solution),beta.gouv,6,0,0,0,0,0,0,6,0
+2026-01,Aides jeunes (1jeune1solution),beta.gouv,8,0,4,0,0,0,0,8,0
+2026-02,Aides jeunes (1jeune1solution),beta.gouv,9,0,2,0,0,0,0,9,0
+2026-03,Aides jeunes (1jeune1solution),beta.gouv,10,0,5,0,0,0,0,10,0
+2026-04,Aides jeunes (1jeune1solution),beta.gouv,16,0,5,0,0,0,0,16,0
+2026-05,Aides jeunes (1jeune1solution),beta.gouv,4,0,1,0,1,0,0,4,0
+2026-06,Aides jeunes (1jeune1solution),beta.gouv,5,0,1,0,1,0,0,5,0
+2026-07,Aides jeunes (1jeune1solution),beta.gouv,13,0,1,0,0,0,0,13,0
+2026-08,Aides jeunes (1jeune1solution),beta.gouv,39,5,1,0,0,0,0,39,5
+2026-09,Aides jeunes (1jeune1solution),beta.gouv,14,1,0,0,0,0,0,14,1
+2026-10,Aides jeunes (1jeune1solution),beta.gouv,3,1,0,0,0,0,0,3,1
+2024-10,adresse.data.gouv.fr,IGN / ANCT,0,0,0,0,0,0,0,0,0
+2024-11,adresse.data.gouv.fr,IGN / ANCT,33,0,10,0,0,0,0,153,0
+2024-12,adresse.data.gouv.fr,IGN / ANCT,10,0,3,0,0,0,0,37,0
+2025-01,adresse.data.gouv.fr,IGN / ANCT,53,0,13,0,0,0,0,120,0
+2025-02,adresse.data.gouv.fr,IGN / ANCT,24,0,12,0,0,0,0,52,0
+2025-03,adresse.data.gouv.fr,IGN / ANCT,18,0,4,0,0,0,0,35,0
+2025-04,adresse.data.gouv.fr,IGN / ANCT,14,0,4,0,0,0,0,15,0
+2025-05,adresse.data.gouv.fr,IGN / ANCT,10,0,5,0,0,0,0,15,0
+2025-06,adresse.data.gouv.fr,IGN / ANCT,15,0,1,0,1,0,0,24,0
+2025-07,adresse.data.gouv.fr,IGN / ANCT,17,0,6,0,0,0,0,20,0
+2025-08,adresse.data.gouv.fr,IGN / ANCT,20,0,5,0,0,0,0,24,0
+2025-09,adresse.data.gouv.fr,IGN / ANCT,15,0,5,0,0,0,0,15,0
+2025-10,adresse.data.gouv.fr,IGN / ANCT,10,0,6,0,0,0,0,12,0
+2025-11,adresse.data.gouv.fr,IGN / ANCT,9,0,4,0,0,0,0,13,0
+2025-12,adresse.data.gouv.fr,IGN / ANCT,10,0,5,0,0,0,0,10,0
+2026-01,adresse.data.gouv.fr,IGN / ANCT,12,0,5,0,0,0,0,12,0
+2026-02,adresse.data.gouv.fr,IGN / ANCT,15,0,2,0,0,0,0,15,0
+2026-03,adresse.data.gouv.fr,IGN / ANCT,17,0,7,0,0,0,0,17,0
+2026-04,adresse.data.gouv.fr,IGN / ANCT,16,0,3,0,0,0,0,19,0
+2026-05,adresse.data.gouv.fr,IGN / ANCT,42,0,10,0,0,0,0,44,0
+2026-06,adresse.data.gouv.fr,IGN / ANCT,10,0,5,0,0,0,0,12,0
+2026-07,adresse.data.gouv.fr,IGN / ANCT,10,0,2,0,0,0,0,10,0
+2026-08,adresse.data.gouv.fr,IGN / ANCT,15,0,3,0,0,0,0,15,0
+2026-09,adresse.data.gouv.fr,IGN / ANCT,22,0,6,0,0,0,0,22,0
+2026-10,adresse.data.gouv.fr,IGN / ANCT,4,0,3,0,0,0,0,4,0
+2024-10,Sites Faciles,DINUM,7,0,3,0,0,0,0,7,0
+2024-11,Sites Faciles,DINUM,4,0,0,0,0,0,0,4,0
+2024-12,Sites Faciles,DINUM,6,0,2,0,0,0,0,6,0
+2025-01,Sites Faciles,DINUM,6,0,2,0,0,0,0,6,0
+2025-02,Sites Faciles,DINUM,6,0,1,0,0,0,0,6,0
+2025-03,Sites Faciles,DINUM,12,0,5,0,0,0,0,12,0
+2025-04,Sites Faciles,DINUM,13,0,7,0,0,0,0,13,0
+2025-05,Sites Faciles,DINUM,14,0,5,0,0,0,0,15,0
+2025-06,Sites Faciles,DINUM,23,0,4,0,0,0,0,36,0
+2025-07,Sites Faciles,DINUM,3,0,1,0,0,0,0,3,0
+2025-08,Sites Faciles,DINUM,3,0,0,0,0,0,0,3,0
+2025-09,Sites Faciles,DINUM,4,0,1,0,0,0,0,4,0
+2025-10,Sites Faciles,DINUM,13,0,9,0,0,0,0,13,0
+2025-11,Sites Faciles,DINUM,7,0,0,0,0,0,0,14,0
+2025-12,Sites Faciles,DINUM,0,0,0,0,0,0,0,0,0
+2026-01,Sites Faciles,DINUM,8,0,2,0,0,0,0,54,0
+2026-02,Sites Faciles,DINUM,10,0,2,0,0,0,0,10,0
+2026-03,Sites Faciles,DINUM,8,0,0,0,0,0,0,22,0
+2026-04,Sites Faciles,DINUM,8,0,3,0,0,0,0,18,0
+2026-05,Sites Faciles,DINUM,9,1,2,1,0,0,0,13,1
+2026-06,Sites Faciles,DINUM,32,0,13,0,0,0,0,32,0
+2026-07,Sites Faciles,DINUM,91,0,29,0,0,0,0,91,0
+2026-08,Sites Faciles,DINUM,18,1,9,1,0,0,0,22,1
+2026-09,Sites Faciles,DINUM,1,0,1,0,0,0,0,1,0
+2026-10,Sites Faciles,DINUM,0,0,0,0,0,0,0,0,0

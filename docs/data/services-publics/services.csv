@@ -1,0 +1,34 @@
+service,produit,groupe,depot,lien,branche,mise_en_production
+Démarche Numérique,Démarche Numérique,DINUM,demarche-numerique/demarche.numerique.gouv.fr,https://github.com/demarche-numerique/demarche.numerique.gouv.fr,main,Première version publiée (étiquette) qui contient le changement
+RDV Service Public,RDV Service Public,ANCT / beta.gouv,betagouv/rdv-service-public,https://github.com/betagouv/rdv-service-public,production,Fusion sur la branche principale (déploiement continu)
+Tchap (web),Tchap,DINUM,tchapgouv/tchap-web-v4,https://github.com/tchapgouv/tchap-web-v4,develop_tchap,Première version publiée (étiquette) qui contient le changement
+"Tchap (Android, nouvelle app)",Tchap,DINUM,tchapgouv/tchap-x-android,https://github.com/tchapgouv/tchap-x-android,develop,Arrivée sur la branche main
+"Tchap (iOS, nouvelle app)",Tchap,DINUM,tchapgouv/tchap-x-ios,https://github.com/tchapgouv/tchap-x-ios,develop,Première version publiée (étiquette) qui contient le changement
+"Tchap (Android, historique)",Tchap,DINUM,tchapgouv/tchap-android,https://github.com/tchapgouv/tchap-android,develop,Arrivée sur la branche main
+"Tchap (iOS, historique)",Tchap,DINUM,tchapgouv/tchap-ios,https://github.com/tchapgouv/tchap-ios,develop,Arrivée sur la branche master
+Docs (La Suite),Docs (La Suite),DINUM,suitenumerique/docs,https://github.com/suitenumerique/docs,main,Première version publiée (étiquette) qui contient le changement
+Visio (La Suite),Visio (La Suite),DINUM,suitenumerique/meet,https://github.com/suitenumerique/meet,main,Première version publiée (étiquette) qui contient le changement
+Fichiers (La Suite),Fichiers (La Suite),DINUM,suitenumerique/drive,https://github.com/suitenumerique/drive,main,Première version publiée (étiquette) qui contient le changement
+Messagerie (La Suite),Messagerie (La Suite),DINUM,suitenumerique/messages,https://github.com/suitenumerique/messages,main,Première version publiée (étiquette) qui contient le changement
+Régie (La Suite),Régie (La Suite),DINUM,suitenumerique/people,https://github.com/suitenumerique/people,main,Première version publiée (étiquette) qui contient le changement
+Assistant IA (La Suite),Assistant IA (La Suite),DINUM,suitenumerique/conversations,https://github.com/suitenumerique/conversations,main,Première version publiée (étiquette) qui contient le changement
+Agenda (La Suite),Agenda (La Suite),DINUM,suitenumerique/calendars,https://github.com/suitenumerique/calendars,main,Fusion sur la branche principale (déploiement continu)
+Recherche (La Suite),Recherche (La Suite),DINUM,suitenumerique/find,https://github.com/suitenumerique/find,main,Fusion sur la branche principale (déploiement continu)
+Projets (La Suite),Projets (La Suite),DINUM,suitenumerique/projects,https://github.com/suitenumerique/projects,main,Fusion sur la branche principale (déploiement continu)
+data.gouv.fr (moteur udata),data.gouv.fr,DINUM,opendatateam/udata,https://github.com/opendatateam/udata,main,Première version publiée (étiquette) qui contient le changement
+data.gouv.fr (nouveau site),data.gouv.fr,DINUM,datagouv/cdata,https://github.com/datagouv/cdata,main,Fusion sur la branche principale (déploiement continu)
+Annuaire des Entreprises,Annuaire des Entreprises,DINUM,annuaire-entreprises-data-gouv-fr/site,https://github.com/annuaire-entreprises-data-gouv-fr/site,main,Fusion sur la branche principale (déploiement continu)
+ProConnect,ProConnect,DINUM,proconnect-gouv/proconnect-identite,https://github.com/proconnect-gouv/proconnect-identite,main,Première version publiée (étiquette) qui contient le changement
+FranceConnect,FranceConnect,DINUM,france-connect/sources,https://github.com/france-connect/sources,main,Fusion sur la branche principale (déploiement continu)
+Trackdéchets,Trackdéchets,Ministère de la Transition écologique,MTES-MCT/trackdechets,https://github.com/MTES-MCT/trackdechets,dev,Arrivée sur la branche master
+CarbuRe,CarbuRe,Ministère de la Transition écologique,MTES-MCT/carbure,https://github.com/MTES-MCT/carbure,dev,Arrivée sur la branche master
+Code du travail numérique,Code du travail numérique,Ministère du Travail,SocialGouv/code-du-travail-numerique,https://github.com/SocialGouv/code-du-travail-numerique,dev,Arrivée sur la branche master
+Mon-entreprise (Urssaf),Mon-entreprise (Urssaf),Urssaf,betagouv/mon-entreprise,https://github.com/betagouv/mon-entreprise,master,Fusion sur la branche principale (déploiement continu)
+pass Culture,pass Culture,Ministère de la Culture,pass-culture/pass-culture-main,https://github.com/pass-culture/pass-culture-main,master,Fusion sur la branche principale (déploiement continu)
+Les emplois de l'inclusion,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,gip-inclusion/les-emplois,https://github.com/gip-inclusion/les-emplois,main,Fusion sur la branche principale (déploiement continu)
+Collectif Objets,Collectif Objets,Ministère de la Culture,betagouv/collectif-objets,https://github.com/betagouv/collectif-objets,main,Fusion sur la branche principale (déploiement continu)
+France Chaleur Urbaine,France Chaleur Urbaine,Ministère de la Transition écologique,betagouv/france-chaleur-urbaine,https://github.com/betagouv/france-chaleur-urbaine,dev,Arrivée sur la branche main
+Nos Gestes Climat,Nos Gestes Climat,ADEME,incubateur-ademe/nosgestesclimat-site-nextjs,https://github.com/incubateur-ademe/nosgestesclimat-site-nextjs,main,Fusion sur la branche principale (déploiement continu)
+Aides jeunes (1jeune1solution),Aides jeunes (1jeune1solution),beta.gouv,betagouv/aides-jeunes,https://github.com/betagouv/aides-jeunes,main,Fusion sur la branche principale (déploiement continu)
+adresse.data.gouv.fr,adresse.data.gouv.fr,IGN / ANCT,BaseAdresseNationale/adresse.data.gouv.fr,https://github.com/BaseAdresseNationale/adresse.data.gouv.fr,main,Première version publiée (étiquette) qui contient le changement
+Sites Faciles,Sites Faciles,DINUM,numerique-gouv/sites-faciles,https://github.com/numerique-gouv/sites-faciles,main,Arrivée sur la branche production

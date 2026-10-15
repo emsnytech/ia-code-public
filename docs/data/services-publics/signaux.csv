@@ -1,0 +1,20 @@
+id,service,signal,date
+s01,Démarche Numérique,"Instructions Claude (CLAUDE.md, .claude/)",2026-01-07
+s02,Démarche Numérique,Instructions agents (AGENTS.md),2026-01-07
+s03,Docs (La Suite),Instructions agents (AGENTS.md),2026-09-23
+s04,Fichiers (La Suite),Règles Cursor,2025-03-31
+s05,Messagerie (La Suite),Règles Cursor,2025-04-13
+s06,Agenda (La Suite),Règles Cursor,2026-01-09
+s07,Agenda (La Suite),"Instructions Claude (CLAUDE.md, .claude/)",2026-01-27
+s08,Agenda (La Suite),Instructions agents (AGENTS.md),2026-01-27
+s09,data.gouv.fr (moteur udata),Instructions agents (AGENTS.md),2026-01-27
+s10,Annuaire des Entreprises,"Instructions Claude (CLAUDE.md, .claude/)",2025-08-08
+s11,Annuaire des Entreprises,Règles Cursor,2025-10-06
+s12,Annuaire des Entreprises,Instructions Copilot,2025-10-06
+s13,Annuaire des Entreprises,Instructions agents (AGENTS.md),2026-02-16
+s14,Code du travail numérique,"Instructions Claude (CLAUDE.md, .claude/)",2026-04-20
+s15,Mon-entreprise (Urssaf),"Instructions Claude (CLAUDE.md, .claude/)",2026-09-11
+s16,Mon-entreprise (Urssaf),Claude Code en CI (revue de PR…),2026-09-11
+s17,France Chaleur Urbaine,Règles Cursor,2025-02-13
+s18,France Chaleur Urbaine,"Instructions Claude (CLAUDE.md, .claude/)",2025-09-04
+s19,France Chaleur Urbaine,Instructions agents (AGENTS.md),2025-10-23

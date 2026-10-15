@@ -1,0 +1,1080 @@
+mois,axe,categorie,n,n_avec_claude
+2021-10,nature,Contenus & libellés,1,0
+2021-10,nature,Correctif,8,0
+2021-10,nature,Design & ergonomie,3,0
+2021-10,nature,Dépendances,1,0
+2021-10,nature,Fonctionnalité,3,0
+2021-10,nature,Performance,2,0
+2021-10,nature,Technique & maintenance,5,0
+2021-10,nature,Tests & qualité,2,0
+2021-10,public,Administrateur,4,0
+2021-10,public,Expert,1,0
+2021-10,public,Instructeur,3,0
+2021-10,public,Super-admin & opérateurs,2,0
+2021-10,public,Transverse,3,0
+2021-10,public,Usager,3,0
+2021-10,public,Équipe technique,9,0
+2021-11,nature,API & interopérabilité,6,0
+2021-11,nature,Contenus & libellés,3,0
+2021-11,nature,Correctif,19,0
+2021-11,nature,Design & ergonomie,2,0
+2021-11,nature,Dépendances,7,0
+2021-11,nature,Fonctionnalité,6,0
+2021-11,nature,Sécurité,1,0
+2021-11,nature,Technique & maintenance,11,0
+2021-11,nature,Tests & qualité,4,0
+2021-11,public,API & intégrateurs,6,0
+2021-11,public,Administrateur,4,0
+2021-11,public,Expert,1,0
+2021-11,public,Instructeur,7,0
+2021-11,public,Super-admin & opérateurs,1,0
+2021-11,public,Transverse,8,0
+2021-11,public,Usager,9,0
+2021-11,public,Équipe technique,23,0
+2021-12,nature,API & interopérabilité,4,0
+2021-12,nature,Accessibilité,1,0
+2021-12,nature,Contenus & libellés,2,0
+2021-12,nature,Correctif,11,0
+2021-12,nature,Design & ergonomie,1,0
+2021-12,nature,Dépendances,2,0
+2021-12,nature,Fonctionnalité,7,0
+2021-12,nature,Technique & maintenance,6,0
+2021-12,nature,Tests & qualité,2,0
+2021-12,public,API & intégrateurs,3,0
+2021-12,public,Administrateur,7,0
+2021-12,public,Instructeur,4,0
+2021-12,public,Super-admin & opérateurs,7,0
+2021-12,public,Transverse,2,0
+2021-12,public,Usager,2,0
+2021-12,public,Équipe technique,11,0
+2022-01,nature,Accessibilité,4,0
+2022-01,nature,Contenus & libellés,2,0
+2022-01,nature,Correctif,10,0
+2022-01,nature,Design & ergonomie,3,0
+2022-01,nature,Dépendances,6,0
+2022-01,nature,Fonctionnalité,9,0
+2022-01,nature,Performance,3,0
+2022-01,nature,Sécurité,2,0
+2022-01,nature,Technique & maintenance,3,0
+2022-01,nature,Tests & qualité,3,0
+2022-01,public,Administrateur,6,0
+2022-01,public,Expert,1,0
+2022-01,public,Instructeur,6,0
+2022-01,public,Super-admin & opérateurs,3,0
+2022-01,public,Transverse,9,0
+2022-01,public,Usager,4,0
+2022-01,public,Équipe technique,16,0
+2022-02,nature,API & interopérabilité,1,0
+2022-02,nature,Accessibilité,3,0
+2022-02,nature,Contenus & libellés,1,0
+2022-02,nature,Correctif,17,0
+2022-02,nature,Design & ergonomie,2,0
+2022-02,nature,Dépendances,4,0
+2022-02,nature,Fonctionnalité,12,0
+2022-02,nature,Sécurité,5,0
+2022-02,nature,Technique & maintenance,1,0
+2022-02,nature,Tests & qualité,7,0
+2022-02,public,API & intégrateurs,1,0
+2022-02,public,Administrateur,4,0
+2022-02,public,Expert,2,0
+2022-02,public,Instructeur,6,0
+2022-02,public,Super-admin & opérateurs,3,0
+2022-02,public,Transverse,7,0
+2022-02,public,Équipe technique,30,0
+2022-03,nature,API & interopérabilité,6,0
+2022-03,nature,Contenus & libellés,6,0
+2022-03,nature,Correctif,21,0
+2022-03,nature,Design & ergonomie,3,0
+2022-03,nature,Dépendances,7,0
+2022-03,nature,Fonctionnalité,18,0
+2022-03,nature,Performance,2,0
+2022-03,nature,Sécurité,2,0
+2022-03,nature,Technique & maintenance,7,0
+2022-03,nature,Tests & qualité,4,0
+2022-03,public,API & intégrateurs,4,0
+2022-03,public,Administrateur,5,0
+2022-03,public,Expert,2,0
+2022-03,public,Instructeur,10,0
+2022-03,public,Super-admin & opérateurs,3,0
+2022-03,public,Transverse,5,0
+2022-03,public,Usager,9,0
+2022-03,public,Équipe technique,38,0
+2022-04,nature,API & interopérabilité,4,0
+2022-04,nature,Accessibilité,2,0
+2022-04,nature,Contenus & libellés,3,0
+2022-04,nature,Correctif,21,0
+2022-04,nature,Design & ergonomie,3,0
+2022-04,nature,Dépendances,7,0
+2022-04,nature,Fonctionnalité,14,0
+2022-04,nature,Performance,6,0
+2022-04,nature,Sécurité,4,0
+2022-04,nature,Technique & maintenance,13,0
+2022-04,nature,Tests & qualité,2,0
+2022-04,public,API & intégrateurs,3,0
+2022-04,public,Administrateur,8,0
+2022-04,public,Expert,2,0
+2022-04,public,Instructeur,11,0
+2022-04,public,Super-admin & opérateurs,4,0
+2022-04,public,Transverse,8,0
+2022-04,public,Usager,8,0
+2022-04,public,Équipe technique,35,0
+2022-05,nature,API & interopérabilité,3,0
+2022-05,nature,Accessibilité,1,0
+2022-05,nature,Contenus & libellés,5,0
+2022-05,nature,Correctif,36,0
+2022-05,nature,Design & ergonomie,4,0
+2022-05,nature,Dépendances,4,0
+2022-05,nature,Fonctionnalité,21,0
+2022-05,nature,Performance,2,0
+2022-05,nature,Technique & maintenance,34,0
+2022-05,nature,Tests & qualité,5,0
+2022-05,public,API & intégrateurs,1,0
+2022-05,public,Administrateur,20,0
+2022-05,public,Expert,3,0
+2022-05,public,Instructeur,12,0
+2022-05,public,Super-admin & opérateurs,4,0
+2022-05,public,Transverse,13,0
+2022-05,public,Usager,21,0
+2022-05,public,Équipe technique,41,0
+2022-06,nature,API & interopérabilité,2,0
+2022-06,nature,Accessibilité,1,0
+2022-06,nature,Correctif,12,0
+2022-06,nature,Design & ergonomie,2,0
+2022-06,nature,Fonctionnalité,6,0
+2022-06,nature,Performance,4,0
+2022-06,nature,Technique & maintenance,5,0
+2022-06,nature,Tests & qualité,1,0
+2022-06,public,API & intégrateurs,2,0
+2022-06,public,Administrateur,10,0
+2022-06,public,Instructeur,2,0
+2022-06,public,Transverse,3,0
+2022-06,public,Usager,6,0
+2022-06,public,Équipe technique,10,0
+2022-07,nature,API & interopérabilité,5,0
+2022-07,nature,Accessibilité,2,0
+2022-07,nature,Contenus & libellés,2,0
+2022-07,nature,Correctif,37,0
+2022-07,nature,Design & ergonomie,4,0
+2022-07,nature,Dépendances,3,0
+2022-07,nature,Fonctionnalité,22,0
+2022-07,nature,Performance,5,0
+2022-07,nature,Technique & maintenance,10,0
+2022-07,nature,Tests & qualité,2,0
+2022-07,public,API & intégrateurs,6,0
+2022-07,public,Administrateur,23,0
+2022-07,public,Instructeur,2,0
+2022-07,public,Super-admin & opérateurs,3,0
+2022-07,public,Transverse,18,0
+2022-07,public,Usager,8,0
+2022-07,public,Équipe technique,32,0
+2022-08,nature,API & interopérabilité,2,0
+2022-08,nature,Correctif,12,0
+2022-08,nature,Dépendances,2,0
+2022-08,nature,Fonctionnalité,9,0
+2022-08,nature,Performance,1,0
+2022-08,nature,Sécurité,1,0
+2022-08,nature,Technique & maintenance,5,0
+2022-08,nature,Tests & qualité,3,0
+2022-08,public,API & intégrateurs,1,0
+2022-08,public,Administrateur,7,0
+2022-08,public,Instructeur,2,0
+2022-08,public,Super-admin & opérateurs,5,0
+2022-08,public,Transverse,2,0
+2022-08,public,Usager,5,0
+2022-08,public,Équipe technique,13,0
+2022-09,nature,API & interopérabilité,12,0
+2022-09,nature,Accessibilité,2,0
+2022-09,nature,Contenus & libellés,2,0
+2022-09,nature,Correctif,25,0
+2022-09,nature,Design & ergonomie,16,0
+2022-09,nature,Dépendances,1,0
+2022-09,nature,Fonctionnalité,10,0
+2022-09,nature,Performance,2,0
+2022-09,nature,Sécurité,1,0
+2022-09,nature,Technique & maintenance,7,0
+2022-09,nature,Tests & qualité,1,0
+2022-09,public,API & intégrateurs,7,0
+2022-09,public,Administrateur,20,0
+2022-09,public,Expert,1,0
+2022-09,public,Instructeur,7,0
+2022-09,public,Super-admin & opérateurs,1,0
+2022-09,public,Transverse,12,0
+2022-09,public,Usager,11,0
+2022-09,public,Équipe technique,20,0
+2022-10,nature,API & interopérabilité,4,0
+2022-10,nature,Contenus & libellés,8,0
+2022-10,nature,Correctif,34,0
+2022-10,nature,Design & ergonomie,3,0
+2022-10,nature,Dépendances,5,0
+2022-10,nature,Fonctionnalité,10,0
+2022-10,nature,Performance,5,0
+2022-10,nature,Technique & maintenance,14,0
+2022-10,nature,Tests & qualité,8,0
+2022-10,public,API & intégrateurs,2,0
+2022-10,public,Administrateur,18,0
+2022-10,public,Expert,1,0
+2022-10,public,Instructeur,6,0
+2022-10,public,Super-admin & opérateurs,6,0
+2022-10,public,Transverse,5,0
+2022-10,public,Usager,11,0
+2022-10,public,Équipe technique,42,0
+2022-11,nature,API & interopérabilité,17,0
+2022-11,nature,Accessibilité,5,0
+2022-11,nature,Contenus & libellés,3,0
+2022-11,nature,Correctif,22,0
+2022-11,nature,Design & ergonomie,6,0
+2022-11,nature,Dépendances,5,0
+2022-11,nature,Fonctionnalité,30,0
+2022-11,nature,Performance,4,0
+2022-11,nature,Sécurité,1,0
+2022-11,nature,Technique & maintenance,15,0
+2022-11,nature,Tests & qualité,7,0
+2022-11,public,API & intégrateurs,11,0
+2022-11,public,Administrateur,37,0
+2022-11,public,Expert,2,0
+2022-11,public,Instructeur,5,0
+2022-11,public,Super-admin & opérateurs,9,0
+2022-11,public,Transverse,10,0
+2022-11,public,Usager,11,0
+2022-11,public,Équipe technique,30,0
+2022-12,nature,API & interopérabilité,8,0
+2022-12,nature,Accessibilité,4,0
+2022-12,nature,Contenus & libellés,3,0
+2022-12,nature,Correctif,30,0
+2022-12,nature,Design & ergonomie,4,0
+2022-12,nature,Dépendances,3,0
+2022-12,nature,Fonctionnalité,24,0
+2022-12,nature,Sécurité,2,0
+2022-12,nature,Technique & maintenance,15,0
+2022-12,nature,Tests & qualité,2,0
+2022-12,public,API & intégrateurs,6,0
+2022-12,public,Administrateur,17,0
+2022-12,public,Expert,3,0
+2022-12,public,Instructeur,17,0
+2022-12,public,Super-admin & opérateurs,1,0
+2022-12,public,Transverse,6,0
+2022-12,public,Usager,16,0
+2022-12,public,Équipe technique,29,0
+2023-01,nature,API & interopérabilité,10,0
+2023-01,nature,Accessibilité,12,0
+2023-01,nature,Contenus & libellés,6,0
+2023-01,nature,Correctif,42,0
+2023-01,nature,Design & ergonomie,13,0
+2023-01,nature,Dépendances,4,0
+2023-01,nature,Fonctionnalité,40,0
+2023-01,nature,Performance,6,0
+2023-01,nature,Sécurité,6,0
+2023-01,nature,Technique & maintenance,24,0
+2023-01,nature,Tests & qualité,4,0
+2023-01,public,API & intégrateurs,11,0
+2023-01,public,Administrateur,26,0
+2023-01,public,Expert,1,0
+2023-01,public,Instructeur,18,0
+2023-01,public,Super-admin & opérateurs,8,0
+2023-01,public,Transverse,23,0
+2023-01,public,Usager,38,0
+2023-01,public,Équipe technique,42,0
+2023-02,nature,API & interopérabilité,12,0
+2023-02,nature,Accessibilité,12,0
+2023-02,nature,Contenus & libellés,5,0
+2023-02,nature,Correctif,28,0
+2023-02,nature,Design & ergonomie,5,0
+2023-02,nature,Dépendances,1,0
+2023-02,nature,Fonctionnalité,26,0
+2023-02,nature,Performance,5,0
+2023-02,nature,Sécurité,3,0
+2023-02,nature,Technique & maintenance,20,0
+2023-02,nature,Tests & qualité,5,0
+2023-02,public,API & intégrateurs,9,0
+2023-02,public,Administrateur,19,0
+2023-02,public,Expert,1,0
+2023-02,public,Instructeur,15,0
+2023-02,public,Super-admin & opérateurs,3,0
+2023-02,public,Transverse,17,0
+2023-02,public,Usager,12,0
+2023-02,public,Équipe technique,46,0
+2023-03,nature,API & interopérabilité,13,0
+2023-03,nature,Accessibilité,7,0
+2023-03,nature,Contenus & libellés,4,0
+2023-03,nature,Correctif,22,0
+2023-03,nature,Design & ergonomie,7,0
+2023-03,nature,Dépendances,4,0
+2023-03,nature,Fonctionnalité,10,0
+2023-03,nature,Performance,4,0
+2023-03,nature,Sécurité,1,0
+2023-03,nature,Technique & maintenance,7,0
+2023-03,nature,Tests & qualité,2,0
+2023-03,public,API & intégrateurs,10,0
+2023-03,public,Administrateur,11,0
+2023-03,public,Expert,5,0
+2023-03,public,Instructeur,7,0
+2023-03,public,Super-admin & opérateurs,3,0
+2023-03,public,Transverse,6,0
+2023-03,public,Usager,13,0
+2023-03,public,Équipe technique,26,0
+2023-04,nature,API & interopérabilité,14,0
+2023-04,nature,Accessibilité,5,0
+2023-04,nature,Contenus & libellés,6,0
+2023-04,nature,Correctif,44,0
+2023-04,nature,Design & ergonomie,11,0
+2023-04,nature,Dépendances,9,0
+2023-04,nature,Fonctionnalité,17,0
+2023-04,nature,Performance,2,0
+2023-04,nature,Technique & maintenance,6,0
+2023-04,nature,Tests & qualité,5,0
+2023-04,public,API & intégrateurs,11,0
+2023-04,public,Administrateur,16,0
+2023-04,public,Expert,3,0
+2023-04,public,Instructeur,16,0
+2023-04,public,Super-admin & opérateurs,7,0
+2023-04,public,Transverse,8,0
+2023-04,public,Usager,30,0
+2023-04,public,Équipe technique,28,0
+2023-05,nature,API & interopérabilité,7,0
+2023-05,nature,Accessibilité,2,0
+2023-05,nature,Contenus & libellés,5,0
+2023-05,nature,Correctif,24,0
+2023-05,nature,Design & ergonomie,8,0
+2023-05,nature,Dépendances,2,0
+2023-05,nature,Fonctionnalité,11,0
+2023-05,nature,Performance,2,0
+2023-05,nature,Sécurité,1,0
+2023-05,nature,Technique & maintenance,13,0
+2023-05,nature,Tests & qualité,4,0
+2023-05,public,API & intégrateurs,7,0
+2023-05,public,Administrateur,15,0
+2023-05,public,Expert,1,0
+2023-05,public,Instructeur,10,0
+2023-05,public,Super-admin & opérateurs,3,0
+2023-05,public,Transverse,1,0
+2023-05,public,Usager,18,0
+2023-05,public,Équipe technique,24,0
+2023-06,nature,API & interopérabilité,9,0
+2023-06,nature,Accessibilité,1,0
+2023-06,nature,Contenus & libellés,5,0
+2023-06,nature,Correctif,23,0
+2023-06,nature,Design & ergonomie,19,0
+2023-06,nature,Dépendances,2,0
+2023-06,nature,Fonctionnalité,13,0
+2023-06,nature,Performance,2,0
+2023-06,nature,Sécurité,2,0
+2023-06,nature,Technique & maintenance,15,0
+2023-06,nature,Tests & qualité,1,0
+2023-06,public,API & intégrateurs,5,0
+2023-06,public,Administrateur,19,0
+2023-06,public,Instructeur,15,0
+2023-06,public,Super-admin & opérateurs,1,0
+2023-06,public,Transverse,2,0
+2023-06,public,Usager,22,0
+2023-06,public,Équipe technique,28,0
+2023-07,nature,API & interopérabilité,11,0
+2023-07,nature,Accessibilité,1,0
+2023-07,nature,Contenus & libellés,3,0
+2023-07,nature,Correctif,13,0
+2023-07,nature,Design & ergonomie,10,0
+2023-07,nature,Dépendances,4,0
+2023-07,nature,Fonctionnalité,18,0
+2023-07,nature,Performance,3,0
+2023-07,nature,Sécurité,2,0
+2023-07,nature,Technique & maintenance,8,0
+2023-07,nature,Tests & qualité,3,0
+2023-07,public,API & intégrateurs,7,0
+2023-07,public,Administrateur,15,0
+2023-07,public,Instructeur,11,0
+2023-07,public,Super-admin & opérateurs,1,0
+2023-07,public,Transverse,1,0
+2023-07,public,Usager,18,0
+2023-07,public,Équipe technique,23,0
+2023-08,nature,API & interopérabilité,4,0
+2023-08,nature,Contenus & libellés,1,0
+2023-08,nature,Correctif,10,0
+2023-08,nature,Design & ergonomie,3,0
+2023-08,nature,Dépendances,5,0
+2023-08,nature,Fonctionnalité,6,0
+2023-08,nature,Performance,1,0
+2023-08,nature,Sécurité,1,0
+2023-08,nature,Technique & maintenance,4,0
+2023-08,nature,Tests & qualité,5,0
+2023-08,public,API & intégrateurs,5,0
+2023-08,public,Administrateur,11,0
+2023-08,public,Instructeur,6,0
+2023-08,public,Super-admin & opérateurs,1,0
+2023-08,public,Transverse,2,0
+2023-08,public,Usager,1,0
+2023-08,public,Équipe technique,14,0
+2023-09,nature,API & interopérabilité,6,0
+2023-09,nature,Contenus & libellés,5,0
+2023-09,nature,Correctif,13,0
+2023-09,nature,Design & ergonomie,17,0
+2023-09,nature,Dépendances,7,0
+2023-09,nature,Fonctionnalité,15,0
+2023-09,nature,Performance,1,0
+2023-09,nature,Sécurité,1,0
+2023-09,nature,Technique & maintenance,6,0
+2023-09,nature,Tests & qualité,2,0
+2023-09,public,API & intégrateurs,5,0
+2023-09,public,Administrateur,11,0
+2023-09,public,Expert,1,0
+2023-09,public,Instructeur,13,0
+2023-09,public,Super-admin & opérateurs,3,0
+2023-09,public,Transverse,2,0
+2023-09,public,Usager,16,0
+2023-09,public,Équipe technique,22,0
+2023-10,nature,API & interopérabilité,12,0
+2023-10,nature,Accessibilité,1,0
+2023-10,nature,Contenus & libellés,2,0
+2023-10,nature,Correctif,15,0
+2023-10,nature,Design & ergonomie,11,0
+2023-10,nature,Dépendances,5,0
+2023-10,nature,Fonctionnalité,22,0
+2023-10,nature,Performance,4,0
+2023-10,nature,Sécurité,4,0
+2023-10,nature,Technique & maintenance,10,0
+2023-10,nature,Tests & qualité,3,0
+2023-10,public,API & intégrateurs,8,0
+2023-10,public,Administrateur,25,0
+2023-10,public,Expert,2,0
+2023-10,public,Instructeur,7,0
+2023-10,public,Super-admin & opérateurs,2,0
+2023-10,public,Transverse,6,0
+2023-10,public,Usager,18,0
+2023-10,public,Équipe technique,21,0
+2023-11,nature,API & interopérabilité,12,0
+2023-11,nature,Accessibilité,2,0
+2023-11,nature,Contenus & libellés,1,0
+2023-11,nature,Correctif,14,0
+2023-11,nature,Design & ergonomie,7,0
+2023-11,nature,Fonctionnalité,22,0
+2023-11,nature,Performance,4,0
+2023-11,nature,Sécurité,2,0
+2023-11,nature,Technique & maintenance,8,0
+2023-11,nature,Tests & qualité,2,0
+2023-11,public,API & intégrateurs,9,0
+2023-11,public,Administrateur,17,0
+2023-11,public,Instructeur,8,0
+2023-11,public,Super-admin & opérateurs,5,0
+2023-11,public,Transverse,2,0
+2023-11,public,Usager,14,0
+2023-11,public,Équipe technique,19,0
+2023-12,nature,API & interopérabilité,10,0
+2023-12,nature,Contenus & libellés,3,0
+2023-12,nature,Correctif,9,0
+2023-12,nature,Design & ergonomie,9,0
+2023-12,nature,Dépendances,4,0
+2023-12,nature,Fonctionnalité,24,0
+2023-12,nature,Performance,6,0
+2023-12,nature,Sécurité,3,0
+2023-12,nature,Technique & maintenance,7,0
+2023-12,public,API & intégrateurs,4,0
+2023-12,public,Administrateur,12,0
+2023-12,public,Expert,2,0
+2023-12,public,Instructeur,14,0
+2023-12,public,Super-admin & opérateurs,4,0
+2023-12,public,Transverse,1,0
+2023-12,public,Usager,16,0
+2023-12,public,Équipe technique,22,0
+2024-01,nature,API & interopérabilité,4,0
+2024-01,nature,Contenus & libellés,3,0
+2024-01,nature,Correctif,8,0
+2024-01,nature,Design & ergonomie,4,0
+2024-01,nature,Dépendances,4,0
+2024-01,nature,Fonctionnalité,13,0
+2024-01,nature,Performance,4,0
+2024-01,nature,Technique & maintenance,7,0
+2024-01,nature,Tests & qualité,4,0
+2024-01,public,API & intégrateurs,1,0
+2024-01,public,Administrateur,22,0
+2024-01,public,Expert,1,0
+2024-01,public,Instructeur,6,0
+2024-01,public,Super-admin & opérateurs,1,0
+2024-01,public,Transverse,2,0
+2024-01,public,Usager,8,0
+2024-01,public,Équipe technique,10,0
+2024-02,nature,API & interopérabilité,6,0
+2024-02,nature,Accessibilité,3,0
+2024-02,nature,Contenus & libellés,1,0
+2024-02,nature,Correctif,16,0
+2024-02,nature,Design & ergonomie,8,0
+2024-02,nature,Dépendances,5,0
+2024-02,nature,Fonctionnalité,14,0
+2024-02,nature,Performance,3,0
+2024-02,nature,Sécurité,4,0
+2024-02,nature,Technique & maintenance,12,0
+2024-02,nature,Tests & qualité,1,0
+2024-02,public,API & intégrateurs,3,0
+2024-02,public,Administrateur,16,0
+2024-02,public,Expert,3,0
+2024-02,public,Instructeur,8,0
+2024-02,public,Super-admin & opérateurs,4,0
+2024-02,public,Usager,24,0
+2024-02,public,Équipe technique,15,0
+2024-03,nature,API & interopérabilité,16,0
+2024-03,nature,Contenus & libellés,5,0
+2024-03,nature,Correctif,41,0
+2024-03,nature,Design & ergonomie,6,0
+2024-03,nature,Dépendances,4,0
+2024-03,nature,Fonctionnalité,14,0
+2024-03,nature,Performance,5,0
+2024-03,nature,Sécurité,1,0
+2024-03,nature,Technique & maintenance,30,0
+2024-03,nature,Tests & qualité,3,0
+2024-03,public,API & intégrateurs,7,0
+2024-03,public,Administrateur,16,0
+2024-03,public,Expert,3,0
+2024-03,public,Instructeur,9,0
+2024-03,public,Super-admin & opérateurs,1,0
+2024-03,public,Transverse,2,0
+2024-03,public,Usager,29,0
+2024-03,public,Équipe technique,58,0
+2024-04,nature,API & interopérabilité,8,0
+2024-04,nature,Accessibilité,8,0
+2024-04,nature,Contenus & libellés,3,0
+2024-04,nature,Correctif,16,0
+2024-04,nature,Design & ergonomie,7,0
+2024-04,nature,Dépendances,6,0
+2024-04,nature,Fonctionnalité,9,0
+2024-04,nature,Performance,8,0
+2024-04,nature,Sécurité,1,0
+2024-04,nature,Technique & maintenance,40,0
+2024-04,nature,Tests & qualité,5,0
+2024-04,public,API & intégrateurs,6,0
+2024-04,public,Administrateur,13,0
+2024-04,public,Expert,1,0
+2024-04,public,Instructeur,9,0
+2024-04,public,Transverse,2,0
+2024-04,public,Usager,15,0
+2024-04,public,Équipe technique,65,0
+2024-05,nature,API & interopérabilité,3,0
+2024-05,nature,Accessibilité,1,0
+2024-05,nature,Contenus & libellés,4,0
+2024-05,nature,Correctif,15,0
+2024-05,nature,Design & ergonomie,6,0
+2024-05,nature,Dépendances,3,0
+2024-05,nature,Fonctionnalité,10,0
+2024-05,nature,Performance,2,0
+2024-05,nature,Sécurité,2,0
+2024-05,nature,Technique & maintenance,16,0
+2024-05,nature,Tests & qualité,4,0
+2024-05,public,API & intégrateurs,1,0
+2024-05,public,Administrateur,15,0
+2024-05,public,Instructeur,10,0
+2024-05,public,Transverse,2,0
+2024-05,public,Usager,11,0
+2024-05,public,Équipe technique,27,0
+2024-06,nature,API & interopérabilité,5,0
+2024-06,nature,Accessibilité,8,0
+2024-06,nature,Contenus & libellés,3,0
+2024-06,nature,Correctif,11,0
+2024-06,nature,Design & ergonomie,7,0
+2024-06,nature,Dépendances,1,0
+2024-06,nature,Fonctionnalité,13,0
+2024-06,nature,Performance,3,0
+2024-06,nature,Sécurité,3,0
+2024-06,nature,Technique & maintenance,9,0
+2024-06,nature,Tests & qualité,3,0
+2024-06,public,API & intégrateurs,4,0
+2024-06,public,Administrateur,16,0
+2024-06,public,Expert,1,0
+2024-06,public,Instructeur,6,0
+2024-06,public,Super-admin & opérateurs,5,0
+2024-06,public,Transverse,8,0
+2024-06,public,Usager,11,0
+2024-06,public,Équipe technique,15,0
+2024-07,nature,API & interopérabilité,3,0
+2024-07,nature,Accessibilité,7,0
+2024-07,nature,Contenus & libellés,3,0
+2024-07,nature,Correctif,19,0
+2024-07,nature,Design & ergonomie,10,0
+2024-07,nature,Dépendances,4,0
+2024-07,nature,Fonctionnalité,14,0
+2024-07,nature,Performance,2,0
+2024-07,nature,Sécurité,5,0
+2024-07,nature,Technique & maintenance,16,0
+2024-07,nature,Tests & qualité,1,0
+2024-07,public,API & intégrateurs,1,0
+2024-07,public,Administrateur,12,0
+2024-07,public,Expert,2,0
+2024-07,public,Instructeur,7,0
+2024-07,public,Super-admin & opérateurs,5,0
+2024-07,public,Transverse,9,0
+2024-07,public,Usager,22,0
+2024-07,public,Équipe technique,26,0
+2024-08,nature,API & interopérabilité,10,0
+2024-08,nature,Correctif,8,0
+2024-08,nature,Design & ergonomie,5,0
+2024-08,nature,Dépendances,2,0
+2024-08,nature,Fonctionnalité,7,0
+2024-08,nature,Performance,2,0
+2024-08,nature,Sécurité,1,0
+2024-08,nature,Technique & maintenance,6,0
+2024-08,public,API & intégrateurs,5,0
+2024-08,public,Administrateur,5,0
+2024-08,public,Expert,1,0
+2024-08,public,Instructeur,8,0
+2024-08,public,Usager,9,0
+2024-08,public,Équipe technique,13,0
+2024-09,nature,API & interopérabilité,11,0
+2024-09,nature,Accessibilité,3,0
+2024-09,nature,Contenus & libellés,11,0
+2024-09,nature,Correctif,22,0
+2024-09,nature,Design & ergonomie,3,0
+2024-09,nature,Dépendances,6,0
+2024-09,nature,Fonctionnalité,12,0
+2024-09,nature,Performance,5,0
+2024-09,nature,Sécurité,5,0
+2024-09,nature,Technique & maintenance,20,0
+2024-09,nature,Tests & qualité,8,0
+2024-09,public,API & intégrateurs,6,0
+2024-09,public,Administrateur,16,0
+2024-09,public,Expert,1,0
+2024-09,public,Instructeur,19,0
+2024-09,public,Super-admin & opérateurs,8,0
+2024-09,public,Transverse,3,0
+2024-09,public,Usager,13,0
+2024-09,public,Équipe technique,40,0
+2024-10,nature,API & interopérabilité,5,0
+2024-10,nature,Accessibilité,4,0
+2024-10,nature,Contenus & libellés,1,0
+2024-10,nature,Correctif,16,0
+2024-10,nature,Design & ergonomie,4,0
+2024-10,nature,Dépendances,5,0
+2024-10,nature,Fonctionnalité,8,0
+2024-10,nature,Performance,5,0
+2024-10,nature,Sécurité,1,0
+2024-10,nature,Technique & maintenance,18,0
+2024-10,nature,Tests & qualité,2,0
+2024-10,public,API & intégrateurs,6,0
+2024-10,public,Administrateur,13,0
+2024-10,public,Instructeur,13,0
+2024-10,public,Super-admin & opérateurs,7,0
+2024-10,public,Transverse,3,0
+2024-10,public,Usager,4,0
+2024-10,public,Équipe technique,23,0
+2024-11,nature,API & interopérabilité,4,0
+2024-11,nature,Accessibilité,6,0
+2024-11,nature,Correctif,17,0
+2024-11,nature,Design & ergonomie,5,0
+2024-11,nature,Dépendances,1,0
+2024-11,nature,Fonctionnalité,22,0
+2024-11,nature,Performance,2,0
+2024-11,nature,Technique & maintenance,19,0
+2024-11,nature,Tests & qualité,2,0
+2024-11,public,Administrateur,14,0
+2024-11,public,Instructeur,30,0
+2024-11,public,Super-admin & opérateurs,1,0
+2024-11,public,Transverse,1,0
+2024-11,public,Usager,12,0
+2024-11,public,Équipe technique,20,0
+2024-12,nature,API & interopérabilité,8,0
+2024-12,nature,Accessibilité,3,0
+2024-12,nature,Contenus & libellés,4,0
+2024-12,nature,Correctif,12,0
+2024-12,nature,Design & ergonomie,10,0
+2024-12,nature,Dépendances,6,0
+2024-12,nature,Fonctionnalité,10,0
+2024-12,nature,Performance,5,0
+2024-12,nature,Sécurité,3,0
+2024-12,nature,Technique & maintenance,6,0
+2024-12,public,API & intégrateurs,6,0
+2024-12,public,Administrateur,8,0
+2024-12,public,Expert,1,0
+2024-12,public,Instructeur,20,0
+2024-12,public,Super-admin & opérateurs,1,0
+2024-12,public,Transverse,1,0
+2024-12,public,Usager,15,0
+2024-12,public,Équipe technique,15,0
+2025-01,nature,API & interopérabilité,4,0
+2025-01,nature,Accessibilité,1,0
+2025-01,nature,Contenus & libellés,1,0
+2025-01,nature,Correctif,12,0
+2025-01,nature,Design & ergonomie,5,0
+2025-01,nature,Dépendances,6,0
+2025-01,nature,Fonctionnalité,16,0
+2025-01,nature,Performance,5,0
+2025-01,nature,Sécurité,2,0
+2025-01,nature,Technique & maintenance,7,0
+2025-01,nature,Tests & qualité,7,0
+2025-01,public,API & intégrateurs,6,0
+2025-01,public,Administrateur,14,0
+2025-01,public,Instructeur,14,0
+2025-01,public,Super-admin & opérateurs,1,0
+2025-01,public,Transverse,4,0
+2025-01,public,Usager,13,0
+2025-01,public,Équipe technique,14,0
+2025-02,nature,API & interopérabilité,5,0
+2025-02,nature,Accessibilité,6,0
+2025-02,nature,Correctif,16,0
+2025-02,nature,Design & ergonomie,8,0
+2025-02,nature,Dépendances,8,0
+2025-02,nature,Fonctionnalité,10,0
+2025-02,nature,Performance,2,0
+2025-02,nature,Sécurité,1,0
+2025-02,nature,Technique & maintenance,9,0
+2025-02,nature,Tests & qualité,4,0
+2025-02,public,API & intégrateurs,3,0
+2025-02,public,Administrateur,10,0
+2025-02,public,Instructeur,17,0
+2025-02,public,Transverse,3,0
+2025-02,public,Usager,15,0
+2025-02,public,Équipe technique,21,0
+2025-03,nature,API & interopérabilité,12,0
+2025-03,nature,Accessibilité,6,0
+2025-03,nature,Contenus & libellés,2,0
+2025-03,nature,Correctif,24,0
+2025-03,nature,Design & ergonomie,4,0
+2025-03,nature,Dépendances,3,0
+2025-03,nature,Fonctionnalité,22,0
+2025-03,nature,Performance,2,0
+2025-03,nature,Sécurité,4,0
+2025-03,nature,Technique & maintenance,15,0
+2025-03,nature,Tests & qualité,4,0
+2025-03,public,API & intégrateurs,4,0
+2025-03,public,Administrateur,19,0
+2025-03,public,Instructeur,25,0
+2025-03,public,Super-admin & opérateurs,2,0
+2025-03,public,Transverse,3,0
+2025-03,public,Usager,18,0
+2025-03,public,Équipe technique,27,0
+2025-04,nature,API & interopérabilité,1,0
+2025-04,nature,Accessibilité,5,0
+2025-04,nature,Contenus & libellés,3,0
+2025-04,nature,Correctif,13,0
+2025-04,nature,Design & ergonomie,8,0
+2025-04,nature,Dépendances,5,0
+2025-04,nature,Fonctionnalité,14,0
+2025-04,nature,Performance,3,0
+2025-04,nature,Sécurité,6,0
+2025-04,nature,Technique & maintenance,6,0
+2025-04,nature,Tests & qualité,1,0
+2025-04,public,API & intégrateurs,2,0
+2025-04,public,Administrateur,16,0
+2025-04,public,Expert,1,0
+2025-04,public,Instructeur,9,0
+2025-04,public,Super-admin & opérateurs,6,0
+2025-04,public,Usager,14,0
+2025-04,public,Équipe technique,17,0
+2025-05,nature,API & interopérabilité,6,0
+2025-05,nature,Accessibilité,10,0
+2025-05,nature,Contenus & libellés,3,0
+2025-05,nature,Correctif,6,0
+2025-05,nature,Design & ergonomie,11,0
+2025-05,nature,Dépendances,5,0
+2025-05,nature,Fonctionnalité,14,0
+2025-05,nature,Performance,4,0
+2025-05,nature,Sécurité,2,0
+2025-05,nature,Technique & maintenance,6,0
+2025-05,nature,Tests & qualité,1,0
+2025-05,public,API & intégrateurs,2,0
+2025-05,public,Administrateur,7,0
+2025-05,public,Instructeur,16,0
+2025-05,public,Super-admin & opérateurs,3,0
+2025-05,public,Transverse,1,0
+2025-05,public,Usager,20,0
+2025-05,public,Équipe technique,19,0
+2025-06,nature,API & interopérabilité,16,0
+2025-06,nature,Accessibilité,8,0
+2025-06,nature,Contenus & libellés,1,0
+2025-06,nature,Correctif,17,0
+2025-06,nature,Design & ergonomie,5,0
+2025-06,nature,Dépendances,1,0
+2025-06,nature,Fonctionnalité,10,0
+2025-06,nature,Performance,7,0
+2025-06,nature,Technique & maintenance,11,0
+2025-06,nature,Tests & qualité,3,0
+2025-06,public,API & intégrateurs,2,0
+2025-06,public,Administrateur,13,0
+2025-06,public,Instructeur,17,0
+2025-06,public,Super-admin & opérateurs,3,0
+2025-06,public,Transverse,2,0
+2025-06,public,Usager,18,0
+2025-06,public,Équipe technique,24,0
+2025-07,nature,API & interopérabilité,15,0
+2025-07,nature,Accessibilité,5,0
+2025-07,nature,Contenus & libellés,2,0
+2025-07,nature,Correctif,19,0
+2025-07,nature,Design & ergonomie,13,0
+2025-07,nature,Dépendances,5,0
+2025-07,nature,Fonctionnalité,22,0
+2025-07,nature,Performance,2,0
+2025-07,nature,Sécurité,4,0
+2025-07,nature,Technique & maintenance,11,0
+2025-07,nature,Tests & qualité,5,0
+2025-07,public,API & intégrateurs,5,0
+2025-07,public,Administrateur,17,0
+2025-07,public,Expert,2,0
+2025-07,public,Instructeur,17,0
+2025-07,public,Super-admin & opérateurs,2,0
+2025-07,public,Transverse,7,0
+2025-07,public,Usager,27,0
+2025-07,public,Équipe technique,26,0
+2025-08,nature,API & interopérabilité,5,0
+2025-08,nature,Accessibilité,5,0
+2025-08,nature,Contenus & libellés,2,0
+2025-08,nature,Correctif,6,0
+2025-08,nature,Design & ergonomie,1,0
+2025-08,nature,Dépendances,1,0
+2025-08,nature,Fonctionnalité,6,0
+2025-08,nature,Performance,4,0
+2025-08,nature,Sécurité,1,0
+2025-08,nature,Technique & maintenance,4,0
+2025-08,nature,Tests & qualité,6,0
+2025-08,public,API & intégrateurs,2,0
+2025-08,public,Administrateur,1,0
+2025-08,public,Instructeur,10,0
+2025-08,public,Super-admin & opérateurs,3,0
+2025-08,public,Usager,9,0
+2025-08,public,Équipe technique,16,0
+2025-09,nature,API & interopérabilité,21,0
+2025-09,nature,Contenus & libellés,6,0
+2025-09,nature,Correctif,13,0
+2025-09,nature,Design & ergonomie,8,0
+2025-09,nature,Dépendances,5,0
+2025-09,nature,Fonctionnalité,19,0
+2025-09,nature,Performance,16,0
+2025-09,nature,Sécurité,6,0
+2025-09,nature,Technique & maintenance,21,0
+2025-09,nature,Tests & qualité,10,0
+2025-09,public,API & intégrateurs,6,0
+2025-09,public,Administrateur,19,0
+2025-09,public,Instructeur,21,0
+2025-09,public,Super-admin & opérateurs,13,0
+2025-09,public,Transverse,5,0
+2025-09,public,Usager,14,0
+2025-09,public,Équipe technique,47,0
+2025-10,nature,API & interopérabilité,15,0
+2025-10,nature,Accessibilité,4,0
+2025-10,nature,Contenus & libellés,3,0
+2025-10,nature,Correctif,19,0
+2025-10,nature,Design & ergonomie,7,0
+2025-10,nature,Dépendances,10,0
+2025-10,nature,Fonctionnalité,14,0
+2025-10,nature,Performance,7,0
+2025-10,nature,Technique & maintenance,19,0
+2025-10,nature,Tests & qualité,3,0
+2025-10,public,API & intégrateurs,3,0
+2025-10,public,Administrateur,26,0
+2025-10,public,Expert,2,0
+2025-10,public,Instructeur,7,0
+2025-10,public,Super-admin & opérateurs,1,0
+2025-10,public,Transverse,1,0
+2025-10,public,Usager,23,0
+2025-10,public,Équipe technique,38,0
+2025-11,nature,API & interopérabilité,23,0
+2025-11,nature,Accessibilité,6,0
+2025-11,nature,Contenus & libellés,1,0
+2025-11,nature,Correctif,11,0
+2025-11,nature,Design & ergonomie,3,0
+2025-11,nature,Dépendances,1,0
+2025-11,nature,Fonctionnalité,13,0
+2025-11,nature,Performance,2,0
+2025-11,nature,Sécurité,2,0
+2025-11,nature,Technique & maintenance,15,0
+2025-11,nature,Tests & qualité,3,0
+2025-11,public,API & intégrateurs,10,0
+2025-11,public,Administrateur,9,0
+2025-11,public,Instructeur,20,0
+2025-11,public,Super-admin & opérateurs,7,0
+2025-11,public,Transverse,1,0
+2025-11,public,Usager,18,0
+2025-11,public,Équipe technique,15,0
+2025-12,nature,API & interopérabilité,16,0
+2025-12,nature,Accessibilité,4,0
+2025-12,nature,Contenus & libellés,2,0
+2025-12,nature,Correctif,17,0
+2025-12,nature,Design & ergonomie,10,0
+2025-12,nature,Fonctionnalité,14,0
+2025-12,nature,Performance,2,0
+2025-12,nature,Technique & maintenance,8,0
+2025-12,nature,Tests & qualité,1,0
+2025-12,public,API & intégrateurs,4,0
+2025-12,public,Administrateur,25,0
+2025-12,public,Instructeur,16,0
+2025-12,public,Super-admin & opérateurs,2,0
+2025-12,public,Transverse,4,0
+2025-12,public,Usager,12,0
+2025-12,public,Équipe technique,11,0
+2026-01,nature,API & interopérabilité,10,0
+2026-01,nature,Accessibilité,7,0
+2026-01,nature,Contenus & libellés,4,0
+2026-01,nature,Correctif,15,0
+2026-01,nature,Design & ergonomie,6,0
+2026-01,nature,Dépendances,1,0
+2026-01,nature,Fonctionnalité,14,0
+2026-01,nature,Performance,9,0
+2026-01,nature,Sécurité,1,0
+2026-01,nature,Technique & maintenance,17,0
+2026-01,nature,Tests & qualité,2,0
+2026-01,public,API & intégrateurs,3,0
+2026-01,public,Administrateur,13,0
+2026-01,public,Expert,1,0
+2026-01,public,Instructeur,16,0
+2026-01,public,Super-admin & opérateurs,6,0
+2026-01,public,Usager,18,0
+2026-01,public,Équipe technique,29,0
+2026-02,nature,API & interopérabilité,9,0
+2026-02,nature,Accessibilité,9,0
+2026-02,nature,Contenus & libellés,2,0
+2026-02,nature,Correctif,17,0
+2026-02,nature,Design & ergonomie,15,0
+2026-02,nature,Dépendances,6,0
+2026-02,nature,Fonctionnalité,20,0
+2026-02,nature,Performance,6,0
+2026-02,nature,Sécurité,4,0
+2026-02,nature,Technique & maintenance,14,0
+2026-02,nature,Tests & qualité,11,0
+2026-02,public,API & intégrateurs,1,0
+2026-02,public,Administrateur,13,0
+2026-02,public,Instructeur,22,0
+2026-02,public,Super-admin & opérateurs,10,0
+2026-02,public,Transverse,4,0
+2026-02,public,Usager,30,0
+2026-02,public,Équipe technique,33,0
+2026-03,nature,API & interopérabilité,26,6
+2026-03,nature,Accessibilité,5,0
+2026-03,nature,Contenus & libellés,3,0
+2026-03,nature,Correctif,20,5
+2026-03,nature,Design & ergonomie,18,6
+2026-03,nature,Dépendances,4,0
+2026-03,nature,Fonctionnalité,23,2
+2026-03,nature,Performance,3,0
+2026-03,nature,Sécurité,10,8
+2026-03,nature,Technique & maintenance,22,2
+2026-03,nature,Tests & qualité,8,1
+2026-03,public,API & intégrateurs,7,3
+2026-03,public,Administrateur,25,3
+2026-03,public,Expert,1,0
+2026-03,public,Instructeur,18,2
+2026-03,public,Super-admin & opérateurs,6,2
+2026-03,public,Transverse,5,2
+2026-03,public,Usager,37,10
+2026-03,public,Équipe technique,43,8
+2026-04,nature,API & interopérabilité,18,10
+2026-04,nature,Accessibilité,1,1
+2026-04,nature,Contenus & libellés,4,0
+2026-04,nature,Correctif,19,8
+2026-04,nature,Design & ergonomie,2,0
+2026-04,nature,Dépendances,6,0
+2026-04,nature,Fonctionnalité,7,2
+2026-04,nature,Performance,6,0
+2026-04,nature,Sécurité,19,5
+2026-04,nature,Technique & maintenance,39,14
+2026-04,nature,Tests & qualité,3,2
+2026-04,public,API & intégrateurs,5,1
+2026-04,public,Administrateur,20,8
+2026-04,public,Expert,4,2
+2026-04,public,Instructeur,17,10
+2026-04,public,Super-admin & opérateurs,7,3
+2026-04,public,Transverse,6,1
+2026-04,public,Usager,18,8
+2026-04,public,Équipe technique,47,9
+2026-05,nature,API & interopérabilité,21,11
+2026-05,nature,Accessibilité,2,1
+2026-05,nature,Contenus & libellés,3,0
+2026-05,nature,Correctif,14,7
+2026-05,nature,Design & ergonomie,4,0
+2026-05,nature,Dépendances,5,0
+2026-05,nature,Fonctionnalité,9,1
+2026-05,nature,Performance,12,5
+2026-05,nature,Sécurité,21,12
+2026-05,nature,Technique & maintenance,29,17
+2026-05,nature,Tests & qualité,7,6
+2026-05,public,API & intégrateurs,11,10
+2026-05,public,Administrateur,19,7
+2026-05,public,Expert,3,2
+2026-05,public,Instructeur,18,9
+2026-05,public,Super-admin & opérateurs,5,2
+2026-05,public,Transverse,1,0
+2026-05,public,Usager,32,20
+2026-05,public,Équipe technique,38,10
+2026-06,nature,API & interopérabilité,19,7
+2026-06,nature,Accessibilité,10,4
+2026-06,nature,Contenus & libellés,3,1
+2026-06,nature,Correctif,15,4
+2026-06,nature,Design & ergonomie,11,3
+2026-06,nature,Dépendances,11,1
+2026-06,nature,Fonctionnalité,21,10
+2026-06,nature,Performance,9,2
+2026-06,nature,Sécurité,3,1
+2026-06,nature,Technique & maintenance,29,12
+2026-06,nature,Tests & qualité,3,3
+2026-06,public,API & intégrateurs,4,2
+2026-06,public,Administrateur,31,11
+2026-06,public,Expert,1,1
+2026-06,public,Instructeur,21,7
+2026-06,public,Super-admin & opérateurs,15,6
+2026-06,public,Transverse,2,1
+2026-06,public,Usager,27,11
+2026-06,public,Équipe technique,33,9
+2026-07,nature,API & interopérabilité,27,16
+2026-07,nature,Accessibilité,5,5
+2026-07,nature,Contenus & libellés,2,0
+2026-07,nature,Correctif,9,2
+2026-07,nature,Design & ergonomie,12,5
+2026-07,nature,Dépendances,7,0
+2026-07,nature,Fonctionnalité,33,17
+2026-07,nature,Performance,14,4
+2026-07,nature,Sécurité,3,0
+2026-07,nature,Technique & maintenance,48,24
+2026-07,nature,Tests & qualité,34,21
+2026-07,public,API & intégrateurs,17,8
+2026-07,public,Administrateur,31,9
+2026-07,public,Expert,1,0
+2026-07,public,Instructeur,27,15
+2026-07,public,Super-admin & opérateurs,5,0
+2026-07,public,Usager,41,24
+2026-07,public,Équipe technique,72,38
+2026-08,nature,API & interopérabilité,17,10
+2026-08,nature,Accessibilité,2,2
+2026-08,nature,Contenus & libellés,3,2
+2026-08,nature,Correctif,10,5
+2026-08,nature,Design & ergonomie,3,3
+2026-08,nature,Dépendances,6,0
+2026-08,nature,Fonctionnalité,6,4
+2026-08,nature,Performance,6,3
+2026-08,nature,Sécurité,2,0
+2026-08,nature,Technique & maintenance,50,25
+2026-08,nature,Tests & qualité,3,3
+2026-08,public,API & intégrateurs,10,6
+2026-08,public,Administrateur,29,12
+2026-08,public,Expert,2,0
+2026-08,public,Instructeur,5,2
+2026-08,public,Super-admin & opérateurs,3,1
+2026-08,public,Usager,24,20
+2026-08,public,Équipe technique,35,16
+2026-09,nature,API & interopérabilité,48,32
+2026-09,nature,Accessibilité,7,2
+2026-09,nature,Contenus & libellés,7,4
+2026-09,nature,Correctif,18,7
+2026-09,nature,Design & ergonomie,10,7
+2026-09,nature,Dépendances,5,0
+2026-09,nature,Fonctionnalité,47,34
+2026-09,nature,Performance,10,5
+2026-09,nature,Sécurité,13,4
+2026-09,nature,Technique & maintenance,89,54
+2026-09,nature,Tests & qualité,30,20
+2026-09,public,API & intégrateurs,18,12
+2026-09,public,Administrateur,63,41
+2026-09,public,Expert,8,8
+2026-09,public,Instructeur,33,24
+2026-09,public,Super-admin & opérateurs,5,1
+2026-09,public,Transverse,2,1
+2026-09,public,Usager,47,24
+2026-09,public,Équipe technique,108,58
+2026-10,nature,API & interopérabilité,22,6
+2026-10,nature,Accessibilité,2,0
+2026-10,nature,Contenus & libellés,5,2
+2026-10,nature,Correctif,24,20
+2026-10,nature,Design & ergonomie,9,5
+2026-10,nature,Dépendances,3,0
+2026-10,nature,Fonctionnalité,21,17
+2026-10,nature,Performance,4,1
+2026-10,nature,Sécurité,3,1
+2026-10,nature,Technique & maintenance,26,13
+2026-10,nature,Tests & qualité,1,0
+2026-10,public,API & intégrateurs,6,0
+2026-10,public,Administrateur,29,20
+2026-10,public,Expert,6,4
+2026-10,public,Instructeur,25,12
+2026-10,public,Super-admin & opérateurs,6,4
+2026-10,public,Usager,29,17
+2026-10,public,Équipe technique,19,8

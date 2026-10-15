@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code dans les services publics</title>
+<meta name="description" content="Deux ans de mises en production dans 33 dépôts publics de services numériques de l'État, et la place de Claude Code et des autres assistants IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/form26.css">
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>window.DASH_SOURCES = {"mensuel_services": "../data/services-publics/mensuel_services.csv", "services": "../data/services-publics/services.csv", "signaux": "../data/services-publics/signaux.csv", "changements_ia": "../data/services-publics/changements_ia.csv"};</script>
+<script src="../assets/dash-shim.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<nav class="site-nav"><a href="../">← Observatoire</a><a href="../demarche-numerique/">Démarche Numérique · 5 ans</a><a href="../services-publics/">Services publics · 2 ans</a></nav>
+<style>
+.cx{
+  --f-font:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-ink:#1e2022;--f-muted:#5c6066;--f-paper:#fbf9f5;--f-surface:#ffffff;--f-line:#e2dfd7;
+  --f-c0:#b45309;--f-c1:#1d4ed8;--f-c2:#15803d;--f-c3:#0e7490;--f-c4:#6d28d9;--f-c5:#be185d;--f-c6:#4d7c0f;--f-c7:#78716c;
+  --f-ok:#15803d;--f-bad:#b91c1c;--f-soft:#f3efe6;
+  --color-fg:var(--f-ink);--color-fg-muted:var(--f-muted);--color-bg:var(--f-paper);--color-panel:var(--f-surface);--color-border-line:var(--f-line);
+  --color-ok:var(--f-ok);--color-bad:var(--f-bad);
+  --cds-chart-muted:#d6d1c6;--cds-chart-grid:var(--f-line);--cds-chart-axis:#a8a39a;--cds-chart-reference:var(--f-muted);
+  --cds-text-secondary:var(--f-muted);--cds-surface-popover:var(--f-surface);--cds-border:var(--f-line);--cds-radius:10px;
+  background:var(--f-paper);color:var(--f-ink);font-family:var(--f-font);font-size:17px;line-height:1.55;
+  padding:var(--cds-pad-lg);border-radius:12px;
+}
+@media (prefers-color-scheme: dark){.cx{
+  --f-ink:#f3f4f6;--f-muted:#9ca3af;--f-paper:#18181b;--f-surface:#27272a;--f-line:#3f3f46;
+  --f-c0:#f59e0b;--f-c1:#60a5fa;--f-c2:#4ade80;--f-c3:#22d3ee;--f-c4:#a78bfa;--f-c5:#f472b6;--f-c6:#a3e635;--f-c7:#a8a29e;
+  --f-ok:#4ade80;--f-bad:#f87171;--f-soft:#3a2a12;
+  --cds-chart-muted:#52525b;--cds-chart-axis:#71717a;
+}}
+.cx h1,.cx h2,.cx h3{font-family:var(--f-font);font-weight:800;letter-spacing:-.01em}
+.cx h1{font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.15}
+.cx .big{font-family:var(--f-font)!important;font-weight:800!important;color:var(--f-c0)}
+.cx a{color:var(--f-c1)}
+.cx .tabs button[aria-selected=true]{border-bottom-color:var(--f-c0)!important;font-weight:700}
+.cx .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--f-c0);margin:0 0 .3rem}
+.cx{font-family:var(--f-font);display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.cx h1{font-family:var(--f-font);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
+.cx .lede{color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 0;font-size:var(--cds-font-size-body);max-width:60rem}
+.cx .tabs{display:flex;gap:var(--cds-gap-xs);flex-wrap:wrap;border-bottom:1px solid var(--color-border-line)}
+.cx .tabs button{font:inherit;font-size:var(--cds-font-size-body);background:none;border:0;border-bottom:2px solid transparent;padding:var(--cds-pad-sm) var(--cds-pad-md);color:var(--color-fg-muted);cursor:pointer;margin-bottom:-1px}
+.cx .tabs button[aria-selected=true]{color:var(--color-fg);border-bottom-color:var(--color-fg)}
+.cx .pane{display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.cx .pane[hidden]{display:none}
+.cx .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.cx .card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0}
+.cx .lab{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.cx .big{font-family:var(--f-font);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;margin-top:var(--cds-gap-xs);min-height:1.2em}
+.cx .sub{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-top:var(--cds-gap-xs);min-height:1em}
+.cx h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0}
+.cx h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 var(--cds-gap-xs)}
+.cx .note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md)}
+.cx .chart{position:relative;min-height:300px}
+.cx .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:var(--cds-gap-md)}
+.cx .legend{display:flex;gap:var(--cds-gap-md);flex-wrap:wrap;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-bottom:var(--cds-gap-sm)}
+.cx .sw{display:inline-block;width:.7rem;height:.7rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.cx .swl{display:inline-block;width:.9rem;height:.18rem;border-radius:2px;margin-right:.35rem;vertical-align:3px}
+.cx .tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);display:none;white-space:nowrap;z-index:2}
+.cx .tip .d{color:var(--cds-text-secondary)}
+.cx table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.cx th,.cx td{text-align:left;padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.cx th{position:sticky;top:0;background:var(--color-panel);color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium)}
+.cx td.n,.cx th.n{text-align:right}
+.cx .scroll{max-height:34rem;overflow:auto}
+.cx .barcell{display:flex;align-items:center;gap:var(--cds-gap-xs);justify-content:flex-end}
+.cx .barcell span.b{display:inline-block;height:.5rem;border-radius:4px}
+.cx .tools{display:flex;gap:var(--cds-gap-sm);flex-wrap:wrap;align-items:center;margin-bottom:var(--cds-gap-sm);font-size:var(--cds-font-size-caption)}
+.cx .tools input[type=search],.cx .tools select{padding:var(--cds-pad-xs) var(--cds-pad-sm);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);font:inherit}
+.cx .tools input[type=search]{flex:1;min-width:12rem}
+.cx a{color:inherit}
+.cx .fail{display:flex;align-items:center;justify-content:center;gap:.4rem;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);min-height:inherit}
+.cx .fail i{width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad);display:inline-block}
+.cx [data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+.cx [data-dash-source-state=empty]{color:transparent}
+.cx .hm{position:relative;min-height:600px}
+.cx .method p,.cx .method li{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.55}
+.cx .method p{margin:0 0 var(--cds-gap-sm)}
+.cx .method ul{margin:0 0 var(--cds-gap-sm);padding-left:1.1rem}
+</style>
+<div class="cx">
+  <header>
+    <p class="eyebrow">FORM 2026 · Observatoire</p>
+    <h1 id="titre">Claude Code dans les services numériques publics</h1>
+    <p class="lede dash-skeleton" id="lede" data-source="kpi">—</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-pane="synthese" aria-selected="true">Synthèse</button>
+    <button role="tab" data-pane="activite" aria-selected="false">Activité par projet</button>
+    <button role="tab" data-pane="services" aria-selected="false">Par service</button>
+    <button role="tab" data-pane="detail" aria-selected="false">Changements</button>
+    <button role="tab" data-pane="methode" aria-selected="false">Méthode</button>
+  </nav>
+
+  <div class="pane" id="synthese">
+    <div class="tiles" id="kpis">
+      <div class="card"><div class="lab">Dépôts étudiés</div><div class="big dash-skeleton" data-source="kpi" data-field="depots" data-row="0">—</div><div class="sub" id="sub-produits"></div></div>
+      <div class="card"><div class="lab">Dépôts avec au moins une trace de Claude</div><div class="big dash-skeleton" data-source="kpi" data-field="depots_claude" data-row="0">—</div><div class="sub" id="sub-claude"></div></div>
+      <div class="card"><div class="lab">Dépôts équipés pour les agents IA</div><div class="big dash-skeleton" data-source="kpi" data-field="depots_signal" data-row="0">—</div><div class="sub">CLAUDE.md, AGENTS.md, règles Cursor ou Copilot, Claude en CI</div></div>
+      <div class="card"><div class="lab">Changements avec Claude · 3 derniers mois</div><div class="big dash-skeleton" data-source="kpi" data-field="part_recente" data-row="0">—</div><div class="sub" id="sub-part"></div></div>
+    </div>
+
+    <div class="grid2">
+      <section class="card" id="adoption-card">
+        <h2>Combien d'équipes s'y mettent</h2>
+        <p class="note">Nombre cumulé de dépôts, mois par mois, depuis octobre 2024.</p>
+        <div class="legend" id="adoption-legend"></div>
+        <div class="chart" id="chart-adoption" data-source="adoption"></div>
+      </section>
+      <section class="card" id="volume-card">
+        <h2>Changements mis en production avec Claude, par mois</h2>
+        <p class="note">Démarche Numérique pèse la grande majorité du volume ; les autres services sont regroupés.</p>
+        <div class="legend"><span><span class="sw sw0"></span>Démarche Numérique</span><span><span class="sw sw1"></span>Autres services</span></div>
+        <div class="chart" id="chart-volume" data-source="claude_mensuel"></div>
+      </section>
+    </div>
+
+    <section class="card" id="signaux-card">
+      <h2>Quand les équipes ont outillé leur dépôt pour les agents IA</h2>
+      <p class="note">Premier ajout, sur la branche principale, d'un fichier d'instructions pour agent ou d'une étape Claude dans l'intégration continue. Les fichiers repris tels quels du code amont (Element pour Tchap) sont exclus.</p>
+      <div class="scroll">
+        <table id="table-signaux" data-source="signaux" data-row-key="id">
+          <thead><tr><th data-field="date">Date</th><th data-field="service">Service</th><th data-field="signal">Signal</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="pane" id="activite" hidden>
+    <section class="card" id="heatmap-card">
+      <h2>Évolutions mises en production, par projet et par mois</h2>
+      <p class="note">Plus la case est foncée, plus le projet a livré ce mois-là : les lignes pleines sont les projets actifs. Le point orange indique la part faite avec Claude (plus il est gros, plus elle est forte). Trié par volume sur deux ans.</p>
+      <div class="tools">
+        <label for="hm-metric">Compter</label>
+        <select id="hm-metric" aria-label="Mesure">
+          <option value="evolutions">les évolutions</option>
+          <option value="changements">tous les changements</option>
+        </select>
+        <span class="legend" style="margin:0"><span><span class="sw" id="hm-sw-lo"></span>peu</span><span><span class="sw" id="hm-sw-hi"></span>beaucoup</span><span><span class="sw sw0" style="border-radius:50%"></span>part avec Claude</span></span>
+      </div>
+      <div class="hm" id="chart-heatmap" data-source="mensuel_services"></div>
+    </section>
+  </div>
+
+  <div class="pane" id="services" hidden>
+    <section class="card" id="services-card">
+      <h2>Par service, sur deux ans</h2>
+      <p class="note">Changements mis en production du 14 octobre 2024 au 14 octobre 2026, hors robots (Dependabot, Renovate…). Trié par nombre de changements avec Claude.</p>
+      <div class="scroll">
+        <table id="table-services" data-source="par_service" data-row-key="service">
+          <thead><tr>
+            <th data-field="service">Service</th><th data-field="groupe">Porteur</th>
+            <th class="n" data-field="changements">Changements</th><th class="n" data-field="evolutions">dont évolutions</th>
+            <th class="n" data-field="avec_claude">Avec Claude</th><th class="n" data-field="evolutions_avec_claude">Évolutions avec Claude</th>
+            <th class="n" data-field="part_6_mois">Part Claude · 6 mois</th><th data-field="premiere_trace">1re trace</th>
+            <th class="n" data-field="autres_ia">Autres IA</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="pane" id="detail" hidden>
+    <section class="card" id="detail-card">
+      <h2>Changements portant une trace d'assistant IA</h2>
+      <p class="note">Les plus récents d'abord. La référence ouvre la pull request ou le commit sur GitHub.</p>
+      <div class="tools">
+        <input type="search" id="q" placeholder="Rechercher dans les titres…" aria-label="Rechercher">
+        <select id="f-service" aria-label="Service"></select>
+        <select id="f-outil" aria-label="Outil"></select>
+        <select id="f-type" aria-label="Type"></select>
+        <span id="count" class="lab"></span>
+      </div>
+      <div class="scroll">
+        <table id="table-ia" data-source="changements_ia" data-row-key="ref">
+          <thead><tr><th data-field="ref">Référence</th><th data-field="service">Service</th><th data-field="titre">Titre</th><th data-field="type">Type</th><th data-field="mise_en_production">En production</th><th data-field="outils_ia">Outil</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="pane" id="methode" hidden>
+    <section class="card method">
+      <h2>Méthode</h2>
+      <p><b>Périmètre.</b> 33 dépôts GitHub publics de services numériques de l'État et d'opérateurs publics, choisis parmi les plus actifs (liste et liens dans le tableau ci-dessous). Période : du 14 octobre 2024 au 14 octobre 2026. Les sources sont l'historique Git public de chaque dépôt, lu le 14 octobre 2026.</p>
+      <p><b>Changement.</b> Une unité intégrée à la branche principale de développement : une pull request fusionnée, ou un commit « squashé » ou « rebasé ». Les changements faits uniquement par des robots (Dependabot, Renovate, GitHub Actions…) sont écartés. Pour Tchap, les synchronisations avec le code amont d'Element sont écartées.</p>
+      <p><b>Mise en production.</b> Selon le fonctionnement de chaque dépôt : première version publiée (étiquette) qui contient le changement ; arrivée sur la branche de production quand il y en a une ; à défaut, date de fusion (déploiement continu).</p>
+      <p><b>Évolution.</b> Classement automatique sur le titre (feat, ✨, « ajout », « ETQ »…). Indicatif.</p>
+      <p><b>Trace de Claude.</b> Au moins un commit du changement porte « Co-Authored-By: Claude », « Generated with Claude Code », un lien claude.ai/code, ou a pour auteur l'application Claude. Les autres assistants sont repérés de la même façon : Copilot, Cursor, Codex, Gemini, Mistral, etc.</p>
+      <p><b>Ce que la mesure ne voit pas.</b> Ces mentions sont ajoutées par défaut par Claude Code, mais chaque développeur peut les désactiver, et elles disparaissent quand on réécrit le message de commit. Un usage de Claude en conversation, en relecture ou par copier-coller ne laisse aucune trace. Les chiffres sont donc un <b>minimum</b>. Les fichiers d'instructions pour agents (CLAUDE.md, AGENTS.md…) sont un second indice, indépendant, d'un usage par l'équipe.</p>
+      <h3>Dépôts étudiés</h3>
+      <div class="scroll">
+        <table id="table-depots" data-source="services" data-row-key="service">
+          <thead><tr><th data-field="service">Service</th><th data-field="groupe">Porteur</th><th data-field="depot">Dépôt</th><th data-field="mise_en_production">Mise en production retenue</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+<script>
+window.FORM_COLORS = window.FORM_COLORS || ['var(--f-c0)','var(--f-c1)','var(--f-c2)','var(--f-c3)','var(--f-c4)','var(--f-c5)','var(--f-c6)','var(--f-c7)'];
+const DN = 'Démarche Numérique';
+dash.calc('kpi', {
+  title: 'Chiffres clés',
+  description: 'Nombre de dépôts et de services, dépôts avec trace de Claude ou fichiers pour agents, part de Claude sur les trois derniers mois.',
+  inputs: ['mensuel_services', 'services', 'signaux'],
+  fn: (mensuel_services, services, signaux) => {
+    const num = (v) => Number(v) || 0;
+    const months = [...new Set(mensuel_services.map(r => r.mois))].sort();
+    const last3 = new Set(months.slice(-3));
+    const withClaude = new Set(mensuel_services.filter(r => num(r.avec_claude) > 0).map(r => r.service));
+    const prod = Object.fromEntries(services.map(s => [s.service, s.produit]));
+    const recent = mensuel_services.filter(r => last3.has(r.mois));
+    const sum = (rs, k) => rs.reduce((s, r) => s + num(r[k]), 0);
+    const recentAutres = recent.filter(r => r.service !== 'Démarche Numérique');
+    return [{
+      depots: services.length,
+      produits: new Set(services.map(s => s.produit)).size,
+      depots_claude: withClaude.size,
+      produits_claude: new Set([...withClaude].map(s => prod[s])).size,
+      depots_signal: new Set(signaux.map(s => s.service)).size,
+      depots_signal_depuis_juillet_2025: Object.values(signaux.reduce((f, s) => { if (!f[s.service] || s.date < f[s.service]) f[s.service] = s.date; return f; }, {})).filter(d => /^\d{4}/.test(d) && d >= '2025-07').length,
+      changements: sum(mensuel_services, 'changements'),
+      avec_claude: sum(mensuel_services, 'avec_claude'),
+      avec_claude_dn: sum(mensuel_services.filter(r => r.service === 'Démarche Numérique'), 'avec_claude'),
+      part_recente: sum(recent, 'changements') ? sum(recent, 'avec_claude') / sum(recent, 'changements') : 0,
+      part_recente_hors_dn: sum(recentAutres, 'changements') ? sum(recentAutres, 'avec_claude') / sum(recentAutres, 'changements') : 0
+    }];
+  }
+});
+dash.calc('adoption', {
+  title: 'Adoption cumulée',
+  description: 'Pour chaque mois, nombre cumulé de dépôts ayant montré une première trace de Claude, une première trace d’un assistant IA quelconque, ou ajouté un fichier pour agents.',
+  inputs: ['mensuel_services', 'signaux'],
+  fn: (mensuel_services, signaux) => {
+    const num = (v) => Number(v) || 0;
+    const months = [...new Set(mensuel_services.map(r => r.mois))].sort();
+    const firstOf = (pred) => {
+      const f = {};
+      for (const r of mensuel_services) if (pred(r) && (!f[r.service] || r.mois < f[r.service])) f[r.service] = r.mois;
+      return Object.values(f);
+    };
+    const claude = firstOf(r => num(r.avec_claude) > 0);
+    const ia = firstOf(r => num(r.avec_claude) + num(r.avec_copilot) + num(r.avec_cursor) + num(r.avec_autre_ia) > 0);
+    const sig = {};
+    for (const s of signaux) {
+      const m = /^\d{4}-\d{2}/.test(s.date) ? s.date.slice(0, 7) : '0000-00';
+      if (!sig[s.service] || m < sig[s.service]) sig[s.service] = m;
+    }
+    const sigs = Object.values(sig);
+    return months.map(mo => ({
+      mois: mo,
+      depots_trace_claude: claude.filter(m => m <= mo).length,
+      depots_trace_ia: ia.filter(m => m <= mo).length,
+      depots_fichiers_agents: sigs.filter(m => m <= mo).length
+    }));
+  }
+});
+dash.calc('claude_mensuel', {
+  title: 'Changements avec Claude par mois',
+  description: 'Changements mis en production portant une trace de Claude, Démarche Numérique d’un côté, les autres services de l’autre.',
+  inputs: ['mensuel_services'],
+  fn: (mensuel_services) => {
+    const by = {};
+    for (const r of mensuel_services) {
+      const o = by[r.mois] = by[r.mois] || { mois: r.mois, demarche_numerique: 0, autres: 0, changements: 0, changements_autres: 0 };
+      const c = Number(r.avec_claude) || 0, n = Number(r.changements) || 0;
+      if (r.service === 'Démarche Numérique') o.demarche_numerique += c; else { o.autres += c; o.changements_autres += n; }
+      o.changements += n;
+    }
+    return Object.values(by).sort((a, b) => a.mois < b.mois ? -1 : 1);
+  }
+});
+dash.calc('par_service', {
+  title: 'Totaux par service',
+  description: 'Par dépôt : changements et évolutions sur deux ans, nombre avec Claude, part de Claude sur les six derniers mois, premier mois avec une trace, changements avec un autre assistant IA.',
+  inputs: ['mensuel_services', 'services'],
+  fn: (mensuel_services, services) => {
+    const num = (v) => Number(v) || 0;
+    const months = [...new Set(mensuel_services.map(r => r.mois))].sort();
+    const last6 = new Set(months.slice(-6));
+    const grp = Object.fromEntries(services.map(s => [s.service, s.groupe]));
+    const by = {};
+    for (const r of mensuel_services) {
+      const o = by[r.service] = by[r.service] || { service: r.service, groupe: grp[r.service] || r.groupe, changements: 0, evolutions: 0, avec_claude: 0, evolutions_avec_claude: 0, n6: 0, c6: 0, premiere_trace: null, autres_ia: 0 };
+      o.changements += num(r.changements); o.evolutions += num(r.evolutions);
+      o.avec_claude += num(r.avec_claude); o.evolutions_avec_claude += num(r.evolutions_avec_claude);
+      o.autres_ia += num(r.avec_copilot) + num(r.avec_cursor) + num(r.avec_autre_ia);
+      if (last6.has(r.mois)) { o.n6 += num(r.changements); o.c6 += num(r.avec_claude); }
+      if (num(r.avec_claude) > 0 && (!o.premiere_trace || r.mois < o.premiere_trace)) o.premiere_trace = r.mois;
+    }
+    return Object.values(by).map(({ n6, c6, ...o }) => ({ ...o, part_6_mois: n6 ? c6 / n6 : 0 }))
+      .sort((a, b) => b.avec_claude - a.avec_claude || b.changements - a.changements);
+  }
+});
+
+(function () {
+  const fmt = ((v) => new Intl.NumberFormat('fr-FR').format(v));
+  const pct = (v) => (v > 0 && v < 0.01) ? '<1 %' : new Intl.NumberFormat('fr-FR', { style: 'percent', maximumFractionDigits: 0 }).format(v);
+  const frMonth = new Intl.DateTimeFormat('fr-FR', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const frShort = new Intl.DateTimeFormat('fr-FR', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const toDate = (m) => new Date(m + '-01T00:00:00Z');
+  const fail = (el) => { el.innerHTML = ''; const d = document.createElement('div'); d.className = 'fail'; d.append(document.createElement('i'), 'Failed to load'); el.append(d); };
+  document.querySelectorAll('.sw0').forEach(s => { s.style.background = window.FORM_COLORS[0]; });
+  document.querySelectorAll('.sw1').forEach(s => { s.style.background = window.FORM_COLORS[1]; });
+
+  const tabs = [...document.querySelectorAll('.tabs button')];
+  let current = 'synthese';
+  function show(id) {
+    if (!tabs.some(t => t.dataset.pane === id)) return;
+    current = id;
+    tabs.forEach(t => t.setAttribute('aria-selected', String(t.dataset.pane === id)));
+    document.querySelectorAll('.pane').forEach(p => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    draw();
+  }
+  tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.pane)));
+
+  function tipFor(el) {
+    let tip = el.querySelector(':scope > .tip');
+    if (!tip) { tip = document.createElement('div'); tip.className = 'tip'; el.append(tip); }
+    return {
+      show(ev, lines) {
+        tip.innerHTML = '';
+        lines.forEach((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 'd'; d.textContent = l; tip.append(d); });
+        tip.style.display = 'block';
+        const [mx, my] = d3.pointer(ev, el);
+        tip.style.left = Math.max(0, Math.min(el.clientWidth - tip.offsetWidth, mx + 12)) + 'px';
+        tip.style.top = Math.max(0, my - tip.offsetHeight - 8) + 'px';
+      },
+      hide() { tip.style.display = 'none'; }
+    };
+  }
+  function frame(el, H, maxY) {
+    el.innerHTML = '';
+    const W = Math.max(260, el.clientWidth);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([0, maxY || 1], [H - 22, 8]).nice();
+    const ticks = y.ticks(5).filter(t => Number.isInteger(t));
+    const probe = svg.append('g').selectAll('text').data(ticks).join('text').text(d => fmt(d)).style('font-size', 'var(--cds-font-size-caption)');
+    const left = 6 + (d3.max(probe.nodes(), n => n.getComputedTextLength()) || 16);
+    probe.remove();
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', left).attr('x2', W - 6).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(ticks).join('text').text(d => fmt(d)).attr('x', left - 5).attr('y', d => y(d) + 4).attr('text-anchor', 'end')
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+    return { svg, y, W, H, left };
+  }
+  function yearLabels(svg, months, x, H, band) {
+    svg.append('g').selectAll('text').data(months.filter(m => m.endsWith('-01'))).join('text')
+      .text(m => m.slice(0, 4)).attr('x', m => band ? x(m) : x(toDate(m))).attr('y', H - 6).attr('text-anchor', band ? 'start' : 'middle')
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+  }
+
+  function drawAdoption() {
+    const el = document.getElementById('chart-adoption');
+    const leg = document.getElementById('adoption-legend');
+    const a = dash.data('adoption');
+    if (a.status !== 'ok') { leg.innerHTML = ''; if (a.status === 'error') fail(el); else el.innerHTML = ''; return; }
+    const rows = a.data;
+    const months = rows.map(r => r.mois);
+    const series = [
+      { key: 'depots_fichiers_agents', name: "Fichiers pour agents IA dans le dépôt", color: window.FORM_COLORS[2] },
+      { key: 'depots_trace_ia', name: "Trace d'un assistant IA (tous outils)", color: window.FORM_COLORS[1] },
+      { key: 'depots_trace_claude', name: 'Trace de Claude', color: window.FORM_COLORS[0] }
+    ];
+    leg.innerHTML = '';
+    for (const s of series) { const sp = document.createElement('span'); const i = document.createElement('span'); i.className = 'swl'; i.style.background = s.color; sp.append(i, s.name); leg.append(sp); }
+    const { svg, y, W, H, left } = frame(el, 300, d3.max(rows, r => d3.max(series, s => r[s.key])));
+    const x = d3.scaleUtc([toDate(months[0]), toDate(months[months.length - 1])], [left, W - 6]);
+    yearLabels(svg, months, x, H, false);
+    svg.append('line').attr('x1', left).attr('x2', W - 6).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    const line = (k) => d3.line().curve(d3.curveStepAfter).x(r => x(toDate(r.mois))).y(r => y(r[k]));
+    for (const s of series) svg.append('path').attr('d', line(s.key)(rows)).attr('fill', 'none').attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').style('stroke', s.color);
+    const tip = tipFor(el);
+    const dates = months.map(toDate);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').style('display', 'none');
+    svg.append('rect').attr('x', left).attr('width', W - 6 - left).attr('y', 0).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const i = Math.max(0, Math.min(dates.length - 1, d3.bisector(d => d).center(dates, x.invert(d3.pointer(ev)[0]))));
+        const r = rows[i];
+        rule.style('display', null).attr('x1', x(dates[i])).attr('x2', x(dates[i]));
+        tip.show(ev, [frMonth.format(dates[i]), ...series.slice().reverse().map(s => s.name + ' : ' + fmt(r[s.key]) + ' dépôts')]);
+      })
+      .on('mouseleave', () => { tip.hide(); rule.style('display', 'none'); });
+  }
+
+  function drawVolume() {
+    const el = document.getElementById('chart-volume');
+    const c = dash.data('claude_mensuel');
+    if (c.status !== 'ok') { if (c.status === 'error') fail(el); else el.innerHTML = ''; return; }
+    const rows = c.data;
+    const months = rows.map(r => r.mois);
+    const { svg, y, W, H, left } = frame(el, 300, d3.max(rows, r => r.demarche_numerique + r.autres));
+    const x = d3.scaleBand(months, [left, W - 6]).padding(0.2);
+    yearLabels(svg, months, x, H, true);
+    svg.append('line').attr('x1', left).attr('x2', W - 6).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    const rx = Math.min(3, x.bandwidth() / 2);
+    svg.append('g').selectAll('rect').data(rows.filter(r => r.demarche_numerique + r.autres > 0)).join('rect')
+      .attr('x', r => x(r.mois)).attr('width', x.bandwidth()).attr('y', r => y(r.demarche_numerique + r.autres)).attr('height', r => y(0) - y(r.demarche_numerique + r.autres))
+      .attr('rx', rx).style('fill', window.FORM_COLORS[0]);
+    svg.append('g').selectAll('rect').data(rows.filter(r => r.autres > 0)).join('rect')
+      .attr('x', r => x(r.mois)).attr('width', x.bandwidth()).attr('y', r => y(r.autres)).attr('height', r => y(0) - y(r.autres))
+      .attr('rx', rx).style('fill', window.FORM_COLORS[1]);
+    const tip = tipFor(el);
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', r => x(r.mois) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => tip.show(ev, [frMonth.format(toDate(r.mois)),
+        'Démarche Numérique : ' + fmt(r.demarche_numerique),
+        'Autres services : ' + fmt(r.autres) + (r.changements_autres ? ' (' + pct(r.autres / r.changements_autres) + ' de leurs changements)' : ''),
+        'Tous services : ' + pct(r.changements ? (r.demarche_numerique + r.autres) / r.changements : 0) + ' des changements']))
+      .on('mouseleave', () => tip.hide());
+  }
+
+  function drawSignaux() {
+    const s = dash.data('signaux');
+    const tb = document.querySelector('#table-signaux tbody');
+    tb.innerHTML = '';
+    if (s.status !== 'ok') return;
+    const rows = [...s.data].sort((a, b) => (a.date < b.date ? -1 : 1));
+    for (const r of rows) {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      [r.date, r.service, r.signal].forEach(t => { const td = document.createElement('td'); td.textContent = t; tr.append(td); });
+      tb.append(tr);
+    }
+  }
+
+  function drawServices() {
+    const p = dash.data('par_service');
+    const tb = document.querySelector('#table-services tbody');
+    tb.innerHTML = '';
+    if (p.status !== 'ok') return;
+    const max = d3.max(p.data, r => r.avec_claude) || 1;
+    for (const r of p.data) {
+      const tr = document.createElement('tr');
+      const cells = [
+        [r.service], [r.groupe], [fmt(r.changements), 'n'], [fmt(r.evolutions), 'n'], null,
+        [fmt(r.evolutions_avec_claude), 'n'], [pct(r.part_6_mois), 'n'],
+        [r.premiere_trace ? frShort.format(toDate(r.premiere_trace)) : '—'], [fmt(r.autres_ia), 'n']
+      ];
+      cells.forEach((c, i) => {
+        const td = document.createElement('td');
+        if (i === 4) {
+          td.className = 'n';
+          const bc = document.createElement('div'); bc.className = 'barcell';
+          const b = document.createElement('span'); b.className = 'b'; b.style.width = (r.avec_claude ? Math.max(0.15, 5 * Math.sqrt(r.avec_claude / max)) : 0) + 'rem'; b.style.background = window.FORM_COLORS[0];
+          const v = document.createElement('span'); v.textContent = fmt(r.avec_claude);
+          bc.append(b, v); td.append(bc);
+        } else { td.textContent = c[0]; if (c[1]) td.className = c[1]; }
+        tr.append(td);
+      });
+      tb.append(tr);
+    }
+  }
+
+  // Detail list
+  let iaRows = [];
+  const q = document.getElementById('q');
+  const sels = { service: document.getElementById('f-service'), outil: document.getElementById('f-outil'), type: document.getElementById('f-type') };
+  const allLabel = { service: 'Tous services', outil: 'Tous outils', type: 'Tous types' };
+  [q, ...Object.values(sels)].forEach(e => e.addEventListener(e === q ? 'input' : 'change', () => drawList()));
+  const outils = (r) => String(r.outils_ia).split(' + ');
+  function fillSelects() {
+    const opts = {
+      service: [...new Set(iaRows.map(r => r.service))],
+      outil: [...new Set(iaRows.flatMap(outils))],
+      type: [...new Set(iaRows.map(r => r.type))]
+    };
+    for (const [k, sel] of Object.entries(sels)) {
+      const v = sel.value; const o = opts[k].sort((a, b) => a.localeCompare(b, 'fr'));
+      sel.replaceChildren(new Option(allLabel[k], ''), ...o.map(x => new Option(x, x)));
+      sel.value = o.includes(v) ? v : '';
+    }
+  }
+  function drawList() {
+    const tb = document.querySelector('#table-ia tbody');
+    tb.innerHTML = '';
+    const term = q.value.trim().toLowerCase();
+    const rows = iaRows.filter(r => (!sels.service.value || r.service === sels.service.value)
+      && (!sels.outil.value || outils(r).includes(sels.outil.value))
+      && (!sels.type.value || r.type === sels.type.value)
+      && (!term || String(r.titre).toLowerCase().includes(term)));
+    document.getElementById('count').textContent = fmt(rows.length) + ' changement' + (rows.length > 1 ? 's' : '');
+    const frag = document.createDocumentFragment();
+    for (const r of rows) {
+      const tr = document.createElement('tr');
+      const td0 = document.createElement('td'); const a = document.createElement('a'); a.textContent = r.ref;
+      if (/^https:\/\/github\.com\//.test(r.lien)) { a.href = r.lien; a.target = '_blank'; a.rel = 'noopener'; }
+      td0.append(a); tr.append(td0);
+      [r.service, r.titre, r.type, r.mise_en_production, r.outils_ia].forEach(t => { const td = document.createElement('td'); td.textContent = t; tr.append(td); });
+      frag.append(tr);
+    }
+    tb.append(frag);
+  }
+
+  function drawDepots() {
+    const s = dash.data('services');
+    const tb = document.querySelector('#table-depots tbody');
+    tb.innerHTML = '';
+    if (s.status !== 'ok') return;
+    for (const r of s.data) {
+      const tr = document.createElement('tr');
+      const td0 = document.createElement('td'); td0.textContent = r.service;
+      const td1 = document.createElement('td'); td1.textContent = r.groupe;
+      const td2 = document.createElement('td'); const a = document.createElement('a'); a.textContent = r.depot;
+      if (/^https:\/\/github\.com\//.test(r.lien)) { a.href = r.lien; a.target = '_blank'; a.rel = 'noopener'; }
+      td2.append(a);
+      const td3 = document.createElement('td'); td3.textContent = r.mise_en_production;
+      tr.append(td0, td1, td2, td3); tb.append(tr);
+    }
+  }
+
+  const hmMetric = document.getElementById('hm-metric');
+  hmMetric.addEventListener('change', () => drawHeatmap());
+  function drawHeatmap() {
+    const el = document.getElementById('chart-heatmap');
+    const m = dash.data('mensuel_services');
+    if (m.status !== 'ok') { if (m.status === 'error') fail(el); else el.innerHTML = ''; return; }
+    el.innerHTML = '';
+    const key = hmMetric.value, keyC = key === 'evolutions' ? 'evolutions_avec_claude' : 'avec_claude';
+    const num = (v) => Number(v) || 0;
+    const months = [...new Set(m.data.map(r => r.mois))].sort();
+    const by = d3.group(m.data, r => r.service);
+    const rows = [...by].map(([service, rs]) => {
+      const cells = Object.fromEntries(rs.map(r => [r.mois, { n: num(r[key]), c: num(r[keyC]) }]));
+      return { service, cells, total: d3.sum(rs, r => num(r[key])), claude: d3.sum(rs, r => num(r[keyC])) };
+    }).sort((a, b) => b.total - a.total);
+    const W = Math.max(320, el.clientWidth);
+    const svg = d3.select(el).append('svg').attr('width', '100%');
+    const probe = svg.append('g').style('font-size', 'var(--cds-font-size-caption)');
+    const labW = d3.max(rows, r => probe.append('text').text(r.service).node().getComputedTextLength()) || 100;
+    const totW = d3.max(rows, r => probe.append('text').text(fmt(r.total) + ' · ' + fmt(r.claude)).node().getComputedTextLength()) || 40;
+    const hdrW = probe.append('text').text('total · Claude').node().getComputedTextLength() || 0;
+    probe.remove();
+    const narrow = W < 560;
+    const left = Math.min(labW + 10, narrow ? W * 0.42 : W * 0.32), right = narrow ? 4 : Math.max(totW, hdrW) + 12;
+    const x = d3.scaleBand(months, [left, W - right]).paddingInner(0.08);
+    const rowH = Math.max(14, Math.min(22, x.bandwidth() * 1.1));
+    const top = 18, H = top + rows.length * rowH + 4;
+    svg.attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleBand(rows.map(r => r.service), [top, H - 4]).paddingInner(0.12);
+    const max = d3.max(rows, r => d3.max(months, mo => (r.cells[mo] || { n: 0 }).n)) || 1;
+    const probeEl = document.createElement('span'); el.append(probeEl);
+    const css = (v) => { probeEl.style.color = v; return getComputedStyle(probeEl).color; };
+    const lo = css('var(--color-panel)'), hi = css('var(--color-fg)');
+    probeEl.remove();
+    const shade = d3.scaleSqrt([0, max], [0.06, 0.85]);
+    const fill = (n) => n ? d3.interpolateRgb(lo, hi)(shade(n)) : 'transparent';
+    document.getElementById('hm-sw-lo').style.background = fill(Math.max(1, max * 0.02));
+    document.getElementById('hm-sw-hi').style.background = fill(max);
+    svg.append('g').selectAll('text').data(months.filter(mo => mo.endsWith('-01') || mo === months[0])).join('text')
+      .text(mo => mo.endsWith('-01') ? mo.slice(0, 4) : frShort.format(toDate(mo))).attr('x', mo => x(mo)).attr('y', 12)
+      .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)');
+    const g = svg.append('g');
+    for (const r of rows) {
+      const cy = y(r.service);
+      const label = g.append('text').attr('x', left - 8).attr('y', cy + y.bandwidth() / 2 + 4).attr('text-anchor', 'end')
+        .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg)').text(r.service);
+      while (label.node().getComputedTextLength() > left - 12 && label.text().length > 4) label.text(label.text().slice(0, -2) + '…');
+      g.append('rect').attr('x', left).attr('width', W - right - left).attr('y', cy).attr('height', y.bandwidth())
+        .attr('fill', 'none').attr('stroke', 'var(--color-border-line)').attr('stroke-width', 0.5).attr('rx', 2);
+      for (const mo of months) {
+        const c = r.cells[mo] || { n: 0, c: 0 };
+        g.append('rect').attr('x', x(mo)).attr('width', x.bandwidth()).attr('y', cy).attr('height', y.bandwidth()).attr('rx', 2)
+          .attr('fill', fill(c.n));
+        if (c.c > 0) {
+          const rr = Math.max(1.6, Math.min(x.bandwidth(), y.bandwidth()) / 2 * Math.sqrt(c.c / c.n));
+          g.append('circle').attr('cx', x(mo) + x.bandwidth() / 2).attr('cy', cy + y.bandwidth() / 2).attr('r', rr)
+            .style('fill', window.FORM_COLORS[0]).style('stroke', 'var(--color-panel)').attr('stroke-width', 0.75);
+        }
+      }
+      if (!narrow) g.append('text').attr('x', W - right + 8).attr('y', cy + y.bandwidth() / 2 + 4)
+        .style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)').text(fmt(r.total) + ' · ' + fmt(r.claude));
+    }
+    if (!narrow) svg.append('text').attr('x', W - right + 8).attr('y', 12).style('font-size', 'var(--cds-font-size-caption)').attr('fill', 'var(--color-fg-muted)').text('total · Claude');
+    const tip = tipFor(el);
+    const unit = key === 'evolutions' ? 'évolution' : 'changement';
+    svg.append('rect').attr('x', left).attr('width', W - right - left).attr('y', top).attr('height', H - top).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx, my] = d3.pointer(ev);
+        const mo = months[Math.max(0, Math.min(months.length - 1, Math.floor((mx - left) / x.step())))];
+        const r = rows[Math.max(0, Math.min(rows.length - 1, Math.floor((my - top) / y.step())))];
+        const c = r.cells[mo] || { n: 0, c: 0 };
+        tip.show(ev, [r.service + ' · ' + frMonth.format(toDate(mo)), fmt(c.n) + ' ' + unit + (c.n > 1 ? 's' : ''), 'dont ' + fmt(c.c) + ' avec Claude' + (c.n ? ' (' + pct(c.c / c.n) + ')' : '')]);
+      })
+      .on('mouseleave', () => tip.hide());
+  }
+
+  function draw() {
+    if (current === 'activite') drawHeatmap();
+    if (current === 'synthese') { drawAdoption(); drawVolume(); drawSignaux(); }
+    if (current === 'services') drawServices();
+    if (current === 'methode') drawDepots();
+  }
+
+  let lastIa = null;
+  dash.onData(() => {
+    const k = dash.data('kpi');
+    const big = [...document.querySelectorAll('#kpis .big')];
+    const lede = document.getElementById('lede');
+    if (k.status === 'ok' && k.data[0]) {
+      const r = k.data[0];
+      big.forEach(el => { const f = el.dataset.field; el.textContent = f === 'part_recente' ? pct(r[f]) : fmt(r[f]); });
+      document.getElementById('sub-produits').textContent = fmt(r.produits) + ' services, ' + fmt(r.changements) + ' changements mis en production';
+      document.getElementById('sub-claude').textContent = 'soit ' + fmt(r.produits_claude) + ' services sur ' + fmt(r.produits);
+      document.getElementById('sub-part').textContent = 'hors Démarche Numérique : ' + pct(r.part_recente_hors_dn);
+      lede.textContent = `Sur deux ans, ${fmt(r.depots_claude)} des ${fmt(r.depots)} dépôts étudiés portent au moins une trace de Claude, et ${fmt(r.depots_signal)} contiennent des fichiers d'instructions pour agents IA, dont ${fmt(r.depots_signal_depuis_juillet_2025)} ajoutés depuis juillet 2025. Le volume reste concentré : Démarche Numérique compte ${fmt(r.avec_claude_dn)} des ${fmt(r.avec_claude)} changements avec Claude.`;
+      [...big, lede].forEach(e => e.classList.remove('dash-skeleton'));
+    } else {
+      big.forEach(el => { el.textContent = '—'; }); lede.textContent = '—';
+      if (k.status === 'error') [...big, lede].forEach(e => e.classList.remove('dash-skeleton'));
+    }
+    const ia = dash.data('changements_ia');
+    if (ia.status === 'ok') { if (ia.data !== lastIa) { iaRows = ia.data; lastIa = ia.data; fillSelects(); } drawList(); }
+    else { iaRows = []; document.querySelector('#table-ia tbody').innerHTML = ''; document.getElementById('count').textContent = ia.status === 'error' ? 'Failed to load' : ''; }
+    draw();
+  });
+
+  const named = location.hash.slice(1);
+  if (named) show(named);
+})();
+</script>
+
+</div>
+<footer class="site-foot">Données : historiques Git publics sur GitHub, lus le 14 octobre 2026. Méthode, scripts et fichiers CSV : <a href="https://github.com/emsnytech/ia-code-public">dépôt du projet</a>. Charte FORM 2026.</footer>
+</body>
+</html>

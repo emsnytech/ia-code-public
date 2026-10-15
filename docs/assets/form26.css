@@ -1,0 +1,20 @@
+/* Charte FORM 2026 — Source Sans 3, fond papier, bleu administration, vert usager, ambre accent */
+:root{
+  --ink:#1e2022;--muted:#5c6066;--paper:#fbf9f5;--surface:#ffffff;--line:#e2dfd7;
+  --cds-gap-xs:.25rem;--cds-gap-sm:.5rem;--cds-gap-md:1rem;--cds-gap-lg:1.5rem;--cds-gap-xl:2.25rem;
+  --cds-pad-xs:.25rem;--cds-pad-sm:.5rem;--cds-pad-md:.85rem;--cds-pad-lg:1.25rem;--cds-pad-xl:2rem;
+  --cds-font-size-caption:.85rem;--cds-font-size-body:1rem;--cds-font-size-heading:1.2rem;--cds-font-size-title:2.1rem;
+  --cds-font-weight-medium:700;--cds-dur-slow:.35s;--cds-ease-out:cubic-bezier(.2,.8,.2,1);
+  --cds-shadow-popover:0 6px 24px rgba(0,0,0,.12);
+}
+@media (prefers-color-scheme: dark){:root{--ink:#f3f4f6;--muted:#9ca3af;--paper:#18181b;--surface:#27272a;--line:#3f3f46;--cds-shadow-popover:0 6px 24px rgba(0,0,0,.5)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+#dash-root{max-width:1240px;margin:0 auto;padding:1.5rem 16px 3rem}
+#dash-root > .dn, #dash-root > .cx{padding:0!important;background:transparent!important}
+.site-nav{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;font-size:.9rem;margin-bottom:1rem;color:var(--muted)}
+.site-nav a{color:#1d4ed8;text-decoration:none;font-weight:600}
+@media (prefers-color-scheme: dark){.site-nav a{color:#60a5fa}}
+.site-foot{max-width:1240px;margin:0 auto;padding:1rem 16px 2.5rem;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.site-foot a{color:inherit}
+.dash-skeleton{color:transparent!important;background:linear-gradient(90deg,var(--line),transparent);border-radius:6px;min-width:3rem}
