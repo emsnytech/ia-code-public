@@ -41,6 +41,8 @@ REPOS = {
  'incubateur-ademe/nosgestesclimat-site-nextjs': ('Nos Gestes Climat', 'ADEME', 'head'),
  'betagouv/aides-jeunes': ('Aides jeunes (1jeune1solution)', 'beta.gouv', 'head'),
  'BaseAdresseNationale/adresse.data.gouv.fr': ('adresse.data.gouv.fr', 'IGN / ANCT', 'tags'),
+ 'betagouv/gestion-des-subventions-locales': ('Gestion des subventions locales', 'beta.gouv', 'tags'),
+ 'dnum-mi/bibliotheque-numerique': ('Bibliothèque Numérique', 'Ministère de l\'Intérieur', 'head'),
  'numerique-gouv/sites-faciles': ('Sites Faciles', 'DINUM', 'branch:production'),
 }
 

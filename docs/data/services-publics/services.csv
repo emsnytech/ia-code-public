@@ -31,4 +31,6 @@ France Chaleur Urbaine,France Chaleur Urbaine,Ministère de la Transition écolo
 Nos Gestes Climat,Nos Gestes Climat,ADEME,incubateur-ademe/nosgestesclimat-site-nextjs,https://github.com/incubateur-ademe/nosgestesclimat-site-nextjs,main,Fusion sur la branche principale (déploiement continu)
 Aides jeunes (1jeune1solution),Aides jeunes (1jeune1solution),beta.gouv,betagouv/aides-jeunes,https://github.com/betagouv/aides-jeunes,main,Fusion sur la branche principale (déploiement continu)
 adresse.data.gouv.fr,adresse.data.gouv.fr,IGN / ANCT,BaseAdresseNationale/adresse.data.gouv.fr,https://github.com/BaseAdresseNationale/adresse.data.gouv.fr,main,Première version publiée (étiquette) qui contient le changement
+Gestion des subventions locales,Gestion des subventions locales,beta.gouv,betagouv/gestion-des-subventions-locales,https://github.com/betagouv/gestion-des-subventions-locales,main,Première version publiée (étiquette) qui contient le changement
+Bibliothèque Numérique,Bibliothèque Numérique,Ministère de l'Intérieur,dnum-mi/bibliotheque-numerique,https://github.com/dnum-mi/bibliotheque-numerique,main,Fusion sur la branche principale (déploiement continu)
 Sites Faciles,Sites Faciles,DINUM,numerique-gouv/sites-faciles,https://github.com/numerique-gouv/sites-faciles,main,Arrivée sur la branche production

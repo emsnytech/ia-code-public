@@ -8,7 +8,7 @@ Site : https://emsnytech.github.io/ia-code-public/
 
 | Page | Périmètre | Ce qu'elle montre |
 |---|---|---|
-| [Services publics](https://emsnytech.github.io/ia-code-public/services-publics/) | 33 dépôts, 14/10/2024 → 14/10/2026 | Adoption par les équipes, activité par projet et par mois, poids de Claude, autres assistants (Copilot, Cursor…), fichiers d'instructions pour agents |
+| [Services publics](https://emsnytech.github.io/ia-code-public/services-publics/) | 35 dépôts, 14/10/2024 → 14/10/2026 | Adoption par les équipes, activité par projet et par mois, poids de Claude, autres assistants (Copilot, Cursor…), fichiers d'instructions pour agents |
 | [Démarche Numérique](https://emsnytech.github.io/ia-code-public/demarche-numerique/) | 1 dépôt, 14/10/2021 → 14/10/2026 | Mises en production par mois, par nature (sécurité, accessibilité, API, design…) et par public, part de Claude |
 
 ## Principaux constats (au 14 octobre 2026)

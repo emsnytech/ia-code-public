@@ -1,5 +1,5 @@
 mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,avec_copilot,avec_cursor,avec_autre_ia,commits,commits_avec_claude
-2024-10,Démarche Numérique,DINUM,35,0,13,0,0,0,0,95,0
+2024-10,Démarche Numérique,DINUM,37,0,15,0,0,0,0,109,0
 2024-11,Démarche Numérique,DINUM,78,0,50,0,0,0,0,289,0
 2024-12,Démarche Numérique,DINUM,66,0,42,0,0,0,0,253,0
 2025-01,Démarche Numérique,DINUM,66,0,31,0,0,0,0,228,0
@@ -24,7 +24,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Démarche Numérique,DINUM,106,57,23,14,0,0,0,335,126
 2026-09,Démarche Numérique,DINUM,283,169,95,62,0,0,1,715,330
 2026-10,Démarche Numérique,DINUM,120,65,68,46,0,0,0,364,209
-2024-10,RDV Service Public,ANCT / beta.gouv,49,0,6,0,0,0,0,49,0
+2024-10,RDV Service Public,ANCT / beta.gouv,52,0,6,0,0,0,0,52,0
 2024-11,RDV Service Public,ANCT / beta.gouv,72,0,12,0,0,0,0,72,0
 2024-12,RDV Service Public,ANCT / beta.gouv,69,0,10,0,0,0,0,69,0
 2025-01,RDV Service Public,ANCT / beta.gouv,86,0,19,0,0,0,0,86,0
@@ -274,7 +274,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Messagerie (La Suite),DINUM,6,0,3,0,0,0,0,6,0
 2026-09,Messagerie (La Suite),DINUM,51,0,14,0,0,0,0,51,0
 2026-10,Messagerie (La Suite),DINUM,0,0,0,0,0,0,0,0,0
-2024-10,Régie (La Suite),DINUM,13,0,3,0,0,0,0,13,0
+2024-10,Régie (La Suite),DINUM,14,0,4,0,0,0,0,14,0
 2024-11,Régie (La Suite),DINUM,78,0,19,0,0,0,0,78,0
 2024-12,Régie (La Suite),DINUM,37,0,9,0,0,0,0,37,0
 2025-01,Régie (La Suite),DINUM,42,0,12,0,0,0,0,42,0
@@ -399,7 +399,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Projets (La Suite),DINUM,0,0,0,0,0,0,0,0,0
 2026-09,Projets (La Suite),DINUM,5,0,1,0,0,0,0,5,0
 2026-10,Projets (La Suite),DINUM,4,0,0,0,0,0,0,4,0
-2024-10,data.gouv.fr (moteur udata),DINUM,7,0,3,0,0,0,0,7,0
+2024-10,data.gouv.fr (moteur udata),DINUM,9,0,3,0,0,0,0,9,0
 2024-11,data.gouv.fr (moteur udata),DINUM,47,0,10,0,0,0,0,47,0
 2024-12,data.gouv.fr (moteur udata),DINUM,25,0,6,0,0,0,0,25,0
 2025-01,data.gouv.fr (moteur udata),DINUM,24,0,10,0,0,0,0,24,0
@@ -475,7 +475,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-09,Annuaire des Entreprises,DINUM,19,0,11,0,0,0,0,19,0
 2026-10,Annuaire des Entreprises,DINUM,13,0,5,0,0,0,0,13,0
 2024-10,ProConnect,DINUM,0,0,0,0,0,0,0,0,0
-2024-11,ProConnect,DINUM,84,0,32,0,0,0,0,100,0
+2024-11,ProConnect,DINUM,88,0,34,0,0,0,0,108,0
 2024-12,ProConnect,DINUM,6,0,2,0,0,0,0,17,0
 2025-01,ProConnect,DINUM,42,0,7,0,0,0,0,70,0
 2025-02,ProConnect,DINUM,35,0,6,0,0,0,0,73,0
@@ -524,7 +524,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
 2026-09,FranceConnect,DINUM,0,0,0,0,0,0,0,0,0
 2026-10,FranceConnect,DINUM,1,0,0,0,0,0,0,1,0
-2024-10,Trackdéchets,Ministère de la Transition écologique,48,0,10,0,0,0,0,76,0
+2024-10,Trackdéchets,Ministère de la Transition écologique,53,0,13,0,0,0,0,81,0
 2024-11,Trackdéchets,Ministère de la Transition écologique,57,0,15,0,0,0,0,76,0
 2024-12,Trackdéchets,Ministère de la Transition écologique,61,0,15,0,0,0,0,87,0
 2025-01,Trackdéchets,Ministère de la Transition écologique,63,0,13,0,0,0,0,90,0
@@ -574,7 +574,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,CarbuRe,Ministère de la Transition écologique,27,0,1,0,0,3,0,214,0
 2026-09,CarbuRe,Ministère de la Transition écologique,38,0,0,0,0,0,0,251,0
 2026-10,CarbuRe,Ministère de la Transition écologique,20,0,1,0,0,0,0,84,0
-2024-10,Code du travail numérique,Ministère du Travail,25,0,10,0,0,0,2,25,0
+2024-10,Code du travail numérique,Ministère du Travail,26,0,10,0,0,0,2,26,0
 2024-11,Code du travail numérique,Ministère du Travail,36,0,12,0,0,0,3,36,0
 2024-12,Code du travail numérique,Ministère du Travail,29,0,5,0,0,0,1,29,0
 2025-01,Code du travail numérique,Ministère du Travail,23,0,1,0,0,0,0,23,0
@@ -624,7 +624,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Mon-entreprise (Urssaf),Urssaf,71,0,9,0,0,0,0,71,0
 2026-09,Mon-entreprise (Urssaf),Urssaf,239,0,48,0,0,0,0,239,0
 2026-10,Mon-entreprise (Urssaf),Urssaf,58,0,4,0,0,0,0,58,0
-2024-10,pass Culture,Ministère de la Culture,237,0,85,0,0,0,0,237,0
+2024-10,pass Culture,Ministère de la Culture,243,0,88,0,0,0,0,243,0
 2024-11,pass Culture,Ministère de la Culture,347,0,150,0,0,0,0,347,0
 2024-12,pass Culture,Ministère de la Culture,309,0,122,0,0,0,0,309,0
 2025-01,pass Culture,Ministère de la Culture,473,0,212,0,0,0,0,473,0
@@ -649,7 +649,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,pass Culture,Ministère de la Culture,221,0,106,0,0,0,0,221,0
 2026-09,pass Culture,Ministère de la Culture,330,0,134,0,0,0,0,330,0
 2026-10,pass Culture,Ministère de la Culture,155,0,81,0,0,0,0,155,0
-2024-10,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,119,0,18,0,0,0,0,119,0
+2024-10,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,122,0,20,0,0,0,0,122,0
 2024-11,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,170,0,30,0,0,0,0,170,0
 2024-12,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,131,0,19,0,0,0,0,131,0
 2025-01,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,265,0,55,0,0,0,0,265,0
@@ -674,7 +674,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,159,0,51,0,0,0,0,159,0
 2026-09,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,352,0,78,0,0,0,0,352,0
 2026-10,Les emplois de l'inclusion,GIP Plateforme de l'inclusion,140,0,33,0,0,1,0,140,0
-2024-10,Collectif Objets,Ministère de la Culture,16,0,4,0,0,0,0,73,0
+2024-10,Collectif Objets,Ministère de la Culture,17,0,4,0,0,0,0,74,0
 2024-11,Collectif Objets,Ministère de la Culture,4,0,2,0,0,0,0,9,0
 2024-12,Collectif Objets,Ministère de la Culture,44,0,2,0,0,0,0,89,0
 2025-01,Collectif Objets,Ministère de la Culture,4,0,1,0,0,0,0,31,0
@@ -699,7 +699,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
 2026-09,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
 2026-10,Collectif Objets,Ministère de la Culture,0,0,0,0,0,0,0,0,0
-2024-10,France Chaleur Urbaine,Ministère de la Transition écologique,27,0,7,0,0,0,0,158,0
+2024-10,France Chaleur Urbaine,Ministère de la Transition écologique,31,0,7,0,0,0,0,162,0
 2024-11,France Chaleur Urbaine,Ministère de la Transition écologique,49,0,9,0,0,0,0,340,0
 2024-12,France Chaleur Urbaine,Ministère de la Transition écologique,35,0,7,0,0,0,0,76,0
 2025-01,France Chaleur Urbaine,Ministère de la Transition écologique,28,0,7,0,0,0,0,138,0
@@ -749,7 +749,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,Nos Gestes Climat,ADEME,46,0,15,0,0,0,0,46,0
 2026-09,Nos Gestes Climat,ADEME,82,3,5,0,0,0,0,82,3
 2026-10,Nos Gestes Climat,ADEME,22,1,4,1,0,0,0,22,1
-2024-10,Aides jeunes (1jeune1solution),beta.gouv,15,0,5,0,0,0,0,15,0
+2024-10,Aides jeunes (1jeune1solution),beta.gouv,17,0,6,0,0,0,0,17,0
 2024-11,Aides jeunes (1jeune1solution),beta.gouv,22,0,7,0,0,0,0,22,0
 2024-12,Aides jeunes (1jeune1solution),beta.gouv,10,0,3,0,0,0,0,10,0
 2025-01,Aides jeunes (1jeune1solution),beta.gouv,24,0,8,0,0,0,0,24,0
@@ -775,7 +775,7 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-09,Aides jeunes (1jeune1solution),beta.gouv,14,1,0,0,0,0,0,14,1
 2026-10,Aides jeunes (1jeune1solution),beta.gouv,3,1,0,0,0,0,0,3,1
 2024-10,adresse.data.gouv.fr,IGN / ANCT,0,0,0,0,0,0,0,0,0
-2024-11,adresse.data.gouv.fr,IGN / ANCT,33,0,10,0,0,0,0,153,0
+2024-11,adresse.data.gouv.fr,IGN / ANCT,34,0,10,0,0,0,0,157,0
 2024-12,adresse.data.gouv.fr,IGN / ANCT,10,0,3,0,0,0,0,37,0
 2025-01,adresse.data.gouv.fr,IGN / ANCT,53,0,13,0,0,0,0,120,0
 2025-02,adresse.data.gouv.fr,IGN / ANCT,24,0,12,0,0,0,0,52,0
@@ -799,6 +799,56 @@ mois,service,groupe,changements,avec_claude,evolutions,evolutions_avec_claude,av
 2026-08,adresse.data.gouv.fr,IGN / ANCT,15,0,3,0,0,0,0,15,0
 2026-09,adresse.data.gouv.fr,IGN / ANCT,22,0,6,0,0,0,0,22,0
 2026-10,adresse.data.gouv.fr,IGN / ANCT,4,0,3,0,0,0,0,4,0
+2024-10,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2024-11,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2024-12,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-01,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-02,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-03,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-04,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-05,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-06,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-07,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-08,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-09,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-10,Gestion des subventions locales,beta.gouv,77,0,33,0,0,0,0,258,0
+2025-11,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2025-12,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2026-01,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2026-02,Gestion des subventions locales,beta.gouv,28,0,11,0,3,0,0,1962,0
+2026-03,Gestion des subventions locales,beta.gouv,4,1,0,0,0,0,0,238,3
+2026-04,Gestion des subventions locales,beta.gouv,24,1,13,1,0,0,0,140,2
+2026-05,Gestion des subventions locales,beta.gouv,0,0,0,0,0,0,0,0,0
+2026-06,Gestion des subventions locales,beta.gouv,82,1,38,1,0,0,0,128,1
+2026-07,Gestion des subventions locales,beta.gouv,19,0,9,0,0,0,0,51,0
+2026-08,Gestion des subventions locales,beta.gouv,40,0,13,0,0,0,0,93,0
+2026-09,Gestion des subventions locales,beta.gouv,16,0,2,0,0,0,0,33,0
+2026-10,Gestion des subventions locales,beta.gouv,65,0,16,0,0,0,0,144,0
+2024-10,Bibliothèque Numérique,Ministère de l'Intérieur,1,0,1,0,0,0,0,1,0
+2024-11,Bibliothèque Numérique,Ministère de l'Intérieur,20,0,10,0,0,0,0,20,0
+2024-12,Bibliothèque Numérique,Ministère de l'Intérieur,7,0,0,0,0,0,0,7,0
+2025-01,Bibliothèque Numérique,Ministère de l'Intérieur,18,0,4,0,0,0,0,18,0
+2025-02,Bibliothèque Numérique,Ministère de l'Intérieur,27,0,8,0,0,0,0,38,0
+2025-03,Bibliothèque Numérique,Ministère de l'Intérieur,17,0,4,0,0,0,0,40,0
+2025-04,Bibliothèque Numérique,Ministère de l'Intérieur,29,0,7,0,0,0,0,36,0
+2025-05,Bibliothèque Numérique,Ministère de l'Intérieur,32,0,8,0,0,0,0,32,0
+2025-06,Bibliothèque Numérique,Ministère de l'Intérieur,17,0,9,0,0,0,0,17,0
+2025-07,Bibliothèque Numérique,Ministère de l'Intérieur,10,0,1,0,0,0,0,10,0
+2025-08,Bibliothèque Numérique,Ministère de l'Intérieur,31,0,13,0,0,0,0,31,0
+2025-09,Bibliothèque Numérique,Ministère de l'Intérieur,5,0,3,0,0,0,0,5,0
+2025-10,Bibliothèque Numérique,Ministère de l'Intérieur,35,0,12,0,0,0,0,35,0
+2025-11,Bibliothèque Numérique,Ministère de l'Intérieur,52,0,8,0,0,0,0,52,0
+2025-12,Bibliothèque Numérique,Ministère de l'Intérieur,4,0,1,0,0,0,0,4,0
+2026-01,Bibliothèque Numérique,Ministère de l'Intérieur,133,0,27,0,0,0,0,133,0
+2026-02,Bibliothèque Numérique,Ministère de l'Intérieur,53,0,19,0,0,0,0,53,0
+2026-03,Bibliothèque Numérique,Ministère de l'Intérieur,51,0,8,0,0,0,0,51,0
+2026-04,Bibliothèque Numérique,Ministère de l'Intérieur,65,0,12,0,0,0,0,65,0
+2026-05,Bibliothèque Numérique,Ministère de l'Intérieur,73,0,3,0,0,0,0,73,0
+2026-06,Bibliothèque Numérique,Ministère de l'Intérieur,22,0,9,0,0,0,0,22,0
+2026-07,Bibliothèque Numérique,Ministère de l'Intérieur,0,0,0,0,0,0,0,0,0
+2026-08,Bibliothèque Numérique,Ministère de l'Intérieur,0,0,0,0,0,0,0,0,0
+2026-09,Bibliothèque Numérique,Ministère de l'Intérieur,0,0,0,0,0,0,0,0,0
+2026-10,Bibliothèque Numérique,Ministère de l'Intérieur,0,0,0,0,0,0,0,0,0
 2024-10,Sites Faciles,DINUM,7,0,3,0,0,0,0,7,0
 2024-11,Sites Faciles,DINUM,4,0,0,0,0,0,0,4,0
 2024-12,Sites Faciles,DINUM,6,0,2,0,0,0,0,6,0
